@@ -1,0 +1,429 @@
+;;; This file bootstraps the configuration, which is divided into
+;;; a number of other files.
+
+(let ((minver "24.1"))
+  (when (version<= emacs-version minver)
+    (error "Your Emacs is too old -- this config requires v%s or higher" minver)))
+(when (version<= emacs-version "24.4")
+  (message "Your Emacs is old, and some functionality in this config will be disabled. Please upgrade if possible."))
+
+(add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
+(require 'init-benchmarking) ;; Measure startup time
+
+(defconst *spell-check-support-enabled* nil) ;; Enable with t if you prefer
+(defconst *is-a-mac* (eq system-type 'darwin))
+
+;;----------------------------------------------------------------------------
+;; Temporarily reduce garbage collection during startup
+;;----------------------------------------------------------------------------
+(defconst sanityinc/initial-gc-cons-threshold gc-cons-threshold
+  "Initial value of `gc-cons-threshold' at start-up time.")
+(setq gc-cons-threshold (* 128 1024 1024))
+(add-hook 'after-init-hook
+          (lambda () (setq gc-cons-threshold sanityinc/initial-gc-cons-threshold)))
+
+;;----------------------------------------------------------------------------
+;; Bootstrap config
+;;----------------------------------------------------------------------------
+(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
+(require 'init-compat)
+(require 'init-utils)
+(require 'init-site-lisp) ;; Must come before elpa, as it may provide package.el
+;; Calls (package-initialize)
+(require 'init-elpa)      ;; Machinery for installing required packages
+(require 'init-exec-path) ;; Set up $PATH
+
+
+
+;;
+;; use-package
+;;
+(add-to-list 'load-path "~/.emacs.d/lisp")
+(add-to-list 'load-path "~/.emacs.d/lisp/emacs-for-python-master")
+(unless (package-installed-p 'use-package)
+  (package-install 'use-package))
+(setq use-package-verbose t)
+(setq use-package-always-ensure t)
+(require 'use-package)
+(use-package auto-compile
+  :config (auto-compile-on-load-mode))
+(setq load-prefer-newer t)
+
+(require 'init-elpa)
+(require 'init-exec-path)
+
+
+;;-------------------------------------------------
+;; customization in a separate file
+;;-------------------------------------------------
+(setq custom-file "~/.emacs.d/emacs-custom.el")
+     (load custom-file)
+
+;;
+;; option key is meta
+;;
+(setq mac-option-modifier 'meta) ; set alt-key to meta
+(setq mac-escape-modifier nil) ; set esc-key to nil
+
+;;
+;; ido-mode
+;;
+(ido-mode 1)
+(setq ido-everywhere t)
+(setq ido-enable-flex-matching t)
+(setq ido-use-filename-at-point 'guess)
+(setq ido-create-new-buffer 'always)
+;;-------------------------------------------------------------------------------------
+;; ;;code from sacha chua
+ (use-package ido :disabled t
+   :init
+   (progn
+   (ido-mode 1)
+   (setq ido-default-buffer-method 'selected-window)
+   (add-hook 'ido-make-file-list-hook 'ido-sort-mtime)
+   (add-hook 'ido-make-dir-list-hook 'ido-sort-mtime)
+   (defun ido-sort-mtime ()
+     (setq ido-temp-list
+           (sort ido-temp-list
+                 (lambda (a b)
+                   (let ((ta (nth 5 (file-attributes (concat ido-current-directory a))))
+                         (tb (nth 5 (file-attributes (concat ido-current-directory b)))))
+                     (if (= (nth 0 ta) (nth 0 tb))
+                         (> (nth 1 ta) (nth 1 tb))
+                       (> (nth 0 ta) (nth 0 tb)))))))
+     (ido-to-end  ;; move . files to end (again)
+      (delq nil (mapcar
+                 (lambda (x) (if (string-equal (substring x 0 1) ".") x))
+                 ido-temp-list))))))
+
+
+;;
+;; writeroom mode
+;;
+(use-package writeroom-mode
+  :ensure t
+  :config (setq writeroom-width  100)
+  :init)
+(global-writeroom-mode 0)
+(global-set-key (kbd "<f6>") 'writeroom-mode)
+;----------------------------------------------------
+
+;; tex-mode
+(require 'init-tex)
+
+;;
+;; Color theme
+;;
+(require-package 'color-theme-sanityinc-solarized)
+(require-package 'color-theme-sanityinc-tomorrow)
+
+;; If you don't customize it, this is the theme you get.
+(setq-default custom-enabled-themes '(sanityinc-solarized-dark))
+
+;; Ensure that themes will be applied even if they have not been customized
+(defun reapply-themes ()
+  "Forcibly load the themes listed in `custom-enabled-themes'."
+  (dolist (theme custom-enabled-themes)
+    (unless (custom-theme-p theme)
+      (load-theme theme)))
+  (custom-set-variables `(custom-enabled-themes (quote ,custom-enabled-themes))))
+
+(add-hook 'after-init-hook 'reapply-themes)
+
+
+;;------------------------------------------------------------------------------
+;; Toggle between light and dark
+;;------------------------------------------------------------------------------
+(defun light ()
+  "Activate a light color theme."
+  (interactive)
+  (color-theme-sanityinc-solarized-light))
+
+(defun dark ()
+  "Activate a dark color theme."
+  (interactive)
+  (color-theme-sanityinc-solarized-dark))
+
+;;
+;; Enable matlab-mode
+;;
+
+;;use the following line enable the path of matlab to be identifiable by Emacs.
+;;sudo ln -s /Applications/MATLAB_R2015b.app/bin/matlab /usr/bin/matlab
+(use-package matlab-mode
+  :config
+  :init)
+    ;; Enable CEDET feature support for MATLAB code. (Optional)
+(matlab-cedet-setup)
+;;
+
+;;override C-l and use it to do M-x erase-buffer
+(defun clear-and-return () 
+  "Erases the buffer, and then passes a return to the buffer process.
+Assumes the buffer is attached to a comint process."
+  (interactive)
+  (erase-buffer) 
+  (comint-send-input))
+
+(defun my-m-shell-mode-hook ()
+  (local-set-key (kbd "C-l") 'clear-and-return))
+
+(add-hook 'm-shell-mode-hook 'my-m-shell-mode-hook)
+
+;;
+;; auto-save-buffers-----------------------------
+;;
+;;Require installation of auto-save-buffers-enhanced
+(use-package auto-save-buffers-enhanced
+  :config
+  :init)
+(require 'auto-save-buffers-enhanced)
+(auto-save-buffers-enhanced t)
+
+;;automatically revert when a file has been editted in a external program
+(global-auto-revert-mode 1)
+;---------------------------------------------------------------------
+
+;; customize interface looking
+(require 'init-interface)
+
+;; mode line
+
+ ;; (use-package smart-mode-line
+ ;;   :ensure t
+ ;;   :init
+ ;;   (setq sml/theme 'respectful)
+ ;;   (sml/setup))
+
+;------------------------------------------------------------------
+
+;;-------------------helm----------------------
+;;helm
+(use-package helm
+  :config
+  :init)
+(require 'helm-config)
+(setq helm-everywhere t)
+;---------------------------------------------
+
+;-----------------GOOGLE---------------------
+;google this
+(use-package google-this
+  :config
+  :init)
+(google-this-mode 1)
+;------------------------------------------
+
+;;-----------------org-mode-------------------------
+(require 'init-org)
+
+;;--------------------markdown mode-------------------------------------
+;;auto load markdown mode
+(autoload 'markdown-mode "markdown-mode.el" 
+	"Major mode for editing Markdown files" t) 
+	(setq auto-mode-alist 
+		(cons '("\\.md" . markdown-mode) auto-mode-alist)
+		)
+;------------------end of markdown-mode---------------------------------
+
+;;--------------------dictionary----------------------------
+;dictionary
+;; press F8 on keypad to lookup definition
+(use-package osx-dictionary
+  :config
+  :init)
+(global-set-key (kbd "<f8>") 'osx-dictionary-search-word-at-point)
+;--------------------end of dictionary mode----------------
+
+;;ESS-mode
+(require 'init-ess)
+
+;;
+;;-----------grammar-checking-----------------------
+;;
+(if (file-exists-p "~/LanguageTool-3.5/")
+(setq langtool-language-tool-jar "~/LanguageTool-3.5/languagetool-commandline.jar"))
+
+(use-package langtool
+  :config
+  :init)
+(require 'langtool)
+
+;----end of grammar check------------------
+
+;;
+;;; Smartscan
+;;
+(use-package smartscan
+  :defer t
+  :config (global-smartscan-mode t))
+;;
+;; Dired
+;;
+(require 'find-dired)
+(setq find-ls-option '("-print0 | xargs -0 ls -ld" . "-ld"))
+;peep-dired, Allow my use of C-x C-q while in peep-dired mode.
+(use-package peep-dired
+  :bind (:map peep-dired-mode-map 
+         ("SPC" . nil)
+         ("<backspace>" . nil)))
+
+;;
+;; Smartparens mode
+;;
+(use-package smartparens
+  :config
+  (progn
+    (require 'smartparens-config)
+    (add-hook 'emacs-lisp-mode-hook 'smartparens-mode)
+    (add-hook 'emacs-lisp-mode-hook 'show-smartparens-mode)))
+
+
+;;;;;;;;;;;;;;;;;;
+    ;; pair management
+
+    (sp-local-pair 'minibuffer-inactive-mode "'" nil :actions nil)
+    (sp-local-pair 'web-mode "<" nil :when '(my/sp-web-mode-is-code-context))
+
+;;; markdown-mode
+    (sp-with-modes '(markdown-mode gfm-mode rst-mode)
+      (sp-local-pair "*" "*" :bind "C-*")
+      (sp-local-tag "2" "**" "**")
+      (sp-local-tag "s" "```scheme" "```")
+      (sp-local-tag "<"  "<_>" "</_>" :transform 'sp-match-sgml-tags))
+
+;;; tex-mode latex-mode
+    (sp-with-modes '(tex-mode plain-tex-mode latex-mode)
+		   (sp-local-tag "i" "1d5f8e69396c521f645375107197ea4dfbc7b792quot;<" "1d5f8e69396c521f645375107197ea4dfbc7b792quot;>"))
+
+;;
+;; recent files
+;;
+(use-package recentf
+  :ensure t
+  :init)
+(recentf-mode 1)
+(global-set-key (kbd "<f7>") 'recentf-open-files)
+
+;;
+;; fill and unfill by `M+q'
+;;
+(defun endless/fill-or-unfill ()
+  "Like `fill-paragraph', but unfill if used twice."
+  (interactive)
+  (let ((fill-column
+         (if (eq last-command 'endless/fill-or-unfill)
+             (progn (setq this-command nil)
+                    (point-max))
+           fill-column)))
+    (call-interactively #'fill-paragraph)))
+
+(global-set-key [remap fill-paragraph]
+                #'endless/fill-or-unfill)
+
+;;
+;; spell checking
+;;
+
+(add-hook 'text-mode-hook 'flyspell-mode)
+(add-hook 'prog-mode-hook 'flyspell-prog-mode)
+
+;; bind a global key for fixing typo
+;;
+(global-set-key (kbd "\es") 'ispell-word)
+
+;;
+;; Ispell and Abbrev, the Perfect Auto-Correct
+;;
+(define-key ctl-x-map "\C-i"
+  #'endless/ispell-word-then-abbrev)
+
+(defun endless/simple-get-word ()
+  (car-safe (save-excursion (ispell-get-word nil))))
+
+(defun endless/ispell-word-then-abbrev (p)
+  "Call `ispell-word', then create an abbrev for it.
+With prefix P, create local abbrev. Otherwise it will
+be global.
+If there's nothing wrong with the word at point, keep
+looking for a typo until the beginning of buffer. You can
+skip typos you don't want to fix with `SPC', and you can
+abort completely with `C-g'."
+  (interactive "P")
+  (let (bef aft)
+    (save-excursion
+      (while (if (setq bef (endless/simple-get-word))
+                 ;; Word was corrected or used quit.
+                 (if (ispell-word nil 'quiet)
+                     nil ; End the loop.
+                   ;; Also end if we reach `bob'.
+                   (not (bobp)))
+               ;; If there's no word at point, keep looking
+               ;; until `bob'.
+               (not (bobp)))
+        (backward-word)
+        (backward-char))
+      (setq aft (endless/simple-get-word)))
+    (if (and aft bef (not (equal aft bef)))
+        (let ((aft (downcase aft))
+              (bef (downcase bef)))
+          (define-abbrev
+            (if p local-abbrev-table global-abbrev-table)
+            bef aft)
+          (message "\"%s\" now expands to \"%s\" %sally"
+                   bef aft (if p "loc" "glob")))
+      (user-error "No typo at or before point"))))
+
+(setq save-abbrevs 'silently)
+(setq-default abbrev-mode t)
+
+
+;; auto-fill mode
+(require 'init-auto-fill)
+
+
+;; pretty-mode
+;; font ligatures
+(require 'init-pretty)
+
+
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(minibuffer-prompt ((t (:foreground "#268bd2" :family "Inconsolata")))))
+
+;;
+;; answer yes or no
+;;
+(fset 'yes-or-no-p 'y-or-n-p)
+
+
+;;
+;; electric parens
+(require 'init-parens)
+
+;; different fonts for different modes
+(require 'init-font)
+
+;; sql mode
+(require 'init-sql)
+
+;; python model
+;; emacs for python
+(require 'epy-init)
+
+;; key-bindings
+(require 'init-key)
+
+;;--------------------------------------------------------
+;; automatically copy text selected with the mouse
+;;---------------------------------------------------------
+(setq mouse-drag-copy-region t)
+
+
+;;---------------------
+;; fly-spell
+;;--------------------
+(require 'init-flyspell)
