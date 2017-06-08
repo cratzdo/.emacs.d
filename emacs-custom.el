@@ -13,6 +13,7 @@
  '(aquamacs-additional-fontsets nil t)
  '(aquamacs-customization-version-id 308 t)
  '(aquamacs-tool-bar-user-customization nil t)
+ '(blink-cursor-mode nil)
  '(custom-enabled-themes (quote (sanityinc-solarized-dark)))
  '(custom-safe-themes
    (quote
@@ -20,7 +21,6 @@
  '(default-frame-alist
     (quote
      ((tool-bar-lines . 0)
-      (menu-bar-lines . 1)
       (foreground-color . "Black")
       (background-color . "White")
       (cursor-type . box)
@@ -28,10 +28,10 @@
       (internal-border-width . 0)
       (left-fringe . 1)
       (right-fringe)
-      (fringe)
-      (vertical-scroll-bars))))
+      (fringe))))
  '(display-time-mode t)
  '(fci-rule-color "#073642")
+ '(fill-column 90)
  '(global-hl-line-mode t)
  '(inhibit-startup-screen t)
  '(matlab-shell-command-switches (quote ("-nodesktop -nosplash")))
@@ -40,6 +40,8 @@
  '(package-selected-packages
    (quote
     (flyspell-correct-helm writeroom-mode use-package smartscan smartparens smart-cursor-color pretty-mode peep-dired osx-dictionary org-bullets matlab-mode langtool helm google-this ess company-auctex color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized auto-save-buffers-enhanced auto-compile)))
+ '(show-paren-mode t)
+ '(tool-bar-mode nil)
  '(vc-annotate-background nil)
  '(vc-annotate-color-map
    (quote

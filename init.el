@@ -307,3 +307,6 @@
 ;;--------------------
 (require 'init-flyspell)
 (require 'init-spelling)
+
+;; UI tweaking
+(require 'init-ui)

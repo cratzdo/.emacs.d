@@ -15,15 +15,15 @@
 
 ;; font for text-mode
 (add-hook 'text-mode-hook (lambda ()
-                            (setq buffer-face-mode-face '(:family "Input Mono"))
+                            (setq buffer-face-mode-face '(:family "GT Pressura Mono" :height 150))
                             (buffer-face-mode)))
 
 ;; font for ess-mode
 (add-hook 'ess-mode-hook (lambda ()
-                            (setq buffer-face-mode-face '(:family "PragmataPro Mono"))
+                            (setq buffer-face-mode-face '(:family "Fantasque Sans Mono" :height 140))
                             (buffer-face-mode)))
 (add-hook 'inferior-ess-mode-hook (lambda ()
-                            (setq buffer-face-mode-face '(:family "PragmataPro Mono"))
+                            (setq buffer-face-mode-face '(:family "Monoid" :height 100))
                             (buffer-face-mode)))
 
 
@@ -43,7 +43,7 @@
 
 ;; font for python-mode
 (add-hook 'python-mode-hook (lambda ()
-                            (setq buffer-face-mode-face '(:family "Monoid" :height 110))
+                            (setq buffer-face-mode-face '(:family "Monoid" :height 100))
                             (buffer-face-mode)))
 
 (add-hook 'inferior-python-mode-hook (lambda ()
