@@ -310,3 +310,8 @@
 
 ;; UI tweaking
 (require 'init-ui)
+
+;; elpy for python development
+(require 'init-elpy)
+
+

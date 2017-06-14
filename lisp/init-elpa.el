@@ -21,7 +21,7 @@
   (setq package-user-dir versioned-package-dir))
 
 
-
+
 ;;; Standard package repositories
 
 ;; We include the org repository for completeness, but don't normally
@@ -43,7 +43,7 @@
 
 
 
-
+
 ;;; On-demand installation of packages
 
 (defun require-package (package &optional min-version no-refresh)
@@ -74,18 +74,18 @@ locate PACKAGE."
      (message "Couldn't install optional package `%s': %S" package err)
      nil)))
 
-
+
 ;;; Fire up package.el
 
 (setq package-enable-at-startup nil)
 (package-initialize)
 
 
-
+
 (require-package 'fullframe)
 (fullframe list-packages quit-window)
 
-
+
 (require-package 'cl-lib)
 (require 'cl-lib)
 
