@@ -1,3 +1,4 @@
+
 ;;; This file bootstraps the configuration, which is divided into
 ;;; a number of other files.
 
@@ -32,8 +33,6 @@
 ;; Calls (package-initialize)
 (require 'init-elpa)      ;; Machinery for installing required packages
 (require 'init-exec-path) ;; Set up $PATH
-
-
 
 ;;
 ;; use-package
@@ -315,3 +314,5 @@
 (require 'init-elpy)
 
 
+;; magit
+(require 'init-magit)

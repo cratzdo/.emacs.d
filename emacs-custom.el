@@ -39,7 +39,7 @@
  '(ns-tool-bar-size-mode nil t)
  '(package-selected-packages
    (quote
-    (iedit ivy ivy-bibtex ivy-gitlab elpy flyspell-correct-helm writeroom-mode use-package smartscan smartparens smart-cursor-color pretty-mode peep-dired osx-dictionary org-bullets matlab-mode langtool helm google-this ess company-auctex color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized auto-save-buffers-enhanced auto-compile)))
+    (magit iedit ivy ivy-bibtex ivy-gitlab elpy flyspell-correct-helm writeroom-mode use-package smartscan smartparens smart-cursor-color pretty-mode peep-dired osx-dictionary org-bullets matlab-mode langtool helm google-this ess company-auctex color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized auto-save-buffers-enhanced auto-compile)))
  '(show-paren-mode t)
  '(tool-bar-mode nil)
  '(vc-annotate-background nil)
