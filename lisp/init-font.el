@@ -1,5 +1,5 @@
 ;; default font
-(set-default-font "Inconsolata 12")
+; (set-default-font "Inconsolata LGC 12")
 
 ;;
 ;; face per buffer
@@ -47,21 +47,21 @@
                             (buffer-face-mode)))
 
 (add-hook 'inferior-python-mode-hook (lambda ()
-                            (setq buffer-face-mode-face '(:family "Consolas"))
+                            (setq buffer-face-mode-face '(:family "Inconsolata-g"))
                             (buffer-face-mode)))
 
 ;; font for message-buffer-mode
 (add-hook 'message-buffer-mode-hook (lambda ()
-                            (setq buffer-face-mode-face '(:family "Source Code Pro"))
+                            (setq buffer-face-mode-face '(:family "Inconsolata-g"))
                             (buffer-face-mode)))
 
 (add-hook 'minibuffer-inactive-hook (lambda ()
-                            (setq buffer-face-mode-face '(:family "Source Code Pro"))
+                            (setq buffer-face-mode-face '(:family "Inconsolata-g"))
                             (buffer-face-mode)))
 
 ;; font for fundamental-mode
 (add-hook 'fundamental-mode-hook (lambda ()
-                            (setq buffer-face-mode-face '(:family "Source Code Pro"))
+                            (setq buffer-face-mode-face '(:family "Inconsolata-g"))
                             (buffer-face-mode)))
 
 (custom-set-faces

@@ -1,4 +1,10 @@
 ;;
+;; option key is meta
+;;
+(setq mac-option-modifier 'meta) ; set alt-key to meta
+(setq mac-escape-modifier nil) ; set esc-key to nil
+
+;;
  ;; keybinding management
 ;;
     (define-key sp-keymap (kbd "C-c s r n") 'sp-narrow-to-sexp)
@@ -54,10 +60,13 @@
 (setq mac-option-modifier 'meta) ; make opt key do meta
 (global-set-key (kbd "M-l") 'downcase-word)
 (global-set-key (kbd "M-c") 'capitalize-word)
-(global-set-key (kbd "M-u") 'upcase-word); use cmd+u
+(global-set-key (kbd "M-u") 'upcase-word) ; use cmd+u
+
+(use-package browse-kill-ring
+  :ensure t
+  :init)
+(global-set-key "\C-cy" 'browse-kill-ring)
+
 
 (provide 'init-key)
 
-
-
-;; HELLO WORLD UUUUU

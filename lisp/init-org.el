@@ -1,5 +1,6 @@
 ;; Enable org-mode
 (require 'org)
+
 ;;UTF-8 characters in org-mode
 (use-package org-bullets
   :ensure t
@@ -90,6 +91,10 @@
         
         (add-hook 'org-export-latex-after-initial-vars-hook 'my-auto-tex-parameters)
 
+(use-package auto-org-md
+  :ensure t
+  :init)
+
 
 (provide 'init-org)
-;--------------------end of ORG-mode------------------
+

@@ -19,13 +19,17 @@
 (add-to-list 'default-frame-alist '(font . "Input Mono-13"))
 
 ;;;; cursor color
-(setq-default cursor-type '(bar . 5))
-;(setq-default cursor-type 'box)
+;(setq-default cursor-type '(bar . 5))
+(setq-default cursor-type 'box)
 
 ;;change cursor color dynamically
 (use-package smart-cursor-color
   :ensure t
   :init)
 (smart-cursor-color-mode +1)
+
+;; initial frame size
+    (setq initial-frame-alist
+          '((top . 110) (left . 350) (width . 100) (height . 35)))
 
 (provide 'init-ui)

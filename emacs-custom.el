@@ -1,6 +1,5 @@
 ;; all customizations goes here
 
-
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -14,10 +13,10 @@
  '(aquamacs-customization-version-id 308 t)
  '(aquamacs-tool-bar-user-customization nil t)
  '(blink-cursor-mode nil)
- '(custom-enabled-themes (quote (sanityinc-solarized-dark)))
+ '(custom-enabled-themes (quote (sanityinc-solarized-light)))
  '(custom-safe-themes
    (quote
-    ("4cf3221feff536e2b3385209e9b9dc4c2e0818a69a1cdb4b522756bcdf4e00a4" "4aee8551b53a43a883cb0b7f3255d6859d766b6c5e14bcb01bed572fcbef4328" default)))
+    ("4cf3221feff536e2b3385209e9b9dc4c2e0818a69a1cdb4b522756bcdf4e00a4" default)))
  '(default-frame-alist
     (quote
      ((tool-bar-lines . 0)
@@ -31,7 +30,7 @@
       (fringe))))
  '(display-time-mode t)
  '(fci-rule-color "#073642")
- '(fill-column 90)
+ '(fill-column 100)
  '(global-hl-line-mode t)
  '(inhibit-startup-screen t)
  '(matlab-shell-command-switches (quote ("-nodesktop -nosplash")))
@@ -39,8 +38,9 @@
  '(ns-tool-bar-size-mode nil t)
  '(package-selected-packages
    (quote
-    (magit iedit ivy ivy-bibtex ivy-gitlab elpy flyspell-correct-helm writeroom-mode use-package smartscan smartparens smart-cursor-color pretty-mode peep-dired osx-dictionary org-bullets matlab-mode langtool helm google-this ess company-auctex color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized auto-save-buffers-enhanced auto-compile)))
+    (auto-org-md markdown-mode eink-theme eink browse-kill-ring pip-requirements synonyms rtags cmake-ide magit iedit ivy ivy-bibtex ivy-gitlab elpy flyspell-correct-helm writeroom-mode use-package smartscan smartparens smart-cursor-color pretty-mode peep-dired osx-dictionary org-bullets matlab-mode langtool helm google-this ess company-auctex color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized auto-save-buffers-enhanced auto-compile)))
  '(show-paren-mode t)
+ '(synonyms-file "/Users/Frank/.emacs.d/lisp/mthesaur.txt")
  '(tool-bar-mode nil)
  '(vc-annotate-background nil)
  '(vc-annotate-color-map
@@ -70,5 +70,6 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(default ((t (:family "Inconsolata LGC" :foundry "nil" :slant normal :weight normal :height 120 :width normal))))
  '(minibuffer-prompt ((t (:foreground "#268bd2" :family "Inconsolata"))))
- '(mode-line ((t (:background "#eee8d5" :box (:line-width 1 :color "#657b83") :weight normal :height 100 :family "Roboto Mono for Powerline")))))
+ '(mode-line ((t (:background "#eee8d5" :box (:line-width 1 :color "#657b83") :weight normal :height 100 :family "GT Pressura Mono")))))

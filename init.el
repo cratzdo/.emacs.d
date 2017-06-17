@@ -1,4 +1,3 @@
-
 ;;; This file bootstraps the configuration, which is divided into
 ;;; a number of other files.
 
@@ -14,14 +13,6 @@
 (defconst *spell-check-support-enabled* nil) ;; Enable with t if you prefer
 (defconst *is-a-mac* (eq system-type 'darwin))
 
-;;----------------------------------------------------------------------------
-;; Temporarily reduce garbage collection during startup
-;;----------------------------------------------------------------------------
-(defconst sanityinc/initial-gc-cons-threshold gc-cons-threshold
-  "Initial value of `gc-cons-threshold' at start-up time.")
-(setq gc-cons-threshold (* 128 1024 1024))
-(add-hook 'after-init-hook
-          (lambda () (setq gc-cons-threshold sanityinc/initial-gc-cons-threshold)))
 
 ;;----------------------------------------------------------------------------
 ;; Bootstrap config
@@ -30,6 +21,7 @@
 (require 'init-compat)
 (require 'init-utils)
 (require 'init-site-lisp) ;; Must come before elpa, as it may provide package.el
+
 ;; Calls (package-initialize)
 (require 'init-elpa)      ;; Machinery for installing required packages
 (require 'init-exec-path) ;; Set up $PATH
@@ -48,145 +40,52 @@
   :config (auto-compile-on-load-mode))
 (setq load-prefer-newer t)
 
-
-
 ;;-------------------------------------------------
 ;; customization in a separate file
 ;;-------------------------------------------------
 (setq custom-file "~/.emacs.d/emacs-custom.el")
      (load custom-file)
 
-;;
-;; option key is meta
-;;
-(setq mac-option-modifier 'meta) ; set alt-key to meta
-(setq mac-escape-modifier nil) ; set esc-key to nil
+;; load mac key-bindings
+(require 'init-smartparens)
+(require 'init-key)
 
-;;
-;; ido-mode
-;;
-(ido-mode 1)
-(setq ido-everywhere t)
-(setq ido-enable-flex-matching t)
-(setq ido-use-filename-at-point 'guess)
-(setq ido-create-new-buffer 'always)
+;; ido
+(require 'init-ido)
 
-;;
-;; writeroom mode
-;;
-(use-package writeroom-mode
-  :ensure t
-  :config (setq writeroom-width  100)
-  :init)
-(global-writeroom-mode 0)
-(global-set-key (kbd "<f6>") 'writeroom-mode)
-;----------------------------------------------------
+;; themes
+(require 'init-theme)
+
+;; writeroom-mode for a distraction free environment
+(require 'init-writeroom)
 
 ;; tex-mode
 (require 'init-tex)
 
-;;
-;; Color theme
-;;
-(require-package 'color-theme-sanityinc-solarized)
-(require-package 'color-theme-sanityinc-tomorrow)
-
-;; If you don't customize it, this is the theme you get.
-(setq-default custom-enabled-themes '(sanityinc-solarized-dark))
-
-;; Ensure that themes will be applied even if they have not been customized
-(defun reapply-themes ()
-  "Forcibly load the themes listed in `custom-enabled-themes'."
-  (dolist (theme custom-enabled-themes)
-    (unless (custom-theme-p theme)
-      (load-theme theme)))
-  (custom-set-variables `(custom-enabled-themes (quote ,custom-enabled-themes))))
-
-(add-hook 'after-init-hook 'reapply-themes)
-
-
-;;------------------------------------------------------------------------------
-;; Toggle between light and dark
-;;------------------------------------------------------------------------------
-(defun light ()
-  "Activate a light color theme."
-  (interactive)
-  (color-theme-sanityinc-solarized-light))
-
-(defun dark ()
-  "Activate a dark color theme."
-  (interactive)
-  (color-theme-sanityinc-solarized-dark))
-
-
 ;; matlab-mode
 (require 'init-matlab)
 
+;; auto-save buffer
+(require 'init-autosave)
 
-;;
-;; auto-save-buffers-----------------------------
-;;
-;;Require installation of auto-save-buffers-enhanced
-(use-package auto-save-buffers-enhanced
-  :config
-  :init)
-(require 'auto-save-buffers-enhanced)
-(auto-save-buffers-enhanced t)
-
-;;automatically revert when a file has been editted in a external program
-(global-auto-revert-mode 1)
-;---------------------------------------------------------------------
 
 ;; customize interface looking
 (require 'init-interface)
 
-;; mode line
+;; mode-line
+(require 'init-modeline)
 
- ;; (use-package smart-mode-line
- ;;   :ensure t
- ;;   :init
- ;;   (setq sml/theme 'respectful)
- ;;   (sml/setup))
+;; helm
+(require 'init-helm)
 
-;------------------------------------------------------------------
-
-;;-------------------helm----------------------
-;;helm
-(use-package helm
-  :config
-  :init)
-(require 'helm-config)
-(setq helm-everywhere t)
-;---------------------------------------------
-
-;-----------------GOOGLE---------------------
-;google this
-(use-package google-this
-  :config
-  :init)
-(google-this-mode 1)
-;------------------------------------------
-
-;;-----------------org-mode-------------------------
+;;org-mode
 (require 'init-org)
 
-;;--------------------markdown mode-------------------------------------
-;;auto load markdown mode
-(autoload 'markdown-mode "markdown-mode.el" 
-	"Major mode for editing Markdown files" t) 
-	(setq auto-mode-alist 
-		(cons '("\\.md" . markdown-mode) auto-mode-alist)
-		)
-;------------------end of markdown-mode---------------------------------
+;; markdown
+(require 'init-markdown)
 
-;;--------------------dictionary----------------------------
-;dictionary
-;; press F8 on keypad to lookup definition
-(use-package osx-dictionary
-  :config
-  :init)
-(global-set-key (kbd "<f8>") 'osx-dictionary-search-word-at-point)
-;--------------------end of dictionary mode----------------
+;; dictionary
+(require 'init-dictionary)
 
 ;;ESS-mode
 (require 'init-ess)
@@ -194,89 +93,31 @@
 ;; langtools for grammar checking
 (require 'init-langtool)
 
-;;
-;;; Smartscan
-;;
-(use-package smartscan
-  :defer t
-  :config (global-smartscan-mode t))
-;;
-;; Dired
-;;
-(require 'find-dired)
-(setq find-ls-option '("-print0 | xargs -0 ls -ld" . "-ld"))
-;peep-dired, Allow my use of C-x C-q while in peep-dired mode.
-(use-package peep-dired
-  :bind (:map peep-dired-mode-map 
-         ("SPC" . nil)
-         ("<backspace>" . nil)))
+;; smart-scan
+(require 'init-smartscan)
 
-;;
-;; Smartparens mode
-;;
-(use-package smartparens
-  :config
-  (progn
-    (require 'smartparens-config)
-    (add-hook 'emacs-lisp-mode-hook 'smartparens-mode)
-    (add-hook 'emacs-lisp-mode-hook 'show-smartparens-mode)))
+;; dired
+(require 'init-dired)
 
-
-;;;;;;;;;;;;;;;;;;
-    ;; pair management
-
-    (sp-local-pair 'minibuffer-inactive-mode "'" nil :actions nil)
-    (sp-local-pair 'web-mode "<" nil :when '(my/sp-web-mode-is-code-context))
-
-;;; markdown-mode
-    (sp-with-modes '(markdown-mode gfm-mode rst-mode)
-      (sp-local-pair "*" "*" :bind "C-*")
-      (sp-local-tag "2" "**" "**")
-      (sp-local-tag "s" "```scheme" "```")
-      (sp-local-tag "<"  "<_>" "</_>" :transform 'sp-match-sgml-tags))
-
-;;; tex-mode latex-mode
-    (sp-with-modes '(tex-mode plain-tex-mode latex-mode)
-		   (sp-local-tag "i" "1d5f8e69396c521f645375107197ea4dfbc7b792quot;<" "1d5f8e69396c521f645375107197ea4dfbc7b792quot;>"))
+;; smart-parens
+(provide 'init-smartparens)
 
 ;;--------------------------------
 ;; show recent files with <f7>
 ;;-------------------------------
 (require 'init-recentf)
 
-
-;;
-;; fill and unfill by `M+q'
-;;
-(defun endless/fill-or-unfill ()
-  "Like `fill-paragraph', but unfill if used twice."
-  (interactive)
-  (let ((fill-column
-         (if (eq last-command 'endless/fill-or-unfill)
-             (progn (setq this-command nil)
-                    (point-max))
-           fill-column)))
-    (call-interactively #'fill-paragraph)))
-
-(global-set-key [remap fill-paragraph]
-                #'endless/fill-or-unfill)
-
-
-
 ;; auto-fill mode
 (require 'init-auto-fill)
-
 
 ;; pretty-mode
 ;; font ligatures
 (require 'init-pretty)
 
-
 ;;
 ;; answer yes or no
 ;;
 (fset 'yes-or-no-p 'y-or-n-p)
-
 
 ;;
 ;; electric parens
@@ -288,10 +129,6 @@
 ;; sql mode
 (require 'init-sql)
 
-;; python model
-;; emacs for python
-(require 'epy-init)
-
 ;; key-bindings
 (require 'init-key)
 
@@ -299,7 +136,6 @@
 ;; automatically copy text selected with the mouse
 ;;---------------------------------------------------------
 (setq mouse-drag-copy-region t)
-
 
 ;;---------------------
 ;; spelling
@@ -310,9 +146,13 @@
 ;; UI tweaking
 (require 'init-ui)
 
-;; elpy for python development
-(require 'init-elpy)
-
+;;---------------------------------
+;; Python
+;;----------------------------------
+(require 'init-python)
 
 ;; magit
 (require 'init-magit)
+
+;; cpp
+(require 'init-cpp)
