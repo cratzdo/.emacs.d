@@ -156,3 +156,9 @@
 
 ;; cpp
 (require 'init-cpp)
+
+;; projectile
+(require 'init-projectile)
+
+;; auto-complete
+(require 'init-autocomplete)

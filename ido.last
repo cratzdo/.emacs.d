@@ -13,7 +13,7 @@
  ("/Users/Frank/Google Drive/LTPP Paper/" . "2017/")
  ("/Users/Frank/Google Drive/" . "LTPP Paper/")
  ("/Users/Frank/.emacs.d/" . "lisp/")
- ("/Users/Frank/" . "magit-exe/")
+ ("/Users/Frank/" . "Python/")
  ("/Users/PG/Google Drive/Geosynthetics Project/" . "DCP Phase I/")
  ("/Users/PG/.emacs.d/elisp/" . "emacs-for-python-master/")
  ("/Users/PG/Google Drive/Course Materials/Spring 2017/STAT575/" . "Takehome Final/")
@@ -32,6 +32,7 @@
 (
  "/Users/Frank/.emacs.d/lisp/"
  "/Users/Frank/.emacs.d/"
+ "/Users/Frank/Python/"
  "/Users/Frank/magit-exe/"
  "/Users/Frank/Python/hand-on-ml/"
  "/Users/Frank/.emacs.d/lisp/emacs-for-python-master/"
@@ -53,29 +54,31 @@
 
 ;; ----- ido-work-file-list -----
 (
- "init-font.el"
+ "init-exec-path.el"
+ "init-autocomplete.el"
  "emacs-custom.el"
- "init-theme.el"
- "init-ui.el"
- "init-org.el"
- "init.el"
+ "init-key.el"
+ "init-projectile.el"
+ "init-python.el"
+ "pandas-exe.py"
  "readme.md"
- "exe-1.py"
- "init-smartscan.el"
- "init-smartparens.el"
+ "init-font.el"
+ "init-theme.el"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/Frank/.emacs.d/" (22853 31794 0 0) "srecode-map.el" "snippets/" "site-lisp/" "SessionDesktop.el" "recentf~" "recentf" "lisp/" "init.el~" "init.el" "ido.last~" "ido.last" "eshell/" "eproject.lst" "emacs-custom.el~" "emacs-custom.el" "elpa-25.2/" "auto-save-list/" "ac-comphist.dat" "abbrev_defs" ".git/" ".DS_Store" "../" "./")
+ ("/Users/Frank/Python/" (22854 38330 0 0) "py3virtualenv/" "pandas-exe.py~" "pandas-exe.py" "hand-on-ml/" ".ipynb_checkpoints/" ".idea/" ".DS_Store" "../" "./")
 
- ("/Users/Frank/.emacs.d/lisp/" (22853 31574 0 0) "mthesaur.txt" "init-writeroom.el~" "init-writeroom.el" "init-utils.el" "init-ui.el~" "init-ui.el" "init-theme.el~" "init-theme.el" "init-tex.el~" "init-tex.el" "init-sql.el~" "init-sql.el" "init-spelling.el~" "init-spelling.el" "init-smartscan.el~" "init-smartscan.el" "init-smartparens.el~" "init-smartparens.el" "init-site-lisp.el" "init-recentf.el~" "init-recentf.el" "init-python.el~" "init-python.el" "init-pretty.el" "init-parens.el~" "init-parens.el" "init-org.el" "init-modeline.el~" "init-modeline.el" "init-matlab.el~" "init-matlab.el" "init-markdown.el~" "init-markdown.el" "init-magit.el~" "init-magit.el" "init-langtool.el~" "init-langtool.el" "init-key.el~" "init-key.el" "init-interface.el~" "init-interface.el" "init-ido.el~" "init-ido.el" "init-helm.el~" "init-helm.el" "init-font.el~" "init-font.el" "init-flyspell.el~" "init-flyspell.el" "init-exec-path.el" "init-ess.el~" "init-ess.el" "init-elpy.el~" "init-elpy.el" "init-elpa.el" "init-dired.el~" "init-dired.el" "init-dictionary.el~" "init-dictionary.el" "init-cpp.el~" "init-cpp.el" "init-compat.el" "init-benchmarking.el" "init-autosave.el~" "init-autosave.el" "init-auto-fill.el" "font-init.el~" "emacs-for-python-master/" ".DS_Store" "../" "./")
+ ("/Users/Frank/.emacs.d/lisp/" (22854 29698 0 0) "mthesaur.txt" "init-writeroom.el~" "init-writeroom.el" "init-utils.el" "init-ui.el~" "init-ui.el" "init-theme.el~" "init-theme.el" "init-tex.el~" "init-tex.el" "init-sql.el~" "init-sql.el" "init-spelling.el~" "init-spelling.el" "init-smartscan.el~" "init-smartscan.el" "init-smartparens.el~" "init-smartparens.el" "init-site-lisp.el" "init-recentf.el~" "init-recentf.el" "init-python.el~" "init-python.el" "init-projectile.el~" "init-projectile.el" "init-pretty.el" "init-parens.el~" "init-parens.el" "init-org.el" "init-modeline.el~" "init-modeline.el" "init-matlab.el~" "init-matlab.el" "init-markdown.el~" "init-markdown.el" "init-magit.el~" "init-magit.el" "init-langtool.el~" "init-langtool.el" "init-key.el~" "init-key.el" "init-interface.el~" "init-interface.el" "init-ido.el~" "init-ido.el" "init-helm.el~" "init-helm.el" "init-font.el~" "init-font.el" "init-flyspell.el~" "init-flyspell.el" "init-exec-path.el" "init-ess.el~" "init-ess.el" "init-elpy.el~" "init-elpy.el" "init-elpa.el" "init-dired.el~" "init-dired.el" "init-dictionary.el~" "init-dictionary.el" "init-cpp.el~" "init-cpp.el" "init-compat.el" "init-benchmarking.el" "init-autosave.el~" "init-autosave.el" "init-autocomplete.el~" "init-autocomplete.el" "init-auto-fill.el" "font-init.el~" "emacs-for-python-master/" ".DS_Store" "../" "./")
+
+ ("/Users/Frank/.emacs.d/" (22854 29167 0 0) "srecode-map.el" "snippets/" "site-lisp/" "SessionDesktop.el" "recentf~" "recentf" "projectile-bookmarks.eld" "lisp/" "init.el~" "init.el" "ido.last~" "ido.last" "eshell/" "eproject.lst" "emacs-custom.el~" "emacs-custom.el" "elpa-25.2/" "auto-save-list/" "ac-comphist.dat" "abbrev_defs" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/Frank/Python/hand-on-ml/" (22853 60820 0 0) "Untitled.ipynb" "untitled" "reshape.py~" "reshape.py" "images/" "handson_ml_ch02.ipynb" "handson-ml/" "exe-1.py~" "exe-1.py" "datasets/" ".ipynb_checkpoints/" ".DS_Store" "../" "./")
+
+ ("/Users/Frank/magit-exe/" (22853 47896 0 0) "readme.md~" "readme.md" ".gitignore" ".git/" "../" "./")
 
  ("/Users/Frank/Google Drive/LTPP Paper/2017/" (22845 62768 0 0) "The Highway Development and Management System in Washington State Calibration and Application for the Department of Transportation Road Network.pdf" "Temperature Correction of Multiload-Level Falling Weight Deflectometer Deflections.pdf" "Subgrade_soil_code.pdf" "Statistical Analysis of LTPP SPS-3 Experiment on Preventive Maintenance of Flexible Pavements .pdf" "SHRP-P-395.pdf" "Selecting Preventive Maintenance Treatments in Texas Using the Technique for Order Preference by Similarity to the Ideal Solution for Specific Pavement Study–3 Sites .pdf" "Results of Long-Term Pavement Performance SPS-3 Analysis- Preventive Maintenance of Flexible Pavements .pdf" "Rehabilitation of Asphalt Concrete Pavements_Initial Evaluation of the SPS-5 Experiment-Final Report.pdf" "manuscript 2.zip" "manuscript/" "LTPP_DATA/" "LTPP Specific Pavement Studies (SPS) Materials Action Plan Final Report.pdf" "LTPP Data Analysis_Influnce of Design and Construction Features on the Response and Performance of New Flexible and Rigid Pavements.pdf" "LTPP Data Analysis_Effectiveness of Maintenance and Rehabilitation Options.pdf" "FWD TEMPERATURE CORRECTION/" "Evaluation of Effectiveness and Cost-Effectiveness of Asphalt Pavement Rehabilitations Utilizing LTPP Data.pdf" "Calibration and Application of Treatment Performance Models in a Pavement Management System in Tennessee.pdf" "A Pavement Condition-Rating Model Using Backpropagation Neural Networks.pdf" "2016_2017_asce_ltpp_contest_guidelines.pdf" "2009_hdm4_volume_1.pdf" ".DS_Store" "../" "./")
-
- ("/Users/Frank/magit-exe/" (22850 2912 0 0) "readme.md~" "readme.md" ".gitignore" ".git/" "../" "./")
-
- ("/Users/Frank/Python/hand-on-ml/" (22853 29769 0 0) "Untitled.ipynb" "untitled" "reshape.py~" "reshape.py" "images/" "handson_ml_ch02.ipynb" "handson-ml/" "exe-1.py~" "exe-1.py" "datasets/" ".ipynb_checkpoints/" ".DS_Store" "../" "./")
 
  ("/Users/Frank/.emacs.d/lisp/emacs-for-python-master/" (22852 15107 0 0) "snippets/" "scripts/" "README.org" "python-libs/" "extensions/" "epy-setup.el" "epy-python.el" "epy-nose.el" "epy-init.el" "epy-editing.el" "epy-completion.el" "epy-bindings.el" "doc/" "COPYING" "CONTRIBUTORS" "ChangeLog" ".gitignore" ".DS_Store" "../" "./")
 
@@ -86,8 +89,6 @@
  ("/Users/Frank/Rcode/R/ltpp2017/Rcode/" (22841 53300 0 0) "thickness_compare.R" "thick-compare.R~" "thick-compare.R" "sps5-rutting.R" "sps5-iri.R" "sps5-dis.R" "sps3-iri.R" "sps3-dis.R~" "sps3-dis.R" "sps3-defl-mod.R~" "sps3-defl-mod.R" "sigmoid_fit.R" "sigmoid.R" "scratch.R" "rutting-temp.R" "mod_defl_temp_correction.R" "mod-temperature.R" "ltppdata.R" "ltppData.py" "ltpp2017.R" "ltpp2017-dis.R" "lead-lag-climate.R" "fwd.R" "defl-mod-label.R" "box_function.R" ".DS_Store" "../" "./")
 
  ("/Users/Frank/" (22852 16083 0 0) "Rcode/" "r-project/" "Python/" "Projects/" "Pictures/" "orgFiles/" "Music/" "Movies/" "mail/" "magit-exe/" "ltpp-2017/" "Library/" "LanguageTool-3.5/" "Google Drive/" "eclipse/" "Dropbox/" "Downloads/" "Documents/" "Desktop/" "Books/" "Applications (Parallels)/" "Applications/" ".zshrc" ".zsh_history" ".zsh-update" ".zcompdump-Hongren’s MacBook Pro-5.2" ".Xauthority" ".w3m/" ".viminfo" ".Trash/" ".textadept/" ".templateengine/" ".swo" ".subversion/" ".stardict/" ".ssh/" ".sogouinput/" ".ServiceHub/" ".rstudio-desktop/" ".Rprofile" ".rnd" ".Rhistory" ".RData" ".Rapp.history" ".R/" ".python_history" ".p2/" ".oracle_jre_usage/" ".oh-my-zsh/" ".npm/" ".nimble-options.json" ".mysql_history" ".mysql-init" ".mono/" ".mime.types" ".matplotlib/" ".MarkEditorData/" ".mailcap" ".local/" ".latexmkrc~" ".latexmkrc" ".keras/" ".jupyter/" ".iterm2_shell_integration.zsh" ".iterm2/" ".ipython/" ".idlerc/" ".IdentityService/" ".gnuplot_history" ".gitconfig" ".git/" ".ghc/" ".gem/" ".emacs.d/" ".eclipse/" ".DS_Store" ".dropbox/" ".cups/" ".config/" ".CFUserTextEncoding" ".cache/" ".cabal/" ".black-screen/" ".bash_profile.swp" ".bash_profile" ".bash_history" ".aspell.en.pws" ".aspell.en.prepl" ".android/" "../" "./")
-
- ("/Users/Frank/Python/" (22852 16285 0 0) "py3virtualenv/" "hand-on-ml/" ".ipynb_checkpoints/" ".idea/" ".DS_Store" "../" "./")
 
  ("/Users/Frank/Google Drive/LTPP Paper/2017/manuscript/sps5/IRI-plots/" (22831 31813 0 0) "supp-iri-left-8.pdf" "supp-iri-left-6.pdf" "supp-iri-left-48.pdf" "supp-iri-left-40.pdf" "supp-iri-left-4.pdf" "supp-iri-left-34.pdf" "supp-iri-left-30.pdf" "supp-iri-left-28.pdf" "supp-iri-left-27.pdf" "supp-iri-left-24.pdf" "supp-iri-left-23.pdf" "supp-iri-left-13.pdf" "supp-iri-left-12.pdf" "supp-iri-left-1.pdf" "supp-iri-boxplot-8.pdf" "supp-iri-boxplot-6.pdf" "supp-iri-boxplot-40.pdf" "supp-iri-boxplot-4.pdf" "supp-iri-boxplot-34.pdf" "supp-iri-boxplot-30.pdf" "supp-iri-boxplot-28.pdf" "supp-iri-boxplot-27.pdf" "supp-iri-boxplot-24.pdf" "supp-iri-boxplot-23.pdf" "supp-iri-boxplot-13.pdf" "supp-iri-boxplot-12.pdf" "supp-iri-boxplot-1.pdf" "core9-iri-boxplot-83.pdf" "core9-iri-boxplot-81.pdf" "core9-iri-boxplot-8.pdf" "core9-iri-boxplot-6.pdf" "core9-iri-boxplot-48.pdf" "core9-iri-boxplot-40.pdf" "core9-iri-boxplot-4.pdf" "core9-iri-boxplot-35.pdf" "core9-iri-boxplot-34.pdf" "core9-iri-boxplot-30.pdf" "core9-iri-boxplot-29.pdf" "core9-iri-boxplot-28.pdf" "core9-iri-boxplot-27.pdf" "core9-iri-boxplot-24.pdf" "core9-iri-boxplot-23.pdf" "core9-iri-boxplot-13.pdf" "core9-iri-boxplot-12.pdf" "core9-iri-boxplot-1.pdf" "core9-IRI-83.pdf" "core9-IRI-81.pdf" "core9-IRI-8.pdf" "core9-IRI-6.pdf" "core9-IRI-48.pdf" "core9-IRI-40.pdf" "core9-IRI-4.pdf" "core9-IRI-35.pdf" "core9-IRI-34.pdf" "core9-IRI-30.pdf" "core9-IRI-29.pdf" "core9-IRI-28.pdf" "core9-IRI-27.pdf" "core9-IRI-24.pdf" "core9-IRI-23.pdf" "core9-IRI-13.pdf" "core9-IRI-12.pdf" "core9-IRI-1.pdf" "../" "./")
 

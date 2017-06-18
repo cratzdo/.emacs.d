@@ -29,6 +29,8 @@
       (right-fringe)
       (fringe))))
  '(display-time-mode t)
+ '(elpy-rpc-python-command "python3")
+ '(exec-path-from-shell-arguments (quote ("-l" "-i")))
  '(fci-rule-color "#073642")
  '(fill-column 100)
  '(global-hl-line-mode t)
@@ -38,7 +40,7 @@
  '(ns-tool-bar-size-mode nil t)
  '(package-selected-packages
    (quote
-    (auto-org-md markdown-mode eink-theme eink browse-kill-ring pip-requirements synonyms rtags cmake-ide magit iedit ivy ivy-bibtex ivy-gitlab elpy flyspell-correct-helm writeroom-mode use-package smartscan smartparens smart-cursor-color pretty-mode peep-dired osx-dictionary org-bullets matlab-mode langtool helm google-this ess company-auctex color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized auto-save-buffers-enhanced auto-compile)))
+    (jedi epc projectile auto-org-md markdown-mode eink-theme eink browse-kill-ring pip-requirements synonyms rtags cmake-ide magit iedit ivy ivy-bibtex ivy-gitlab elpy flyspell-correct-helm writeroom-mode use-package smartscan smartparens smart-cursor-color pretty-mode peep-dired osx-dictionary org-bullets matlab-mode langtool helm google-this ess company-auctex color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized auto-save-buffers-enhanced auto-compile)))
  '(show-paren-mode t)
  '(synonyms-file "/Users/Frank/.emacs.d/lisp/mthesaur.txt")
  '(tool-bar-mode nil)

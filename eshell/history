@@ -56,3 +56,15 @@ which python3
 jupyter notebook
 jupyter notebook
 which multimarkdown 
+cd ~/.emacs.d/
+git push
+git status
+which python3
+ipython3
+which ipython3
+pip3 install epc
+pip install epc
+which virtualenv
+brew install virtualenv
+ brew install pyenv-virtualenv
+python3 jediepcserver.py --help

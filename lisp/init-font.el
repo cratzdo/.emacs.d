@@ -47,21 +47,21 @@
                             (buffer-face-mode)))
 
 (add-hook 'inferior-python-mode-hook (lambda ()
-                            (setq buffer-face-mode-face '(:family "Inconsolata-g"))
+                            (setq buffer-face-mode-face '(:family "Inconsolata"))
                             (buffer-face-mode)))
 
 ;; font for message-buffer-mode
 (add-hook 'message-buffer-mode-hook (lambda ()
-                            (setq buffer-face-mode-face '(:family "Inconsolata-g"))
+                            (setq buffer-face-mode-face '(:family "Inconsolata"))
                             (buffer-face-mode)))
 
 (add-hook 'minibuffer-inactive-hook (lambda ()
-                            (setq buffer-face-mode-face '(:family "Inconsolata-g"))
+                            (setq buffer-face-mode-face '(:family "Inconsolata"))
                             (buffer-face-mode)))
 
 ;; font for fundamental-mode
 (add-hook 'fundamental-mode-hook (lambda ()
-                            (setq buffer-face-mode-face '(:family "Inconsolata-g"))
+                            (setq buffer-face-mode-face '(:family "Inconsolata"))
                             (buffer-face-mode)))
 
 (custom-set-faces
