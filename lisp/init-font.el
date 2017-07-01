@@ -43,11 +43,11 @@
 
 ;; font for python-mode
 (add-hook 'python-mode-hook (lambda ()
-                            (setq buffer-face-mode-face '(:family "Monoid" :height 100))
+                            (setq buffer-face-mode-face '(:family "Consola Mono" :height 130))
                             (buffer-face-mode)))
 
 (add-hook 'inferior-python-mode-hook (lambda ()
-                            (setq buffer-face-mode-face '(:family "Inconsolata"))
+                            (setq buffer-face-mode-face '(:family "Fira Code"))
                             (buffer-face-mode)))
 
 ;; font for message-buffer-mode
@@ -64,11 +64,11 @@
                             (setq buffer-face-mode-face '(:family "Inconsolata"))
                             (buffer-face-mode)))
 
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(minibuffer-prompt ((t (:foreground "#268bd2" :family "Inconsolata")))))
+;; font for shell-mode
+(add-hook 'shell-mode-hook (lambda ()
+                            (setq buffer-face-mode-face '(:family "Inconsolata"))
+                            (buffer-face-mode)))
+
+
 
 (provide 'init-font)

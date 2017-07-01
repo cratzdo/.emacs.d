@@ -19,9 +19,6 @@
 ;;
 ;; preffify symbols
 ;;
-;(use-package prettify-symbols-mode
-; :config
-;  :init)
 
 (global-prettify-symbols-mode 1)
 

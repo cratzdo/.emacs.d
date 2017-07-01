@@ -162,3 +162,12 @@
 
 ;; auto-complete
 (require 'init-autocomplete)
+
+;; fix rubbish codes in shell-mode
+(require 'init-shell)
+
+;; expand region with "C+="
+(require 'init-expandregion)
+
+;; beautify eshell
+(require 'init-eshell)

@@ -44,6 +44,11 @@
   (interactive)
   (color-theme-sanityinc-solarized-dark))
 
+(defun tomorrow ()
+  "Activate a dark color theme."
+  (interactive)
+  (color-theme-sanityinc-tomorrow-night))
+
 (setq gc-cons-threshold sanityinc/initial-gc-cons-threshold)
 
 (provide 'init-theme)

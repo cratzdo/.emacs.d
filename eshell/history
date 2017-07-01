@@ -66,5 +66,14 @@ pip3 install epc
 pip install epc
 which virtualenv
 brew install virtualenv
- brew install pyenv-virtualenv
+brew install pyenv-virtualenv
 python3 jediepcserver.py --help
+cd ..
+git status
+python3 -m pip install --user yapf
+pip3 install yapf
+pip install yapf
+pip3 install virtualenv
+tclsh
+ls
+pip3 install nnabla

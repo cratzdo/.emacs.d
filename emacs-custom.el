@@ -13,10 +13,10 @@
  '(aquamacs-customization-version-id 308 t)
  '(aquamacs-tool-bar-user-customization nil t)
  '(blink-cursor-mode nil)
- '(custom-enabled-themes (quote (sanityinc-solarized-light)))
+ '(custom-enabled-themes (quote (sanityinc-tomorrow-night)))
  '(custom-safe-themes
    (quote
-    ("4cf3221feff536e2b3385209e9b9dc4c2e0818a69a1cdb4b522756bcdf4e00a4" default)))
+    ("06f0b439b62164c6f8f84fdda32b62fb50b6d00e8b01c2208e55543a6337433a" "4cf3221feff536e2b3385209e9b9dc4c2e0818a69a1cdb4b522756bcdf4e00a4" default)))
  '(default-frame-alist
     (quote
      ((tool-bar-lines . 0)
@@ -25,14 +25,13 @@
       (cursor-type . box)
       (cursor-color . "Red")
       (internal-border-width . 0)
-      (left-fringe . 1)
-      (right-fringe)
       (fringe))))
  '(display-time-mode t)
  '(elpy-rpc-python-command "python3")
  '(exec-path-from-shell-arguments (quote ("-l" "-i")))
  '(fci-rule-color "#073642")
  '(fill-column 100)
+ '(fringe-mode 15 nil (fringe))
  '(global-hl-line-mode t)
  '(inhibit-startup-screen t)
  '(matlab-shell-command-switches (quote ("-nodesktop -nosplash")))
@@ -40,7 +39,9 @@
  '(ns-tool-bar-size-mode nil t)
  '(package-selected-packages
    (quote
-    (jedi epc projectile auto-org-md markdown-mode eink-theme eink browse-kill-ring pip-requirements synonyms rtags cmake-ide magit iedit ivy ivy-bibtex ivy-gitlab elpy flyspell-correct-helm writeroom-mode use-package smartscan smartparens smart-cursor-color pretty-mode peep-dired osx-dictionary org-bullets matlab-mode langtool helm google-this ess company-auctex color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized auto-save-buffers-enhanced auto-compile)))
+    (prettify-symbols-mode expand-region jedi epc projectile auto-org-md markdown-mode eink-theme eink browse-kill-ring pip-requirements synonyms rtags cmake-ide magit iedit ivy ivy-bibtex ivy-gitlab elpy flyspell-correct-helm writeroom-mode use-package smartscan smartparens smart-cursor-color pretty-mode peep-dired osx-dictionary org-bullets matlab-mode langtool helm google-this ess company-auctex color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized auto-save-buffers-enhanced auto-compile)))
+ '(python-shell-interpreter "python3")
+ '(python-shell-virtualenv-root "'~/Python/py3virtualenv/'")
  '(show-paren-mode t)
  '(synonyms-file "/Users/Frank/.emacs.d/lisp/mthesaur.txt")
  '(tool-bar-mode nil)
