@@ -23,7 +23,7 @@
                             (setq buffer-face-mode-face '(:family "Fantasque Sans Mono" :height 140))
                             (buffer-face-mode)))
 (add-hook 'inferior-ess-mode-hook (lambda ()
-                            (setq buffer-face-mode-face '(:family "Monoid" :height 100))
+                            (setq buffer-face-mode-face '(:family "Monoid" :height 110))
                             (buffer-face-mode)))
 
 

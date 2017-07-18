@@ -77,3 +77,11 @@ pip3 install virtualenv
 tclsh
 ls
 pip3 install nnabla
+cd ~/.emacs.d/
+git status
+git add -A
+git log
+pip3 update scikit-learn
+pip3 upgrade scikit-learn
+sudo pip3 scikit-learn --upgrade
+pip3 install scikit-learn --upgrade

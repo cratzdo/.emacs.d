@@ -2,6 +2,9 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/Users/Frank/Dropbox/R/ltpp2017/" . "Rcode/")
+ ("/Users/Frank/Dropbox/R/" . "ltpp2017/")
+ ("/Users/Frank/Dropbox/" . "R/")
  ("/Users/Frank/.emacs.d/lisp/" . "emacs-for-python-master/")
  ("/Users/Frank/Python/" . "hand-on-ml/")
  ("/Users/Frank/Google Drive/LTPP Paper/2017/manuscript/sps5/" . "IRI-plots/")
@@ -9,11 +12,11 @@
  ("/Users/Frank/Rcode/R/ltpp2017/" . "Rcode/")
  ("/Users/Frank/Rcode/R/" . "ltpp2017/")
  ("/Users/Frank/Rcode/" . "R/")
- ("/Users/Frank/Google Drive/LTPP Paper/2017/" . "LTPP_DATA/")
+ ("/Users/Frank/Google Drive/LTPP Paper/2017/" . "manuscript/")
  ("/Users/Frank/Google Drive/LTPP Paper/" . "2017/")
  ("/Users/Frank/Google Drive/" . "LTPP Paper/")
  ("/Users/Frank/.emacs.d/" . "lisp/")
- ("/Users/Frank/" . "Python/")
+ ("/Users/Frank/" . "Google Drive/")
  ("/Users/PG/Google Drive/Geosynthetics Project/" . "DCP Phase I/")
  ("/Users/PG/.emacs.d/elisp/" . "emacs-for-python-master/")
  ("/Users/PG/Google Drive/Course Materials/Spring 2017/STAT575/" . "Takehome Final/")
@@ -30,15 +33,17 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/Users/Frank/Google Drive/LTPP Paper/2017/manuscript/"
+ "/Users/Frank/Google Drive/LTPP Paper/2017/RAP/"
  "/Users/Frank/Python/"
+ "/Users/Frank/Dropbox/R/ltpp2017/Rcode/"
  "/Users/Frank/.emacs.d/lisp/"
- "/Users/Frank/.emacs.d/"
  "/Users/Frank/Python/hand-on-ml/"
+ "/Users/Frank/.emacs.d/"
  "/Users/Frank/magit-exe/"
  "/Users/Frank/.emacs.d/lisp/emacs-for-python-master/"
  "/Users/Frank/Rcode/R/ltpp2017/Rcode/"
  "/Users/Frank/Google Drive/LTPP Paper/2017/LTPP_DATA/"
- "/Users/Frank/Google Drive/LTPP Paper/2017/manuscript/"
  "/Users/Frank/.emacs.d/elisp/"
  "/Users/PG/Google Drive/Geosynthetics Project/DCP Phase I/"
  "/Users/PG/.emacs.d/elisp/"
@@ -54,39 +59,51 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "ltpp2017-2.tex"
+ "trb2017_rap.tex"
+ "keras_tutor.py"
+ "sps5_stack.R"
+ "init-font.el"
+ "gradient_boosting.py"
  "wine.py"
  "init-pretty.el"
  "init-theme.el"
  "init-ui.el"
- "init.el"
- "init-eshell.el"
- "init-magit.el"
- "init-expandregion.el"
- "exe-1.py"
- "init-shell.el"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/Frank/Google Drive/LTPP Paper/2017/LTPP_DATA/" (22865 50813 0 0) "TST_L05B_LAYER_STRUCTURE_SECTION_THICK_COMPARE.csv" "TST_L05B.csv" "TRUE" "TRF_MON_EST_ESAL.csv" "TRF_HIST_EST_ESAL.csv" "TRF_ESAL_INPUTS_SUMMARY.xlsx" "TRF_ESAL_INPUTS_SUMMARY.csv" "trench_profile.xlsx" "trench_profile.csv" "trans-l-1.pdf" "trans-hist.pdf" "tikz-test.tex" "tikz-test.pdf" "SUBGRADE_TYPE_CODE.csv" "STRUCTURE_THICKNESS.xlsx" "STRUCTURE_THICKNESS.csv" "STRUCTURE_AC_THICK.csv" "STRCT_THICK.csv" "STATE_CODE.csv" "SQL-files/" "sps5supp-long-wp-boxplot-13.pdf" "sps5supp-long-nwp-boxplot-13.pdf" "sps5supp-gator-boxplot.pdf" "sps5_defl_mod_adj.csv" "SPS5-scatterMatrix.pdf" "sps5-rutting.R~" "sps5-iri.R~" "sps5-gator-boxplot.pdf" "sps5-count.pdf" "SPS5/" "sps3-iri.R~" "sps3-iri.R" "SPS3/" "sps-count-hist.pdf" "sigmoid.m" "SECTION_LAYER_STRUCTURE.csv" "scratch.R~" "rutting_sps5_survey_date.csv" "RUTTING_OBS_NUM.csv" "RUTTING_LABEL_THICK.xlsx" "RUTTING_LABEL_THICK.csv" "rut_mean.csv" "rut_group1.cvs" "rut_group1.csv" "rut_group.csv" "rut.group2.csv" "Rplots.pdf" "rcode/" "MOST_RUT2.csv" "MOST_IRI2.csv" "most-rutting.xlsx" "most-rutting.csv" "most-long-wp-all.pdf" "most-long-nwp-all.pdf" "most-iri.csv" "most-gator-overlapped.pdf" "most-gator-all.pdf" "Monitoring.mdb" "Monitoring.ldb" "MON_T_PROF_INDEX_POINT_LABEL.csv" "MON_RUTTING_TEMP.csv" "MON_RUTTING_SPS1.csv" "MON_RUTTING_GPS6.csv" "MON_RUTTING_GPS1.csv" "MON_RUTTING_EXPERIMENT_LABEL.xlsx" "MON_RUTTING_EXPERIMENT_LABEL.csv" "MON_RUTTING.csv" "MON_IRI_THICK_NUM.xlsx" "MON_IRI_THICK_NUM.csv" "MON_IRI_SPS1.csv" "MON_IRI_OUTPUT.csv" "MON_IRI_OBS.csv" "MON_IRI_GPS6.csv" "MON_IRI_GPS1.csv" "MON_IRI_CENTER.csv" "MON_HSS_PROFILE_SECTION.csv" "MON_HSS_IRI.csv" "modulus_sigmoid.sfit" "MOD_TEMP.xlsx" "MOD_TEMP.csv" "mod_needed.csv" "mod_defl_temp_correction.R~" "MATL_CODE.xlsx" "MATL_CODE.csv" "ltppdata.R~" "ltppData.py~" "LTPP_DATA_CLEAN.sql~" "ltpp_data.sql~" "ltpp2017plots.R~" "ltpp2017.R~" "ltpp2017-dis.R~" "long_nwp_48_time.pdf" "long_nwp_48.pdf" "long-wp-hist.pdf" "long-nwp-hist.pdf" "lft-rgt-rut-compare.pdf" "IRI_RUTTING.csv" "IRI_OBS_NUM.csv" "INV_AGE.csv" "GPS_SPS_LINK2.csv" "GPS_SPS_LINK.csv" "gator-hist.pdf" "gator-dist.pdf" "gator-boxplot.pdf" "FWD_SQL.sql~" "FWD_OBS_NUM_LABEL.csv" "FWD_OBS_NUM.csv" "FWD_DROP_DATA_NORMLIZED_F3_TEMP.csv" "FWD_DROP_DATA_NORMLIZED_F1_TEMP.csv" "FWD_DROP_DATA_F1.csv" "FWD_DROP_DATA_3.fmp12" "FWD_DROP_DATA4.csv" "FWD_DROP_DATA.fmp12" "FWD_Data_Without_Drop_Data.mdb" "FWD_Data_Without_Drop_Data.ldb" "fwd.R~" "EXPERIMENT_SECTION.csv" "effect_of_temp_on_rutting/" "Drops.csv" "DIS_SUMMARY_THICKNESS2.csv" "DIS_SUMMARY_THICKNESS.csv" "DIS_SUMMARY.xlsx" "DIS_SUMMARY.csv" "DIS_SUMM_CNREASON.xlsx" "DIS_SUMM_CNREASON.csv" "DIS_SPS3_LINK.csv" "DIS_OBS_NUM.csv" "dis_n_gt_20.csv" "dis-automate.R~" "dis-all-bar.pdf" "DEFL_MOD_LINK_ONLY_SPS5.csv" "DEFL_MOD_LABEL_SPS5.csv" "DEFL_MOD_LABEL_MIDDEPTH.xlsx" "DEFL_MOD_LABEL_MIDDEPTH.csv" "DEFL_MOD_LABEL.xlsx" "DEFL_MOD_LABEL.csv" "DEFL_F3_NORMLIZED.csv" "DEFL_DIS_MOD_THICK_F3.fmp12" "DEFL_DIS_MOD_THICK_F3.csv" "DEFL_DIS_MOD_THICK_F1.csv" "DEFL_DIS_MOD_F3.csv" "dataExport/" "data-txt/" "COREtrans-l-83.pdf" "COREtrans-l-81.pdf" "COREtrans-l-8.pdf" "COREtrans-l-6.pdf" "COREtrans-l-48.pdf" "COREtrans-l-40.pdf" "COREtrans-l-4.pdf" "COREtrans-l-35.pdf" "COREtrans-l-34.pdf" "COREtrans-l-30.pdf" "COREtrans-l-29.pdf" "COREtrans-l-28.pdf" "COREtrans-l-27.pdf" "COREtrans-l-24.pdf" "COREtrans-l-23.pdf" "COREtrans-l-13.pdf" "COREtrans-l-12.pdf" "COREtrans-l-1.pdf" "AWS_PRECIP_TEMP.csv" ".texpadtmp/" ".Rhistory" ".RData" ".Rapp.history" ".DS_Store" "../" "./")
+ ("/Users/Frank/Google Drive/LTPP Paper/2017/RAP/" (22892 48335 804489 898000) "trb2017_rap.pdf" "trb2017_rap.synctex.gz" "count.txt" ".git/" "trb2017_rap.bbl" "trb.bst" "trb2017rap.bib" ".gitattributes" "trb2017_rap.out" "trb2017_rap.tex~" ".texpadtmp/" "TRB_LaTeX_rnw/" "trb2017_rap.tex" "README.md" "trb2017_rap.fdb_latexmk" "auto/" "sps5/" "LICENSE" "trb2017_rap.blg" "trb2017_rap.fls" "trb2017_rap.log" "trb2017_rap.aux" "trbunofficial.cls" "../" "./")
 
- ("/Users/Frank/.emacs.d/" (22867 7451 0 0) "srecode-map.el" "snippets/" "site-lisp/" "SessionDesktop.el" "recentf~" "recentf" "projectile-bookmarks.eld" "lisp/" "init.el~" "init.el" "ido.last~" "ido.last" "eshell/" "eproject.lst" "emacs-custom.el~" "emacs-custom.el" "elpa-25.2/" "auto-save-list/" "ac-comphist.dat" "abbrev_defs" ".git/" ".DS_Store" "../" "./")
+ ("/Users/Frank/Google Drive/LTPP Paper/2017/" (22888 15037 105901 817000) "Selecting Preventive Maintenance Treatments in Texas Using the Technique for Order Preference by Similarity to the Ideal Solution for Specific Pavement Study–3 Sites .pdf" "RAP/" "Results of Long-Term Pavement Performance SPS-3 Analysis- Preventive Maintenance of Flexible Pavements .pdf" "LTPP Data Analysis_Effectiveness of Maintenance and Rehabilitation Options.pdf" "A Pavement Condition-Rating Model Using Backpropagation Neural Networks.pdf" "Calibration and Application of Treatment Performance Models in a Pavement Management System in Tennessee.pdf" "Rehabilitation of Asphalt Concrete Pavements_Initial Evaluation of the SPS-5 Experiment-Final Report.pdf" "2009_hdm4_volume_1.pdf" "LTPP_DATA/" "Temperature Correction of Multiload-Level Falling Weight Deflectometer Deflections.pdf" "LTPP Data Analysis_Influnce of Design and Construction Features on the Response and Performance of New Flexible and Rigid Pavements.pdf" "trb2017bib/" "Subgrade_soil_code.pdf" "manuscript 2.zip" "SHRP-P-395.pdf" "LTPP Specific Pavement Studies (SPS) Materials Action Plan Final Report.pdf" "FWD TEMPERATURE CORRECTION/" "Statistical Analysis of LTPP SPS-3 Experiment on Preventive Maintenance of Flexible Pavements .pdf" "2016_2017_asce_ltpp_contest_guidelines.pdf" ".DS_Store" "fwdman1.pdf" "Evaluation of Effectiveness and Cost-Effectiveness of Asphalt Pavement Rehabilitations Utilizing LTPP Data.pdf" "manuscript/" "The Highway Development and Management System in Washington State Calibration and Application for the Department of Transportation Road Network.pdf" "../" "./")
 
- ("/Users/Frank/.emacs.d/lisp/" (22867 4511 0 0) "mthesaur.txt" "init-writeroom.el~" "init-writeroom.el" "init-utils.el" "init-ui.el~" "init-ui.el" "init-theme.el~" "init-theme.el" "init-tex.el~" "init-tex.el" "init-sql.el~" "init-sql.el" "init-spelling.el~" "init-spelling.el" "init-smartscan.el~" "init-smartscan.el" "init-smartparens.el~" "init-smartparens.el" "init-site-lisp.el" "init-shell.el~" "init-shell.el" "init-recentf.el~" "init-recentf.el" "init-python.el~" "init-python.el" "init-projectile.el~" "init-projectile.el" "init-pretty.el" "init-parens.el~" "init-parens.el" "init-org.el" "init-modeline.el~" "init-modeline.el" "init-matlab.el~" "init-matlab.el" "init-markdown.el~" "init-markdown.el" "init-magit.el~" "init-magit.el" "init-langtool.el~" "init-langtool.el" "init-key.el~" "init-key.el" "init-interface.el~" "init-interface.el" "init-ido.el~" "init-ido.el" "init-helm.el~" "init-helm.el" "init-font.el~" "init-font.el" "init-flyspell.el~" "init-flyspell.el" "init-expandregion.el~" "init-expandregion.el" "init-exec-path.el" "init-ess.el~" "init-ess.el" "init-eshell.el~" "init-eshell.el" "init-elpy.el~" "init-elpy.el" "init-elpa.el" "init-dired.el~" "init-dired.el" "init-dictionary.el~" "init-dictionary.el" "init-cpp.el~" "init-cpp.el" "init-compat.el" "init-benchmarking.el" "init-autosave.el~" "init-autosave.el" "init-autocomplete.el~" "init-autocomplete.el" "init-auto-fill.el" "font-init.el~" "emacs-for-python-master/" ".DS_Store" "../" "./")
+ ("/Users/Frank/Google Drive/" (22888 14872 890590 987000) "bibFiles/" "TRC/" "Geosynthetics Project/" ".tmp.drivedownload/" "Files Backup/" "LTPP Paper/" "color/" "Alfred_C.dmg" "References/" "Design Criteria Paper/" "Icon
+" ".DS_Store" "Misc/" "../" "./")
 
- ("/Users/Frank/" (22867 5992 0 0) "Snapshots/" "Rcode/" "r-project/" "Python/" "Projects/" "Pictures/" "orgFiles/" "Music/" "Movies/" "mail/" "ltpp-2017/" "Library/" "LanguageTool-3.5/" "Google Drive/" "eclipse/" "Dropbox/" "Downloads/" "Documents/" "Desktop/" "Books/" "Applications (Parallels)/" "Applications/" ".zshrc" ".zsh_history" ".zsh-update" ".zprofile" ".zcompdump-Hongren’s MacBook Pro-5.2" ".yjp/" ".Xauthority" ".w3m/" ".vimrc" ".viminfo" ".vim_runtime/" ".vim_mru_files" ".vim/" ".Trash/" ".textadept/" ".templateengine/" ".swo" ".subversion/" ".stCommitMsg" ".stardict/" ".ssh/" ".sogouinput/" ".ServiceHub/" ".rstudio-desktop/" ".Rprofile" ".rnd" ".Rhistory" ".RData" ".Rapp.history" ".R/" ".python_history" ".p2/" ".oracle_jre_usage/" ".oh-my-zsh/" ".npm/" ".nimble-options.json" ".mysql_history" ".mysql-init" ".mono/" ".mime.types" ".matplotlib/" ".MarkEditorData/" ".mailcap" ".local/" ".latexmkrc~" ".latexmkrc" ".keras/" ".jupyter/" ".iterm2_shell_integration.zsh" ".iterm2/" ".ipython/" ".idlerc/" ".IdentityService/" ".hgignore_global" ".gnuplot_history" ".gitignore_global" ".gitconfig" ".git/" ".ghc/" ".gem/" ".emacs.d/" ".eclipse/" ".DS_Store" ".dropbox/" ".cups/" ".config/" ".CFUserTextEncoding" ".cache/" ".cabal/" ".black-screen/" ".bash_profile.swp" ".bash_profile" ".bash_history" ".aspell.en.pws" ".aspell.en.prepl" ".android/" "../" "./")
+ ("/Users/Frank/Google Drive/LTPP Paper/2017/LTPP_DATA/" (22876 11887 711982 487000) "COREtrans-l-4.pdf" "DIS_SUMMARY.xlsx" "DEFL_MOD_LABEL.csv" "modulus_sigmoid.sfit" "DEFL_DIS_MOD_THICK_F3.fmp12" "COREtrans-l-27.pdf" "TST_L05B.csv" "DEFL_MOD_LINK_ONLY_SPS5.csv" "most-gator-all.pdf" "FWD_OBS_NUM.csv" "sps5-gator-boxplot.pdf" "EXPERIMENT_SECTION.csv" "Rplots.pdf" "MON_RUTTING_GPS6.csv" "DIS_SUMMARY_THICKNESS.csv" "tikz-test.pdf" "COREtrans-l-24.pdf" "COREtrans-l-30.pdf" "COREtrans-l-6.pdf" "COREtrans-l-34.pdf" "long_nwp_48.pdf" "STRUCTURE_THICKNESS.xlsx" "FWD_DROP_DATA4.csv" "STRCT_THICK.csv" "sps3-iri.R" "trans-l-1.pdf" "MON_HSS_PROFILE_SECTION.csv" "MOD_TEMP.csv" "STATE_CODE.csv" "rcode/" "COREtrans-l-35.pdf" "DIS_SUMM_CNREASON.csv" "MON_T_PROF_INDEX_POINT_LABEL.csv" "TRUE" "COREtrans-l-1.pdf" "lft-rgt-rut-compare.pdf" "COREtrans-l-23.pdf" "Monitoring.ldb" "ltpp2017-dis.R~" "most-rutting.csv" "MON_RUTTING_GPS1.csv" "sps5supp-gator-boxplot.pdf" "sps3-iri.R~" "most-long-wp-all.pdf" "MON_RUTTING_SPS1.csv" "trans-hist.pdf" "TRF_MON_EST_HIST_SPS5_LINK.csv" ".Rapp.history" "FWD_DROP_DATA_NORMLIZED_F1_TEMP.csv" "DEFL_F3_NORMLIZED.csv" "DEFL_DIS_MOD_F3.csv" "mod_defl_temp_correction.R~" "DIS_OBS_NUM.csv" "sps5-rutting.R~" "DEFL_DIS_MOD_THICK_F3.csv" "DEFL_DIS_MOD_THICK_F1.csv" "MON_RUTTING_EXPERIMENT_LABEL.csv" "DIS_SPS3_LINK.csv" "MON_HSS_IRI.csv" "MON_IRI_GPS6.csv" "TST_L05B_LAYER_STRUCTURE_SECTION_THICK_COMPARE.csv" ".RData" "FWD_Data_Without_Drop_Data.ldb" "MATL_CODE.csv" "dis-all-bar.pdf" "long-nwp-hist.pdf" "FWD_SQL.sql~" "most-gator-overlapped.pdf" "tikz-test.tex" "sps5-iri.R~" "fwd.R~" "most-long-nwp-all.pdf" "DEFL_MOD_LABEL_MIDDEPTH.csv" "MATL_CODE.xlsx" "rut_group1.cvs" "ltpp2017.R~" "scratch.R~" "long_nwp_48_time.pdf" "MON_RUTTING_TEMP.csv" "COREtrans-l-81.pdf" "dataExport/" "sps5-count.pdf" "COREtrans-l-83.pdf" "SUBGRADE_TYPE_CODE.csv" "COREtrans-l-40.pdf" ".texpadtmp/" "MON_IRI_SPS1.csv" "ltpp_data.sql~" "MON_IRI_GPS1.csv" "FWD_DROP_DATA_3.fmp12" "rutting_sps5_survey_date.csv" "RUTTING_LABEL_THICK.csv" "sps5supp-long-wp-boxplot-13.pdf" "DIS_IRI_MERGED2.csv" "MOD_TEMP.xlsx" "ltpp2017plots.R~" "AWS_PRECIP_TEMP.csv" "DIS_SUMMARY_THICKNESS2.csv" "TRF_ESAL_INPUTS_SUMMARY.xlsx" "DEFL_MOD_LABEL_MIDDEPTH.xlsx" "FWD_DROP_DATA_F1.csv" "sps5supp-long-nwp-boxplot-13.pdf" "MOST_RUT2.csv" "MON_IRI_OUTPUT.csv" "MON_IRI_CENTER.csv" "FWD_Data_Without_Drop_Data.mdb" "rut.group2.csv" "SECTION_LAYER_STRUCTURE.csv" "ltppData.py~" "sps5_defl_mod_adj.csv" "FWD_DROP_DATA.fmp12" "trench_profile.xlsx" "TRF_MON_EST_HIST_SPS5.csv" "RUTTING_LABEL_THICK.xlsx" "DIS_SUMM_CNREASON.xlsx" "ltppdata.R~" "SPS5-scatterMatrix.pdf" "SQL-files/" "COREtrans-l-48.pdf" "STRUCTURE_AC_THICK.csv" "most-iri.csv" "GPS_SPS_LINK.csv" "COREtrans-l-13.pdf" "MON_IRI_THICK_NUM.xlsx" "sigmoid.m" "STRUCTURE_THICKNESS.csv" "MOST_IRI2.csv" "dis-automate.R~" "COREtrans-l-12.pdf" "most-rutting.xlsx" "SPS5/" "TRF_ESAL_INPUTS_SUMMARY.csv" "effect_of_temp_on_rutting/" "gator-hist.pdf" "DEFL_MOD_LABEL.xlsx" "TRF_MON_EST_ESAL.csv" "FWD_OBS_NUM_LABEL.csv" "sps-count-hist.pdf" "MON_RUTTING.csv" "gator-dist.pdf" "SPS3/" ".DS_Store" "LTPP_DATA_CLEAN.sql~" "MON_IRI_OBS.csv" "IRI_RUTTING.csv" "dis_n_gt_20.csv" "long-wp-hist.pdf" "COREtrans-l-29.pdf" "DIS_IRI_MERGED.csv" "GPS_SPS_LINK2.csv" "IRI_OBS_NUM.csv" "COREtrans-l-28.pdf" "TRF_HIST_EST_ESAL.csv" "gator-boxplot.pdf" "Drops.csv" "COREtrans-l-8.pdf" "data-txt/" "mod_needed.csv" "Monitoring.mdb" "RUTTING_OBS_NUM.csv" "MON_IRI_THICK_NUM.csv" "DIS_SUMMARY.csv" "INV_AGE.csv" "DEFL_MOD_LABEL_SPS5.csv" ".Rhistory" "FWD_DROP_DATA_NORMLIZED_F3_TEMP.csv" "MON_RUTTING_EXPERIMENT_LABEL.xlsx" "../" "./")
+
+ ("/Users/Frank/.emacs.d/" (22882 60087 195172 586000) "eproject.lst" ".git/" "recentf" "site-lisp/" "init.el" "emacs-custom.el" "auto-save-list/" "SessionDesktop.el" "emacs-custom.el~" "recentf~" "projectile-bookmarks.eld" "ido.last~" "abbrev_defs" "srecode-map.el" "eshell/" ".DS_Store" "lisp/" "init.el~" "ido.last" "snippets/" "elpa-25.2/" "ac-comphist.dat" "../" "./")
+
+ ("/Users/Frank/Python/hand-on-ml/" (22875 57576 707473 44000) "untitled" "reshape.py~" "handson_ml_ch02.ipynb" ".ipynb_checkpoints/" "exe-1.py" "gradient_boosting.py~" "handson-ml/" "datasets/" "reshape.py" "gradient_boosting.py" "Untitled.ipynb" "images/" ".DS_Store" "exe-1.py~" "../" "./")
+
+ ("/Users/Frank/.emacs.d/lisp/" (22878 56987 211140 269000) "init-python.el" "init-magit.el~" "init-markdown.el" "init-org.el" "init-theme.el" "init-dired.el" "init-python.el~" "init-parens.el" "init-projectile.el" "init-smartparens.el~" "init-writeroom.el~" "init-writeroom.el" "init-helm.el~" "init-helm.el" "init-pretty.el" "init-modeline.el~" "init-tex.el" "init-key.el" "init-magit.el" "init-benchmarking.el" "init-dictionary.el" "init-spelling.el~" "init-recentf.el~" "init-ui.el" "init-autocomplete.el" "init-matlab.el~" "init-autocomplete.el~" "init-eshell.el~" "init-dictionary.el~" "init-smartscan.el" "init-ess.el~" "init-smartparens.el" "init-interface.el" "init-elpy.el" "init-cpp.el" "init-flyspell.el~" "init-elpa.el" "init-markdown.el~" "init-expandregion.el~" "init-shell.el" "init-ui.el~" "init-autosave.el~" "init-ido.el~" "init-interface.el~" "init-auto-fill.el" "init-elpy.el~" "init-tex.el~" "emacs-for-python-master/" "init-compat.el" "mthesaur.txt" "init-key.el~" "init-modeline.el" "init-expandregion.el" "init-dired.el~" "init-cpp.el~" "init-theme.el~" "init-utils.el" "init-font.el" "init-spelling.el" "init-sql.el~" "init-eshell.el" "init-sql.el" "init-shell.el~" "init-exec-path.el" "init-ess.el" ".DS_Store" "init-matlab.el" "init-site-lisp.el" "init-ido.el" "init-projectile.el~" "init-langtool.el~" "init-smartscan.el~" "init-parens.el~" "init-langtool.el" "init-autosave.el" "init-flyspell.el" "init-recentf.el" "init-font.el~" "font-init.el~" "../" "./")
+
+ ("/Users/Frank/Dropbox/R/ltpp2017/Rcode/" (22880 23771 608577 473000) "sps5-iri.R" "approx.R" "ltpp2017.R" "dis-all.R" "most-iri.R" "defl-mod-label.R" "iri-all.R" "lead-lag-climate.R" "sps5_stack.R~" "sps3-iri.R" "sps3-dis.R~" ".ipynb_checkpoints/" "sps3-defl-mod.R~" "sigmoid_fit.R" "sigmoid.R" "ltppData.py" "sps3-defl-mod.R" "sps5-rutting.R" "mod_defl_temp_correction.R" "mod-temperature.R" "defl-sps5.R" "thick-compare.R~" "rutting-temp.R" "box_function.R" "rutting-all.R" "sps3-dis.R" "sps5_stacked.ipynb" "most-rutting.R" "sps5-dis.R" "scratch.R" "ltpp2017-dis.R" "sps5_stack.R" "thick-compare.R" "fwd.R" "defl-all.R" ".Rhistory" "../" "./")
+
+ ("/Users/Frank/Python/" (22882 20336 802248 603000) "hand-on-ml/" ".idea/" "ggplot2_examples.ipynb" "pandas-exe.py~" "py3virtualenv/" ".ipynb_checkpoints/" "pandas-exe.py" "nn_wine.ipynb" "emacs-virtualenv/" "ggpy/" "wine.py" "wine.py~" ".DS_Store" "KerasHelloWorld.ipynb" "missing_val_interpolate_groupby.ipynb" "../" "./")
+
+ ("/Users/Frank/Dropbox/R/ltpp2017/" (22830 11747 0 0) "Rcode/" "../" "./")
+
+ ("/Users/Frank/Dropbox/R/" (22876 11864 93375 581000) ".git/" ".Rapp.history" ".RData" "ltpp2017/" ".DS_Store" ".Rhistory" "../" "./")
+
+ ("/Users/Frank/Dropbox/" (22877 4977 344556 0) "Apps/" "Library.papers3/" ".dropbox.cache/" "RMPD Proofs/" "PDFs/" ".Rapp.history" "dunnett_results.txt" "Day One/" "Work/" "VMware+Fusion_8.5.8-5824040_xclient.info.dmg" "Ulysses Files/" ".dropbox" ".Trash-1000/" "R/" ".Papers3.syncsettings" "~$ecutive Board.docx" "org-notes/" "str_to_date.sql" "Papers/" "Icon
+" ".DS_Store" "Estar_Gstar.xlsx" ".Rhistory" "../" "./")
 
  ("/Users/" (22616 531 0 0) "Shared/" "Guest/" "Frank/" ".localized" "../" "./")
 
  ("/Users/Frank/Google Drive/LTPP Paper/2017/manuscript/" (22861 40671 0 0) "trans-l-overall.pdf" "trans-hist.pdf" "thick-compare/" "sps5-iri-surf-cond.pdf" "sps5-IRI-count.pdf" "sps5-IRI-count-hist.pdf" "sps5-dis-count.pdf" "sps5-dis-count-hist.pdf" "sps5/" "sps3-IRI-count.pdf" "sps3-IRI-count-hist.pdf" "sps3/" "rutting-temperature.pdf" "rutting-bar-all.pdf" "rutting-bar-all-2.pdf" "rutting-all-hist2.pdf" "rutting-all-hist.pdf" "rut-all-loc.pdf" "recovered-plots/" "plainat.bib" "most-gator-all.pdf" "most/" "mod/" "ltpp2017.tex~" "ltpp2017.synctex.gz" "ltpp2017.synctex (1).gz" "ltpp2017.pdf" "ltpp2017.log" "ltpp2017.fls" "ltpp2017.fdb_latexmk" "ltpp2017.blg" "ltpp2017.bib" "ltpp2017.bbl" "ltpp2017.aux" "ltpp2017-3.tex" "ltpp2017-2.tex" "ltpp2017-2.pdf" "ltpp2017 copy 2.tex" "ltpp2017 copy 2.pdf" "ltpp2017 copy 2.log" "ltpp2017 copy 2.fls" "ltpp2017 copy 2.fdb_latexmk" "ltpp2017 copy 2.aux" "ltpp2017 (1).pdf" "long-wp-hist.pdf" "long-nwp-hist.pdf" "iri-most-time.pdf" "iri-count-bar-all.pdf" "iri-all-hist2.pdf" "gator-hist.pdf" "dis-all-bar.pdf" "auto/" ".texpadtmp/" ".git/" ".DS_Store" ".aux" "../" "./")
 
- ("/Users/Frank/Python/" (22861 56030 0 0) "Untitled.ipynb" "py3virtualenv/" "pandas-exe.py~" "pandas-exe.py" "hand-on-ml/" "ggpy/" "emacs-virtualenv/" ".ipynb_checkpoints/" ".idea/" ".DS_Store" "../" "./")
-
- ("/Users/Frank/Python/hand-on-ml/" (22860 21952 0 0) "Untitled.ipynb" "untitled" "reshape.py~" "reshape.py" "images/" "handson_ml_ch02.ipynb" "handson-ml/" "exe-1.py~" "exe-1.py" "datasets/" ".ipynb_checkpoints/" ".DS_Store" "../" "./")
-
  ("/Users/Frank/magit-exe/" (22853 47896 0 0) "readme.md~" "readme.md" ".gitignore" ".git/" "../" "./")
-
- ("/Users/Frank/Google Drive/LTPP Paper/2017/" (22845 62768 0 0) "The Highway Development and Management System in Washington State Calibration and Application for the Department of Transportation Road Network.pdf" "Temperature Correction of Multiload-Level Falling Weight Deflectometer Deflections.pdf" "Subgrade_soil_code.pdf" "Statistical Analysis of LTPP SPS-3 Experiment on Preventive Maintenance of Flexible Pavements .pdf" "SHRP-P-395.pdf" "Selecting Preventive Maintenance Treatments in Texas Using the Technique for Order Preference by Similarity to the Ideal Solution for Specific Pavement Study–3 Sites .pdf" "Results of Long-Term Pavement Performance SPS-3 Analysis- Preventive Maintenance of Flexible Pavements .pdf" "Rehabilitation of Asphalt Concrete Pavements_Initial Evaluation of the SPS-5 Experiment-Final Report.pdf" "manuscript 2.zip" "manuscript/" "LTPP_DATA/" "LTPP Specific Pavement Studies (SPS) Materials Action Plan Final Report.pdf" "LTPP Data Analysis_Influnce of Design and Construction Features on the Response and Performance of New Flexible and Rigid Pavements.pdf" "LTPP Data Analysis_Effectiveness of Maintenance and Rehabilitation Options.pdf" "FWD TEMPERATURE CORRECTION/" "Evaluation of Effectiveness and Cost-Effectiveness of Asphalt Pavement Rehabilitations Utilizing LTPP Data.pdf" "Calibration and Application of Treatment Performance Models in a Pavement Management System in Tennessee.pdf" "A Pavement Condition-Rating Model Using Backpropagation Neural Networks.pdf" "2016_2017_asce_ltpp_contest_guidelines.pdf" "2009_hdm4_volume_1.pdf" ".DS_Store" "../" "./")
 
  ("/Users/Frank/.emacs.d/lisp/emacs-for-python-master/" (22852 15107 0 0) "snippets/" "scripts/" "README.org" "python-libs/" "extensions/" "epy-setup.el" "epy-python.el" "epy-nose.el" "epy-init.el" "epy-editing.el" "epy-completion.el" "epy-bindings.el" "doc/" "COPYING" "CONTRIBUTORS" "ChangeLog" ".gitignore" ".DS_Store" "../" "./")
 
@@ -101,9 +118,6 @@
  ("/Users/Frank/Rcode/R/" (22823 29005 0 0) "ltpp2017/" ".git/" ".DS_Store" "../" "./")
 
  ("/Users/Frank/Rcode/" (22828 52886 0 0) "R/" "ANN_Example.R" ".DS_Store" "../" "./")
-
- ("/Users/Frank/Google Drive/" (22828 53633 0 0) "TRC/" "References/" "Misc/" "LTPP Paper/" "Icon
-" "Geosynthetics Project/" "Files Backup/" "Design Criteria Paper/" "Course Materials/" "color/" "bibFiles/" ".tmp.drivedownload/" ".DS_Store" "../" "./")
 
  ("/Users/Frank/Google Drive/LTPP Paper/" (22828 52886 0 0) "LTPP_SPS_GPS.pdf" "2017/" "2016/" ".DS_Store" "../" "./")
 

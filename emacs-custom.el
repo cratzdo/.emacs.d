@@ -74,5 +74,6 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Inconsolata LGC" :foundry "nil" :slant normal :weight normal :height 120 :width normal))))
+ '(font-latex-sectioning-2-face ((t (:foreground "sienna" :weight bold :height 1.1 :family "Arima Madurai"))))
  '(minibuffer-prompt ((t (:foreground "#268bd2" :family "Inconsolata"))))
- '(mode-line ((t (:background "#eee8d5" :box (:line-width 1 :color "#657b83") :weight normal :height 100 :family "GT Pressura Mono")))))
+ '(mode-line ((t (:background "dim gray" :foreground "#c5c8c6" :box (:line-width 1 :color "white smoke") :weight bold :height 120 :family "GT Pressura Mono")))))
