@@ -1,1 +1,1 @@
-("~/Google Drive/LTPP Paper/2017/RAP/" "~/" "~/.emacs.d/" "~/Google Drive/LTPP Paper/2017/manuscript/" "~/Dropbox/R/")
+("~/.emacs.d/" "~/Dropbox/R/" "~/Google Drive/LTPP Paper/2017/trb2017rap/" "~/Google Drive/LTPP Paper/2017/RAP/" "~/" "~/Google Drive/LTPP Paper/2017/manuscript/")
