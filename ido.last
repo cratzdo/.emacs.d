@@ -16,7 +16,7 @@
  ("/Users/Frank/Google Drive/LTPP Paper/" . "2017/")
  ("/Users/Frank/Google Drive/" . "LTPP Paper/")
  ("/Users/Frank/.emacs.d/" . "lisp/")
- ("/Users/Frank/" . "Google Drive/")
+ ("/Users/Frank/" . ".emacs.d/")
  ("/Users/PG/Google Drive/Geosynthetics Project/" . "DCP Phase I/")
  ("/Users/PG/.emacs.d/elisp/" . "emacs-for-python-master/")
  ("/Users/PG/Google Drive/Course Materials/Spring 2017/STAT575/" . "Takehome Final/")
@@ -33,12 +33,12 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/Users/Frank/.emacs.d/lisp/"
  "/Users/Frank/Google Drive/LTPP Paper/2017/trb2017rap/"
  "/Users/Frank/Google Drive/LTPP Paper/2017/manuscript/"
  "/Users/Frank/Google Drive/LTPP Paper/2017/RAP/"
  "/Users/Frank/Python/"
  "/Users/Frank/Dropbox/R/ltpp2017/Rcode/"
- "/Users/Frank/.emacs.d/lisp/"
  "/Users/Frank/Python/hand-on-ml/"
  "/Users/Frank/.emacs.d/"
  "/Users/Frank/magit-exe/"
@@ -60,6 +60,7 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "init-helm.el"
  "dis5.R"
  "ltpp2017-2.tex"
  "trb2017_rap.tex"
@@ -69,11 +70,14 @@
  "gradient_boosting.py"
  "wine.py"
  "init-pretty.el"
- "init-theme.el"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/Users/Frank/.emacs.d/" (22897 10593 342490 174000) "eproject.lst" ".git/" "recentf" "site-lisp/" "init.el" "emacs-custom.el" "auto-save-list/" "SessionDesktop.el" "emacs-custom.el~" "recentf~" "projectile-bookmarks.eld" "ido.last~" "abbrev_defs" "srecode-map.el" "eshell/" ".DS_Store" "lisp/" "init.el~" "ido.last" "snippets/" "elpa-25.2/" "ac-comphist.dat" "../" "./")
+
+ ("/Users/Frank/" (22897 20407 701221 853000) ".conda/" ".yjp/" ".viminfo" ".bash_history" "h2o-3/" ".latexmkrc~" ".gitconfig" ".cache/" ".python_history" "test_r.ipynb" "Downloads/" "anaconda3/" ".oh-my-zsh/" ".Xauthority" ".vim_runtime/" ".gem/" ".aspell.en.pws" ".bash_profile" ".mono/" ".git/" ".mysql_history" ".rstudio-desktop/" "Rcode/" ".black-screen/" ".mailcap" "Documents/" ".npm/" ".swo" ".keras/" ".jupyter/" ".aspell.en.prepl" ".ipynb_checkpoints/" ".stardict/" ".Trash/" ".Rapp.history" "Dropbox/" ".zsh-update" ".gradle/" ".ghc/" "Applications/" ".vimrc" "Movies/" "Applications (Parallels)/" ".vim_mru_files" ".ssh/" ".latexmkrc" ".anaconda/" ".RData" ".idlerc/" ".nimble-options.json" "LanguageTool-3.5/" ".bash_profile-anaconda3.bak" "ltpp-2017/" ".dropbox/" ".iterm2/" "orgFiles/" "Google Drive/" ".cups/" ".gitignore_global" ".android/" ".emacs.d/" "seaborn-data/" ".IdentityService/" ".spyder-py3/" ".oracle_jre_usage/" "Books/" ".zcompdump-Hongren’s MacBook Pro-5.2" ".electron/" ".matplotlib/" "Library/" "Desktop/" ".iterm2_shell_integration.zsh" ".ipython/" ".p2/" ".zsh_history" ".zcompdump-Hongren’s MacBook Pro-5.3" ".rnd" ".zprofile" ".atom/" ".MarkEditorData/" "Pictures/" "Projects/" ".local/" "r-project/" ".templateengine/" ".mime.types" ".textadept/" "mail/" ".ServiceHub/" ".zshrc" ".serverauth.19467" ".subversion/" ".cabal/" "Snapshots/" "Python/" ".sogouinput/" ".hgignore_global" ".stCommitMsg" ".Rprofile" ".w3m/" ".CFUserTextEncoding" ".bash_profile.swp" "eclipse/" ".R/" ".DS_Store" ".vim/" ".node-gyp/" ".mysql-init" ".condarc" "Music/" ".gnuplot_history" ".config/" ".eclipse/" ".Rhistory" "../" "./")
+
  ("/Users/Frank/Google Drive/LTPP Paper/2017/trb2017rap/" (22897 9531 438822 52000) "trb2017_rap.pdf" "trb2017_rap.synctex.gz" "sps5_coord.R" "trb2017_rap[Conflict].fdb_latexmk" "count.txt" "#trb2017_rap.tex#" "trb2017_rap[Conflict].pdf" "#trb2017_rap (1).tex#" "data/" ".git/" "supp.csv" "trb2017_rap.bbl" "trb2017rap.bib" "trb2017_rap.out" "trb2017_rap.tex~" "trb2017_rap.synctex.gz(busy)" ".texpadtmp/" "trb2017_rap.tex" "README.md" "mytrb.bst" "dis5.R~" "trb2017_rap.fdb_latexmk" "figure/" "dis5.R" "auto/" "LICENSE" "trb2017_rap.blg" "missfont.log" "trb2017_rap.fls" "trb2017_rap.synctex (1).gz" ".DS_Store" "sps5_coord.R~" "trb2017_rap.log" "trb2017_rap.aux" "SPS5_Coordinate.csv" "trbunofficial.cls" ".Rhistory" "../" "./")
 
  ("/Users/Frank/Google Drive/" (22894 7014 525915 848000) "bibFiles/" "TRC/" "Geosynthetics Project/" ".tmp.drivedownload/" "Files Backup/" "LTPP Paper/" "color/" "Alfred_C.dmg" "References/" "Design Criteria Paper/" "Icon
@@ -84,8 +88,6 @@
  ("/Users/Frank/Google Drive/LTPP Paper/2017/RAP/" (22893 29437 137205 655000) "trb2017_rap.pdf" "trb2017_rap.synctex.gz" "sps5_coord.R" "count.txt" ".git/" "trb2017_rap.bbl" "trb.bst" "trb2017rap.bib" ".gitattributes" "trb2017_rap.out" "trb2017_rap[Conflict].tex" "trb2017_rap.tex~" ".texpadtmp/" "TRB_LaTeX_rnw/" "trb2017_rap.tex" "README.md" "trb2017_rap[Conflict].tex~" "trb2017_rap.fdb_latexmk" "auto/" "trb2017_rap.synctex (2).gz" "trb2017_rap.synctex (3).gz" "sps5/" "LICENSE" "trb2017_rap.blg" "trb2017_rap.fls" "trb2017_rap.synctex (1).gz" "sps5_coord.R~" "trb2017_rap.log" "trb2017_rap.aux" "SPS5_Coordinate.csv" "trb2017_rap.synctex (4).gz" "trb2017_rap.synctex (5).gz" "trbunofficial.cls" "trb2017_rap.synctex (6).gz" "../" "./")
 
  ("/Users/Frank/Google Drive/LTPP Paper/2017/LTPP_DATA/" (22876 11887 711982 487000) "COREtrans-l-4.pdf" "DIS_SUMMARY.xlsx" "DEFL_MOD_LABEL.csv" "modulus_sigmoid.sfit" "DEFL_DIS_MOD_THICK_F3.fmp12" "COREtrans-l-27.pdf" "TST_L05B.csv" "DEFL_MOD_LINK_ONLY_SPS5.csv" "most-gator-all.pdf" "FWD_OBS_NUM.csv" "sps5-gator-boxplot.pdf" "EXPERIMENT_SECTION.csv" "Rplots.pdf" "MON_RUTTING_GPS6.csv" "DIS_SUMMARY_THICKNESS.csv" "tikz-test.pdf" "COREtrans-l-24.pdf" "COREtrans-l-30.pdf" "COREtrans-l-6.pdf" "COREtrans-l-34.pdf" "long_nwp_48.pdf" "STRUCTURE_THICKNESS.xlsx" "FWD_DROP_DATA4.csv" "STRCT_THICK.csv" "sps3-iri.R" "trans-l-1.pdf" "MON_HSS_PROFILE_SECTION.csv" "MOD_TEMP.csv" "STATE_CODE.csv" "rcode/" "COREtrans-l-35.pdf" "DIS_SUMM_CNREASON.csv" "MON_T_PROF_INDEX_POINT_LABEL.csv" "TRUE" "COREtrans-l-1.pdf" "lft-rgt-rut-compare.pdf" "COREtrans-l-23.pdf" "Monitoring.ldb" "ltpp2017-dis.R~" "most-rutting.csv" "MON_RUTTING_GPS1.csv" "sps5supp-gator-boxplot.pdf" "sps3-iri.R~" "most-long-wp-all.pdf" "MON_RUTTING_SPS1.csv" "trans-hist.pdf" "TRF_MON_EST_HIST_SPS5_LINK.csv" ".Rapp.history" "FWD_DROP_DATA_NORMLIZED_F1_TEMP.csv" "DEFL_F3_NORMLIZED.csv" "DEFL_DIS_MOD_F3.csv" "mod_defl_temp_correction.R~" "DIS_OBS_NUM.csv" "sps5-rutting.R~" "DEFL_DIS_MOD_THICK_F3.csv" "DEFL_DIS_MOD_THICK_F1.csv" "MON_RUTTING_EXPERIMENT_LABEL.csv" "DIS_SPS3_LINK.csv" "MON_HSS_IRI.csv" "MON_IRI_GPS6.csv" "TST_L05B_LAYER_STRUCTURE_SECTION_THICK_COMPARE.csv" ".RData" "FWD_Data_Without_Drop_Data.ldb" "MATL_CODE.csv" "dis-all-bar.pdf" "long-nwp-hist.pdf" "FWD_SQL.sql~" "most-gator-overlapped.pdf" "tikz-test.tex" "sps5-iri.R~" "fwd.R~" "most-long-nwp-all.pdf" "DEFL_MOD_LABEL_MIDDEPTH.csv" "MATL_CODE.xlsx" "rut_group1.cvs" "ltpp2017.R~" "scratch.R~" "long_nwp_48_time.pdf" "MON_RUTTING_TEMP.csv" "COREtrans-l-81.pdf" "dataExport/" "sps5-count.pdf" "COREtrans-l-83.pdf" "SUBGRADE_TYPE_CODE.csv" "COREtrans-l-40.pdf" ".texpadtmp/" "MON_IRI_SPS1.csv" "ltpp_data.sql~" "MON_IRI_GPS1.csv" "FWD_DROP_DATA_3.fmp12" "rutting_sps5_survey_date.csv" "RUTTING_LABEL_THICK.csv" "sps5supp-long-wp-boxplot-13.pdf" "DIS_IRI_MERGED2.csv" "MOD_TEMP.xlsx" "ltpp2017plots.R~" "AWS_PRECIP_TEMP.csv" "DIS_SUMMARY_THICKNESS2.csv" "TRF_ESAL_INPUTS_SUMMARY.xlsx" "DEFL_MOD_LABEL_MIDDEPTH.xlsx" "FWD_DROP_DATA_F1.csv" "sps5supp-long-nwp-boxplot-13.pdf" "MOST_RUT2.csv" "MON_IRI_OUTPUT.csv" "MON_IRI_CENTER.csv" "FWD_Data_Without_Drop_Data.mdb" "rut.group2.csv" "SECTION_LAYER_STRUCTURE.csv" "ltppData.py~" "sps5_defl_mod_adj.csv" "FWD_DROP_DATA.fmp12" "trench_profile.xlsx" "TRF_MON_EST_HIST_SPS5.csv" "RUTTING_LABEL_THICK.xlsx" "DIS_SUMM_CNREASON.xlsx" "ltppdata.R~" "SPS5-scatterMatrix.pdf" "SQL-files/" "COREtrans-l-48.pdf" "STRUCTURE_AC_THICK.csv" "most-iri.csv" "GPS_SPS_LINK.csv" "COREtrans-l-13.pdf" "MON_IRI_THICK_NUM.xlsx" "sigmoid.m" "STRUCTURE_THICKNESS.csv" "MOST_IRI2.csv" "dis-automate.R~" "COREtrans-l-12.pdf" "most-rutting.xlsx" "SPS5/" "TRF_ESAL_INPUTS_SUMMARY.csv" "effect_of_temp_on_rutting/" "gator-hist.pdf" "DEFL_MOD_LABEL.xlsx" "TRF_MON_EST_ESAL.csv" "FWD_OBS_NUM_LABEL.csv" "sps-count-hist.pdf" "MON_RUTTING.csv" "gator-dist.pdf" "SPS3/" ".DS_Store" "LTPP_DATA_CLEAN.sql~" "MON_IRI_OBS.csv" "IRI_RUTTING.csv" "dis_n_gt_20.csv" "long-wp-hist.pdf" "COREtrans-l-29.pdf" "DIS_IRI_MERGED.csv" "GPS_SPS_LINK2.csv" "IRI_OBS_NUM.csv" "COREtrans-l-28.pdf" "TRF_HIST_EST_ESAL.csv" "gator-boxplot.pdf" "Drops.csv" "COREtrans-l-8.pdf" "data-txt/" "mod_needed.csv" "Monitoring.mdb" "RUTTING_OBS_NUM.csv" "MON_IRI_THICK_NUM.csv" "DIS_SUMMARY.csv" "INV_AGE.csv" "DEFL_MOD_LABEL_SPS5.csv" ".Rhistory" "FWD_DROP_DATA_NORMLIZED_F3_TEMP.csv" "MON_RUTTING_EXPERIMENT_LABEL.xlsx" "../" "./")
-
- ("/Users/Frank/.emacs.d/" (22882 60087 195172 586000) "eproject.lst" ".git/" "recentf" "site-lisp/" "init.el" "emacs-custom.el" "auto-save-list/" "SessionDesktop.el" "emacs-custom.el~" "recentf~" "projectile-bookmarks.eld" "ido.last~" "abbrev_defs" "srecode-map.el" "eshell/" ".DS_Store" "lisp/" "init.el~" "ido.last" "snippets/" "elpa-25.2/" "ac-comphist.dat" "../" "./")
 
  ("/Users/Frank/Python/hand-on-ml/" (22875 57576 707473 44000) "untitled" "reshape.py~" "handson_ml_ch02.ipynb" ".ipynb_checkpoints/" "exe-1.py" "gradient_boosting.py~" "handson-ml/" "datasets/" "reshape.py" "gradient_boosting.py" "Untitled.ipynb" "images/" ".DS_Store" "exe-1.py~" "../" "./")
 

@@ -115,5 +115,22 @@
 (global-set-key "\em"     'dollar-pair)
 (global-set-key "\C-cm"   'dollar-pair)
 
+;; fill paragraph
+(setq LaTeX-fill-break-at-separators '(\\\( \\\[))
+
+;; use PDFViewer rather than Skim as pdf-viewer
+;; ;; The following only works with AUCTeX loaded
+;; 		(require 'tex-site)
+;; 		(add-hook 'TeX-mode-hook
+;; 		    (lambda ()
+;; 		        (add-to-list 'TeX-output-view-style
+;; 		            '("^pdf$" "."
+;; 		              "/Applications/PDFView.app/Contents/MacOS/gotoline.sh %n %(OutFullPath)"))
+;; 		        (add-to-list 'TeX-expand-list
+;; 		            '("%(OutFullPath)" (lambda nil
+;; 		                                 (expand-file-name
+;; 		                                  (TeX-active-master (TeX-output-extension) t)
+;; 		                                  (TeX-master-directory))))))
+;; 		)
 
 (provide 'init-tex)

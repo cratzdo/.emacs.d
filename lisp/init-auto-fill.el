@@ -26,4 +26,12 @@
 (global-set-key [remap fill-paragraph]
                 #'endless/fill-or-unfill)
 
+;; aggressive fill paragraph
+(use-package aggressive-fill-paragraph
+  :ensure t
+  :init)
+(add-hook 'text-mode-hook #'aggressive-fill-paragraph-mode)
+
+(add-to-list 'afp-fill-comments-only-mode-list 'python-mode)
+
 (provide 'init-auto-fill)
