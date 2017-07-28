@@ -7,13 +7,11 @@
  ;; If there is more than one, they won't work right.
  '(ansi-color-faces-vector
    [default bold shadow italic underline bold bold-italic bold])
- '(ansi-color-names-vector
-   (vector "#839496" "#dc322f" "#859900" "#b58900" "#268bd2" "#d33682" "#2aa198" "#eee8d5"))
  '(aquamacs-additional-fontsets nil t)
  '(aquamacs-customization-version-id 308 t)
  '(aquamacs-tool-bar-user-customization nil t)
  '(blink-cursor-mode nil)
- '(custom-enabled-themes (quote (sanityinc-tomorrow-night)))
+ '(custom-enabled-themes (quote (moe-dark)))
  '(custom-safe-themes
    (quote
     ("06f0b439b62164c6f8f84fdda32b62fb50b6d00e8b01c2208e55543a6337433a" "4cf3221feff536e2b3385209e9b9dc4c2e0818a69a1cdb4b522756bcdf4e00a4" default)))
@@ -39,7 +37,7 @@
  '(ns-tool-bar-size-mode nil t)
  '(package-selected-packages
    (quote
-    (aggressive-fill-paragraph prettify-symbols-mode expand-region jedi epc projectile auto-org-md markdown-mode eink-theme eink browse-kill-ring pip-requirements synonyms rtags cmake-ide magit iedit ivy ivy-bibtex ivy-gitlab elpy flyspell-correct-helm writeroom-mode use-package smartscan smartparens smart-cursor-color pretty-mode peep-dired osx-dictionary org-bullets matlab-mode langtool helm google-this ess company-auctex color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized auto-save-buffers-enhanced auto-compile)))
+    (powerline moe-theme aggressive-fill-paragraph prettify-symbols-mode expand-region jedi epc projectile auto-org-md markdown-mode eink-theme eink browse-kill-ring pip-requirements synonyms rtags cmake-ide magit iedit ivy ivy-bibtex ivy-gitlab elpy flyspell-correct-helm writeroom-mode use-package smartscan smartparens smart-cursor-color pretty-mode peep-dired osx-dictionary org-bullets matlab-mode langtool helm google-this ess company-auctex auto-save-buffers-enhanced auto-compile)))
  '(python-shell-interpreter "python3")
  '(python-shell-virtualenv-root "'~/Python/py3virtualenv/'")
  '(show-paren-mode t)
@@ -67,13 +65,14 @@
      (340 . "#dc322f")
      (360 . "#cb4b16"))))
  '(vc-annotate-very-old-color nil)
- '(visual-line-mode nil t))
+ '(visual-line-mode nil t)
+ '(writeroom-width 120))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Inconsolata LGC" :foundry "nil" :slant normal :weight normal :height 120 :width normal))))
+ '(default ((t (:family "Roboto Mono for Powerline" :foundry "nil" :slant normal :weight normal :height 120 :width normal))))
  '(font-latex-sectioning-2-face ((t (:foreground "sienna" :weight bold :height 1.1 :family "Arima Madurai"))))
- '(minibuffer-prompt ((t (:foreground "#268bd2" :family "Inconsolata"))))
- '(mode-line ((t (:background "dim gray" :foreground "#c5c8c6" :box (:line-width 1 :color "white smoke") :weight bold :height 120 :family "GT Pressura Mono")))))
+ '(fringe ((t (:background "nil" :foreground "#a8a8a8"))))
+ '(mode-line ((t (:background "#5faf87" :foreground "#ffffff" :box nil :weight normal :family "Consola Mono")))))

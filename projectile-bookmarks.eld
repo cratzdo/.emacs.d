@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/hg_papers/trb2017rap/" "~/Google Drive/LTPP Paper/2017/trb2017rap/" "~/Dropbox/R/" "~/Google Drive/LTPP Paper/2017/RAP/" "~/" "~/Google Drive/LTPP Paper/2017/manuscript/")
+("~/Google Drive/LTPP Paper/2017/trb2017rap/" "~/papers/trb2017rap/" "~/.emacs.d/" "~/hg_papers/trb2017rap/" "~/Dropbox/R/" "~/Google Drive/LTPP Paper/2017/RAP/" "~/" "~/Google Drive/LTPP Paper/2017/manuscript/")

@@ -15,9 +15,10 @@
 (require-package 'eink-theme)
 (require-package 'color-theme-sanityinc-solarized)
 (require-package 'color-theme-sanityinc-tomorrow)
-
+(require-package 'powerline)
+(require-package 'moe-theme)
 ;; If you don't customize it, this is the theme you get.
-(setq-default custom-enabled-themes '(sanityinc-tomorrow-night))
+(setq-default custom-enabled-themes '(moe-dark))
 
 ;; Ensure that themes will be applied even if they have not been customized
 (defun reapply-themes ()
@@ -49,6 +50,19 @@
   (interactive)
   (color-theme-sanityinc-tomorrow-night))
 
+(defun moe ()
+  "Activate a dark color theme."
+  (interactive)
+  (moe-dark))
+
 (setq gc-cons-threshold sanityinc/initial-gc-cons-threshold)
+
+;; setup moe-theme
+(require 'powerline)
+(require 'moe-theme)
+(powerline-moe-theme)
+ (setq moe-theme-highlight-buffer-id t)
+ (moe-theme-set-color 'cyan)
+ (moe-dark)
 
 (provide 'init-theme)
