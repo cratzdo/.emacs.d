@@ -7,6 +7,14 @@
   :init)
 (elpy-enable)
 
+(setq python-shell-interpreter "ipython3"
+      python-shell-interpreter-args "--simple-prompt --pprint")
+
+(elpy-enable)
+(elpy-use-ipython)
+;(elpy-clean-modeline)
+
+
 ;;jedi
 (use-package jedi
   :ensure t
@@ -15,61 +23,7 @@
 (add-to-list 'ac-sources 'ac-source-jedi-direct)
 ;; enable for python-mode
 (add-hook 'python-mode-hook 'jedi:setup)
-
-;; (defvar jedi-config:with-virtualenv nil
-;;   "Set to non-nil to point to a particular virtual environment ")
-
-;; ;; Variable help to find the project root
-;; (defvar jedi-config:vcs-root-sentinel ".git")
-;; (defvar jedi-config:python-module-sentinel "__init__.py")
-
-;; ;; Functions used to find project root for a given buffer)
-;; (defun get-project-root (buf repo-type init-file)
-;;   (vc-find-root (expand-file-name (buffer-file-name buf)) repo-type))
-
-;; (defvar jedi-config:find-root-function 'get-project-root)
-
-;; ;; And call this on initialization
-;; (defun current-buffer-project-root ()
-;;   (funcall jedi-config:find-root-function
-;; 	   (current-buffer)
-;; 	   jedi-config:vcs-root-sentinel
-;; 	   jedi-config:python-module-sentinel))
-
-;; ;; jedi-server-args
-;; (defun jedi-config:setup-server-args ()
-;;   ;; little helper macro
-;;   (defmacro add-args (arg-list arg-name arg-value)
-;;     '(setq ,arg-list (append ,arg-list (list ,arg-name ,arg-value))))
-
-;;   (let ((project-root (current-buffer-project-root )))
-    
-;;     ;; variable for this buffer only
-;;   (make-local-variable 'jedi:server-args)
-  
-;;   ;; set your variables
-;;   (when project-root
-;;     (add-args jedi:server-args "--sys-path" project-root))
-;;   (when jedi-config:with-virtualenv
-;;     (add-args jedi:server-args "--virtual-env" jedi-config:with-virtualenv))))
-    
-;; ;; set python path for mac
-;; (defvar jedi-config:use-system-python t)
-
-;; (defun jedi-config:set-python-executable ()
-;;   (set-exec-path-from-shell-path) ;; for OS X
-;;   (make-local-variable 'jedi:server-command)
-;;   (set 'jedi:server-command
-;;        (list (executable-find "python3")
-;; 	     (cadr default-jedi-server-command))))
-
-;; (add-hook 'python-mode-hook
-;; 	  'jedi-config:setup-server-args)
-
-;; (when jedi-config:use-system-python
-;;   (add-hook 'python-mode-hook
-;; 	    'jedi-config:set-python-executable))
-  
+ 
 ;; modify jedi default key-combos
 (defun jedi-config:setup-keys ()
   (local-set-key (kbd "M-.") 'jedi:goto-definition)
@@ -105,5 +59,41 @@
 (use-package epc
   :ensure t
   :init)
+
+
+;;
+;; solve ipython does not show output
+;;
+(defun python-shell-append-to-output (string)
+  (let ((buffer (current-buffer)))
+    (set-buffer (process-buffer (python-shell-get-process)))
+    (let ((oldpoint (point)))
+      (goto-char (process-mark (python-shell-get-process)))
+      (insert string)
+      (set-marker (process-mark (python-shell-get-process)) (point))
+      (goto-char oldpoint))
+    (set-buffer buffer)))
+
+(defadvice python-shell-send-string
+    (around advice-python-shell-send-string activate)
+  (interactive)
+  (let* ((append-string1
+         (if (string-match "import codecs, os;__pyfile = codecs.open.*$" string)
+             (replace-match "" nil nil string)
+           string))
+        (append-string2
+         (if (string-match "^# -\\*- coding: utf-8 -\\*-\n*$" append-string1)
+             (replace-match "" nil nil append-string1)
+           append-string1))
+        (append-string
+         (if (string-match "^\n*$" append-string2)
+             (replace-match "" nil nil append-string2)
+           append-string2)))  
+    (python-shell-append-to-output
+     (concat (string-trim-right append-string) "\n")))
+  (if (called-interactively-p 'any)
+      (call-interactively (ad-get-orig-definition 'python-shell-send-string))
+    ad-do-it))
+
 
 (provide 'init-python)

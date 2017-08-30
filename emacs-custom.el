@@ -18,8 +18,8 @@
  '(default-frame-alist
     (quote
      ((tool-bar-lines . 0)
-      (foreground-color . "Black")
-      (background-color . "White")
+      (foreground-color)
+      (background-color)
       (cursor-type . box)
       (cursor-color . "Red")
       (internal-border-width . 0)
@@ -28,7 +28,7 @@
  '(elpy-rpc-python-command "python3")
  '(exec-path-from-shell-arguments (quote ("-l" "-i")))
  '(fci-rule-color "#073642")
- '(fill-column 100)
+ '(fill-column 70)
  '(fringe-mode 15 nil (fringe))
  '(global-hl-line-mode t)
  '(inhibit-startup-screen t)
@@ -38,7 +38,7 @@
  '(package-selected-packages
    (quote
     (powerline moe-theme aggressive-fill-paragraph prettify-symbols-mode expand-region jedi epc projectile auto-org-md markdown-mode eink-theme eink browse-kill-ring pip-requirements synonyms rtags cmake-ide magit iedit ivy ivy-bibtex ivy-gitlab elpy flyspell-correct-helm writeroom-mode use-package smartscan smartparens smart-cursor-color pretty-mode peep-dired osx-dictionary org-bullets matlab-mode langtool helm google-this ess company-auctex auto-save-buffers-enhanced auto-compile)))
- '(python-shell-interpreter "python3")
+ '(python-shell-interpreter "ipython3")
  '(python-shell-virtualenv-root "'~/Python/py3virtualenv/'")
  '(show-paren-mode t)
  '(synonyms-file "/Users/Frank/.emacs.d/lisp/mthesaur.txt")
@@ -65,6 +65,8 @@
      (340 . "#dc322f")
      (360 . "#cb4b16"))))
  '(vc-annotate-very-old-color nil)
+ '(visual-fill-column-center-text t)
+ '(visual-fill-column-width 120)
  '(visual-line-mode nil t)
  '(writeroom-width 120))
 (custom-set-faces

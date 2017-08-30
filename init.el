@@ -100,7 +100,7 @@
 (require 'init-dired)
 
 ;; smart-parens
-(provide 'init-smartparens)
+(require 'init-smartparens)
 
 ;;--------------------------------
 ;; show recent files with <f7>

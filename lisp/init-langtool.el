@@ -2,7 +2,7 @@
 ;;-----------grammar-checking-----------------------
 ;;
 (if (file-exists-p "~/LanguageTool-3.5/")
-(setq langtool-language-tool-jar "~/LanguageTool-3.5/languagetool-commandline.jar"))
+(setq langtool-language-tool-jar "~/.emacs.d/LanguageTool-3.5/languagetool-commandline.jar"))
 
 (use-package langtool
   :config

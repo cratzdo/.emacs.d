@@ -10,12 +10,12 @@
 
 ;; font for latex-mode
 (add-hook 'latex-mode-hook (lambda ()
-                            (setq buffer-face-mode-face '(:family "Input Mono"))
+                            (setq buffer-face-mode-face '(:family "GT Pressura Mono" :height 160))
                             (buffer-face-mode)))
 
 ;; font for text-mode
 (add-hook 'text-mode-hook (lambda ()
-                            (setq buffer-face-mode-face '(:family "GT Pressura Mono" :height 150))
+                            (setq buffer-face-mode-face '(:family "GT Pressura Mono" :height 170))
                             (buffer-face-mode)))
 
 ;; font for ess-mode
@@ -23,7 +23,7 @@
                             (setq buffer-face-mode-face '(:family "Fantasque Sans Mono" :height 140))
                             (buffer-face-mode)))
 (add-hook 'inferior-ess-mode-hook (lambda ()
-                            (setq buffer-face-mode-face '(:family "Monoid" :height 110))
+                            (setq buffer-face-mode-face '(:family "Consola Mono" :height 110))
                             (buffer-face-mode)))
 
 
@@ -47,7 +47,7 @@
                             (buffer-face-mode)))
 
 (add-hook 'inferior-python-mode-hook (lambda ()
-                            (setq buffer-face-mode-face '(:family "Fira Code"))
+				       (setq buffer-face-mode-face '(:family "Inconsolata LGC" :height 130))
                             (buffer-face-mode)))
 
 ;; font for message-buffer-mode
