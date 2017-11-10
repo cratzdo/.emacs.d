@@ -86,3 +86,21 @@ pip3 upgrade scikit-learn
 sudo pip3 scikit-learn --upgrade
 pip3 install scikit-learn --upgrade
 bash
+bash
+bash
+bash
+ls
+alias ff 'find-file $1'
+ff
+alias d 'dired $1'
+d
+cd ~
+ls
+ls -a
+scala
+cd ~/Downloads/
+ls
+tar zxvf cudnn-9.0-osx-x64-v7.tar 
+sudo cp ./cuda/include/cudnn.h /usr/local/cuda/include/
+sudo cp cuda/lib/libcudnn* /usr/local/cuda/lib/
+source ~/.bash_profile

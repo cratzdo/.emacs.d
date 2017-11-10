@@ -7,8 +7,8 @@
 (when (version<= emacs-version "24.4")
   (message "Your Emacs is old, and some functionality in this config will be disabled. Please upgrade if possible."))
 
-(add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
-(require 'init-benchmarking) ;; Measure startup time
+;(add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
+;(require 'init-benchmarking) ;; Measure startup time
 
 (defconst *spell-check-support-enabled* nil) ;; Enable with t if you prefer
 (defconst *is-a-mac* (eq system-type 'darwin))
@@ -17,7 +17,11 @@
 ;;----------------------------------------------------------------------------
 ;; Bootstrap config
 ;;----------------------------------------------------------------------------
-(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
+
+(add-to-list 'load-path "~/.emacs.d/init-files")
+(add-to-list 'load-path "~/.emacs.d/init-files/emacs-for-python-master")
+
+
 (require 'init-compat)
 (require 'init-utils)
 (require 'init-site-lisp) ;; Must come before elpa, as it may provide package.el
@@ -29,8 +33,7 @@
 ;;
 ;; use-package
 ;;
-(add-to-list 'load-path "~/.emacs.d/lisp")
-(add-to-list 'load-path "~/.emacs.d/lisp/emacs-for-python-master")
+
 (unless (package-installed-p 'use-package)
   (package-install 'use-package))
 (setq use-package-verbose t)
@@ -43,7 +46,7 @@
 ;;-------------------------------------------------
 ;; customization in a separate file
 ;;-------------------------------------------------
-(setq custom-file "~/.emacs.d/emacs-custom.el")
+ (setq custom-file "~/.emacs.d/emacs-custom.el")
      (load custom-file)
 
 ;; load mac key-bindings
@@ -67,7 +70,6 @@
 
 ;; auto-save buffer
 (require 'init-autosave)
-
 
 ;; customize interface looking
 (require 'init-interface)
@@ -171,3 +173,12 @@
 
 ;; beautify eshell
 (require 'init-eshell)
+
+;; emacs-lisp
+(require 'init-lisp)
+
+;; scala & ensime
+(require 'init-scala)
+
+;; c++
+(require 'init-c++)

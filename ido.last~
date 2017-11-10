@@ -2,6 +2,7 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/Users/Frank/Scala/" . "programming-in-scala/")
  ("/Users/Frank/Dropbox/R/ltpp2017/" . "Rcode/")
  ("/Users/Frank/Dropbox/R/" . "ltpp2017/")
  ("/Users/Frank/Dropbox/" . "R/")
@@ -16,7 +17,7 @@
  ("/Users/Frank/Google Drive/LTPP Paper/" . "2017/")
  ("/Users/Frank/Google Drive/" . "LTPP Paper/")
  ("/Users/Frank/.emacs.d/" . "lisp/")
- ("/Users/Frank/" . ".emacs.d/")
+ ("/Users/Frank/" . "Scala/")
  ("/Users/PG/Google Drive/Geosynthetics Project/" . "DCP Phase I/")
  ("/Users/PG/.emacs.d/elisp/" . "emacs-for-python-master/")
  ("/Users/PG/Google Drive/Course Materials/Spring 2017/STAT575/" . "Takehome Final/")
@@ -33,6 +34,7 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/Users/Frank/Scala/programming-in-scala/"
  "/Users/Frank/.emacs.d/lisp/"
  "/Users/Frank/Google Drive/LTPP Paper/2017/trb2017rap/"
  "/Users/Frank/Google Drive/LTPP Paper/2017/manuscript/"
@@ -74,7 +76,17 @@
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/Frank/" (22905 16391 0 0) "Snapshots/" "Rcode/" "r-project/" "Python/" "Projects/" "Pictures/" "papers/" "orgFiles/" "Music/" "Movies/" "mail/" "Library/" "LanguageTool-3.5/" "Google Drive/" "eclipse/" "Dropbox/" "Downloads/" "Documents/" "Desktop/" "Books/" "Applications (Parallels)/" "Applications/" ".zshrc" ".zsh_history" ".zsh-update" ".zprofile" ".zcompdump-Hongren’s MacBook Pro-5.2" ".yjp/" ".Xauthority" ".w3m/" ".vimrc" ".viminfo" ".vim_runtime/" ".vim_mru_files" ".vim/" ".Trash/" ".textadept/" ".templateengine/" ".swo" ".subversion/" ".stCommitMsg" ".stardict/" ".ssh/" ".sogouinput/" ".ServiceHub/" ".serverauth.14151" ".rstudio-desktop/" ".Rprofile" ".rnd" ".Rhistory" ".RData" ".Rapp.history" ".R/" ".python_history" ".p2/" ".oracle_jre_usage/" ".oh-my-zsh/" ".npm/" ".nimble-options.json" ".mysql_history" ".mysql-init" ".mono/" ".mime.types" ".matplotlib/" ".MarkEditorData/" ".mailcap" ".local/" ".latexmkrc~" ".latexmkrc" ".keras/" ".jupyter/" ".iterm2_shell_integration.zsh" ".iterm2/" ".ipython/" ".idlerc/" ".IdentityService/" ".hgignore_global" ".gnuplot_history" ".gitignore_global" ".gitconfig" ".git/" ".ghc/" ".gem/" ".emacs.d/" ".eclipse/" ".DS_Store" ".dropbox/" ".cups/" ".config/" ".CFUserTextEncoding" ".cache/" ".cabal/" ".black-screen/" ".bash_profile.swp" ".bash_profile" ".bash_history" ".aspell.en.pws" ".aspell.en.prepl" ".android/" "../" "./")
+ ("/Users/Frank/Downloads/r-pkgs/book/" (23038 28319 205558 719000) "package.aux" "r-packages.out" "git.aux" "check.aux" "r-packages.toc" "r-packages.idx" "r-packages.tex" "r-packages.ind" "tests.aux" "r-packages.pdf" "r-packages.ilg" "intro.aux" ".gitignore" ".texpadtmp/" "src.aux" "r-packages.fdb_latexmk" "description.aux" "build-book.r" "r-packages.fls" "namespace.aux" "r-packages.aux" "r-packages.log" "data.aux" "vignettes.aux" "man.aux" "auto/" "inst.aux" "r.aux" "misc.aux" "tex/" "release.aux" "../" "./")
+
+ ("/Users/Frank/Scala/programming-in-scala/" (23029 12195 47314 4000) "src/" ".idea/" ".ensime" "target/" "../" "./")
+
+ ("/Users/Frank/Scala/" (23029 16971 803643 665000) ".idea/" ".project" "programming-in-scala/" ".DS_Store" ".#forags.scala" "../" "./")
+
+ ("/Users/Frank/" (23029 16946 767707 203000) "Spark/" ".yjp/" ".viminfo" ".bash_history" ".latexmkrc~" ".gitconfig" ".cache/" ".python_history" "Downloads/" ".oh-my-zsh/" ".Xauthority" ".vim_runtime/" ".gem/" ".aspell.en.pws" ".bash_profile" ".hyper.js" ".mono/" ".git/" ".mysql_history" ".rstudio-desktop/" ".black-screen/" ".mailcap" "Documents/" ".npm/" ".scala_history" ".swo" ".keras/" ".jupyter/" ".aspell.en.prepl" ".ipynb_checkpoints/" ".Trash/" ".Rapp.history" "Dropbox/" ".zsh-update" ".ghc/" "Applications/" ".vimrc" "Movies/" "Applications (Parallels)/" ".vim_mru_files" ".ssh/" ".latexmkrc" ".RData" "Scala/" ".idlerc/" ".nimble-options.json" ".gitignore" ".hyper_plugins/" ".dropbox/" ".iterm2/" ".sbt/" "Google Drive/" ".cups/" ".gitignore_global" ".android/" ".emacs.d/" ".coursier/" ".IdentityService/" ".oracle_jre_usage/" "Books/" ".electron/" ".matplotlib/" "Library/" "Desktop/" ".iterm2_shell_integration.zsh" ".ipython/" ".p2/" ".zsh_history" ".zcompdump-Hongren’s MacBook Pro-5.3" "R/" ".rnd" ".nvm/" ".zprofile" ".atom/" ".MarkEditorData/" "Pictures/" ".local/" ".templateengine/" ".mime.types" ".textadept/" ".ServiceHub/" ".zshrc" ".scalaide/" ".subversion/" ".cabal/" "Snapshots/" "Dropbox (UTK)/" "Python/" "derby.log" ".sogouinput/" "Papers/" ".hgignore_global" ".stCommitMsg" ".Rprofile" ".w3m/" ".CFUserTextEncoding" ".bash_profile.swp" ".electron-gyp/" ".R/" ".DS_Store" ".vim/" ".node-gyp/" ".ivy2/" ".mysql-init" "Dropbox (Personal)/" "Music/" ".gnuplot_history" ".config/" ".eclipse/" ".Rhistory" ".upterm/" "../" "./")
+
+ ("/Users/Frank/scala/programming-in-scala/src/main/scala/" (23028 64227 787164 774000) "list9_1.scala" "list7_1.scala~" ".#list9_1.scala" "list9_1.scala~" "list7_1.scala" "../" "./")
+
+ ("/Users/Frank/linkage/" (22992 25718 261228 910000) "data/" "metastore_db/" "frequencies.csv" "sparkR.R~" "block_9.csv" "block_8.csv" "block_8.zip" "block_9.zip" "block_7.zip" "block_1.csv" "block_10.zip" "block_6.zip" "block_4.zip" "block_3.csv" "block_2.csv" "block_5.zip" "block_1.zip" "block_10.csv" "block_6.csv" "block_7.csv" "block_2.zip" "block_5.csv" "block_4.csv" "block_3.zip" "derby.log" "sparkR.R" ".DS_Store" "documentation" "donation.zip" "../" "./")
 
  ("/Users/Frank/papers/trb2017rap/" (22902 43380 0 0) "trbunofficial.cls" "trb2017rap.bib" "trb2017_rap.tex~" "trb2017_rap.tex" "trb2017_rap.synctex.gz" "trb2017_rap.synctex (1).gz" "trb2017_rap.pdf" "trb2017_rap.out" "trb2017_rap.log" "trb2017_rap.fls" "trb2017_rap.fdb_latexmk" "trb2017_rap.blg" "trb2017_rap.bbl" "trb2017_rap.aux" "trb.bst" "supp.csv" "SPS5_Coordinate.csv" "sps5_coord.R~" "sps5_coord.R" "Rplot001.pdf" "README.md" "mytrb.bst" "missfont.log" "long_wp_mean_box.pdf" "LICENSE" "IRI_box.pdf" "iri.R" "gator_mean.tex" "gator_mean.pdf" "font_ggplot.pdf" "figure/" "dis5.R~" "dis5.R" "data/" "count.txt" "auto/" ".texpadtmp/" ".Rhistory" ".git/" ".DS_Store" "#trb2017_rap (1).tex#" "../" "./")
 

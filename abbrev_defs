@@ -39,13 +39,17 @@
     ("`va" "\\value" nil 0)
    ))
 
-(define-abbrev-table 'TeX-error-overview-mode-abbrev-table '())
-
-(define-abbrev-table 'TeX-output-mode-abbrev-table '())
-
 (define-abbrev-table 'awk-mode-abbrev-table
   '(
    ))
+
+(define-abbrev-table 'bookmark-bmenu-mode-abbrev-table '())
+
+(define-abbrev-table 'bookmark-edit-annotation-mode-abbrev-table '())
+
+(define-abbrev-table 'browse-kill-ring-edit-mode-abbrev-table '())
+
+(define-abbrev-table 'browse-kill-ring-mode-abbrev-table '())
 
 (define-abbrev-table 'c++-mode-abbrev-table
   '(
@@ -63,10 +67,6 @@
 
 (define-abbrev-table 'completion-list-mode-abbrev-table '())
 
-(define-abbrev-table 'context-mode-abbrev-table '())
-
-(define-abbrev-table 'debugger-mode-abbrev-table '())
-
 (define-abbrev-table 'diff-mode-abbrev-table '())
 
 (define-abbrev-table 'display-time-world-mode-abbrev-table '())
@@ -75,23 +75,37 @@
 
 (define-abbrev-table 'edit-abbrevs-mode-abbrev-table '())
 
-(define-abbrev-table 'eieio-custom-mode-abbrev-table '())
-
 (define-abbrev-table 'elisp-byte-code-mode-abbrev-table '())
 
 (define-abbrev-table 'elpy-refactor-mode-abbrev-table '())
 
 (define-abbrev-table 'emacs-lisp-mode-abbrev-table '())
 
-(define-abbrev-table 'ert-results-mode-abbrev-table '())
+(define-abbrev-table 'ensime-connection-list-mode-abbrev-table '())
 
-(define-abbrev-table 'ert-simple-view-mode-abbrev-table '())
+(define-abbrev-table 'ensime-inf-mode-abbrev-table '())
 
-(define-abbrev-table 'ess-julia-mode-abbrev-table '())
+(define-abbrev-table 'eshell-mode-abbrev-table '())
+
+(define-abbrev-table 'flycheck-error-list-mode-abbrev-table '())
 
 (define-abbrev-table 'fundamental-mode-abbrev-table '())
 
+(define-abbrev-table 'gdb-breakpoints-mode-abbrev-table '())
+
+(define-abbrev-table 'gdb-disassembly-mode-abbrev-table '())
+
+(define-abbrev-table 'gdb-frames-mode-abbrev-table '())
+
+(define-abbrev-table 'gdb-locals-mode-abbrev-table '())
+
+(define-abbrev-table 'gdb-memory-mode-abbrev-table '())
+
+(define-abbrev-table 'gdb-registers-mode-abbrev-table '())
+
 (define-abbrev-table 'gdb-script-mode-abbrev-table '())
+
+(define-abbrev-table 'gdb-threads-mode-abbrev-table '())
 
 (define-abbrev-table 'global-abbrev-table '())
 
@@ -99,21 +113,27 @@
 
 (define-abbrev-table 'gud-mode-abbrev-table '())
 
+(define-abbrev-table 'helm-grep-mode-abbrev-table '())
+
 (define-abbrev-table 'helm-major-mode-abbrev-table '())
+
+(define-abbrev-table 'helm-moccur-mode-abbrev-table '())
 
 (define-abbrev-table 'help-mode-abbrev-table '())
 
+(define-abbrev-table 'ibuffer-mode-abbrev-table '())
+
 (define-abbrev-table 'idl-mode-abbrev-table '())
 
-(define-abbrev-table 'inferior-julia-mode-abbrev-table '())
-
 (define-abbrev-table 'inferior-python-mode-abbrev-table '())
+
+(define-abbrev-table 'ivy-occur-grep-mode-abbrev-table '())
+
+(define-abbrev-table 'ivy-occur-mode-abbrev-table '())
 
 (define-abbrev-table 'java-mode-abbrev-table
   '(
    ))
-
-(define-abbrev-table 'julia-mode-abbrev-table '())
 
 (define-abbrev-table 'latex-mode-abbrev-table '())
 
@@ -151,12 +171,6 @@
 
 (define-abbrev-table 'magit-status-mode-abbrev-table '())
 
-(define-abbrev-table 'matlab-mode-abbrev-table '())
-
-(define-abbrev-table 'matlab-shell-help-mode-abbrev-table '())
-
-(define-abbrev-table 'matlab-shell-topic-mode-abbrev-table '())
-
 (define-abbrev-table 'message-mode-abbrev-table '())
 
 (define-abbrev-table 'messages-buffer-mode-abbrev-table '())
@@ -183,21 +197,35 @@
   '(
    ))
 
-(define-abbrev-table 'plain-tex-mode-abbrev-table '())
+(define-abbrev-table 'pip-requirements-mode-abbrev-table '())
 
 (define-abbrev-table 'process-menu-mode-abbrev-table '())
 
 (define-abbrev-table 'prog-mode-abbrev-table '())
 
-(define-abbrev-table 'python-mode-abbrev-table
+(define-abbrev-table 'python-mode-abbrev-table '())
+
+(define-abbrev-table 'python-mode-skeleton-abbrev-table
   '(
-    ("class" "" python-skeleton-class 0)
-    ("def" "" python-skeleton-def 0)
-    ("for" "" python-skeleton-for 0)
-    ("if" "" python-skeleton-if 0)
-    ("try" "" python-skeleton-try 0)
-    ("while" "" python-skeleton-while 0)
    ))
+
+(define-abbrev-table 'rtags-dependency-tree-mode-abbrev-table '())
+
+(define-abbrev-table 'rtags-diagnostics-mode-abbrev-table '())
+
+(define-abbrev-table 'rtags-location-stack-visualize-mode-abbrev-table '())
+
+(define-abbrev-table 'rtags-mode-abbrev-table '())
+
+(define-abbrev-table 'rtags-preprocess-mode-abbrev-table '())
+
+(define-abbrev-table 'rtags-references-tree-mode-abbrev-table '())
+
+(define-abbrev-table 'rtags-taglist-mode-abbrev-table '())
+
+(define-abbrev-table 'sbt-mode-abbrev-table '())
+
+(define-abbrev-table 'scala-mode-abbrev-table '())
 
 (define-abbrev-table 'select-tags-table-mode-abbrev-table '())
 
@@ -211,11 +239,9 @@
 
 (define-abbrev-table 'srecode-template-mode-abbrev-table '())
 
+(define-abbrev-table 'synonyms-mode-abbrev-table '())
+
 (define-abbrev-table 'tabulated-list-mode-abbrev-table '())
-
-(define-abbrev-table 'tar-mode-abbrev-table '())
-
-(define-abbrev-table 'texinfo-mode-abbrev-table '())
 
 (define-abbrev-table 'text-mode-abbrev-table '())
 
