@@ -1,4 +1,6 @@
 ;; python setup
+(setq python-python-command "usr/local/bin/python3")
+(setq python-shell-interpreter 'python3)
 
 ;; elpy
 (use-package elpy
@@ -14,6 +16,15 @@
 (elpy-use-ipython)
 ;(elpy-clean-modeline)
 
+;; install iedit
+(use-package iedit
+  :ensure t
+  :init)
+
+;; Fixing a key binding bug in elpy
+(define-key yas-minor-mode-map (kbd "C-c k") 'yas-expand)
+;; Fixing another key binding bug in iedit mode
+(define-key global-map (kbd "C-c o") 'iedit-mode)
 
 ;;jedi
 (use-package jedi
@@ -60,7 +71,6 @@
   :ensure t
   :init)
 
-
 ;;
 ;; solve ipython does not show output
 ;;
@@ -94,6 +104,5 @@
   (if (called-interactively-p 'any)
       (call-interactively (ad-get-orig-definition 'python-shell-send-string))
     ad-do-it))
-
 
 (provide 'init-python)

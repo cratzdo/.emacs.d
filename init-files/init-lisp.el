@@ -1,8 +1,8 @@
 ;; emacs-lisp-mode config
 
 (defun my-lisp-mode-config ()
-  "For use in `html-mode-hook'."
-  (local-set-key (kbd "<C-c C-c>") 'eval-region)
+  "For use in `emacs-lisp-mode-hook'."
+  (local-set-key (kbd "<C-c C-e>") 'eval-region)
   (local-set-key (kbd "<C-c c>") 'comment-region)
   (local-set-key (kbd "C-c C-p") nil) ;  remove a key
   )

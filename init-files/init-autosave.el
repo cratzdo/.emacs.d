@@ -4,7 +4,7 @@
 ;;
 ;;Require installation of auto-save-buffers-enhanced
 (use-package auto-save-buffers-enhanced
-  :config
+  :ensure t
   :init)
 (require 'auto-save-buffers-enhanced)
 (auto-save-buffers-enhanced t)

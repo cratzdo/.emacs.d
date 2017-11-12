@@ -34,6 +34,7 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/Users/Frank/Google Drive/org-notes/programmingNotes/cpp/"
  "/Users/Frank/Scala/programming-in-scala/"
  "/Users/Frank/.emacs.d/lisp/"
  "/Users/Frank/Google Drive/LTPP Paper/2017/trb2017rap/"
@@ -76,6 +77,8 @@
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/Users/Frank/Google Drive/org-notes/programmingNotes/cpp/" (23046 12014 28504 775000) "vegnews.cpp" "stringBad.cpp" "stringbad.h" "../" "./")
+
  ("/Users/Frank/Downloads/r-pkgs/book/" (23038 28319 205558 719000) "package.aux" "r-packages.out" "git.aux" "check.aux" "r-packages.toc" "r-packages.idx" "r-packages.tex" "r-packages.ind" "tests.aux" "r-packages.pdf" "r-packages.ilg" "intro.aux" ".gitignore" ".texpadtmp/" "src.aux" "r-packages.fdb_latexmk" "description.aux" "build-book.r" "r-packages.fls" "namespace.aux" "r-packages.aux" "r-packages.log" "data.aux" "vignettes.aux" "man.aux" "auto/" "inst.aux" "r.aux" "misc.aux" "tex/" "release.aux" "../" "./")
 
  ("/Users/Frank/Scala/programming-in-scala/" (23029 12195 47314 4000) "src/" ".idea/" ".ensime" "target/" "../" "./")

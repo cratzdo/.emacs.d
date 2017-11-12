@@ -75,6 +75,14 @@
                             (setq buffer-face-mode-face '(:family "Hasklig" :height 140))
                             (buffer-face-mode)))
 
+;; font for c++ and c
+(add-hook 'c++-mode-hook (lambda ()
+                            (setq buffer-face-mode-face '(:family "Hasklig" :height 140))
+                            (buffer-face-mode)))
+(add-hook 'c-mode-hook (lambda ()
+                            (setq buffer-face-mode-face '(:family "Hasklig" :height 140))
+                            (buffer-face-mode)))
+
 ;; use ligature in emacs
 (mac-auto-operator-composition-mode)
 
