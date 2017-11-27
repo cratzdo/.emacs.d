@@ -3,7 +3,8 @@
 ;;
 (setq mac-option-modifier 'meta) ; set alt-key to meta
 (setq mac-escape-modifier nil) ; set esc-key to nil
-
+(global-set-key "\C-x\C-m" 'execute-extended-command)
+(global-set-key "\C-c\C-m" 'execute-extended-command)
 ;;
  ;; keybinding management
 ;;

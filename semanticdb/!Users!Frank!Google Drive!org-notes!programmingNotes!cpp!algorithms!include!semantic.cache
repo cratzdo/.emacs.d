@@ -1,0 +1,266 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("ALGO_QUICKSORT_H__" variable (:constant-flag t) nil [515 533])
+            ("generic.h" include (:system-flag t) nil [535 555])
+            ("alg" type
+               (:members 
+                  ( ("partition_" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "int"
+                        :arguments 
+                          ( ("list" variable
+                               (:dereference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [667 676])
+                            ("begin" variable (:type "int") (reparse-symbol arg-sub-list) [676 686])
+                            ("end" variable (:type "int") (reparse-symbol arg-sub-list) [687 695]))                          
+                        :typemodifiers ("static"))
+                        (reparse-symbol namespacesubparts) [622 1093])
+                    ("quicksort" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("list" variable
+                               (:dereference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1197 1206])
+                            ("begin" variable (:type "int") (reparse-symbol arg-sub-list) [1206 1216])
+                            ("end" variable (:type "int") (reparse-symbol arg-sub-list) [1216 1224]))                          
+                        :typemodifiers ("static"))
+                        (reparse-symbol namespacesubparts) [1152 1390]))                  
+                :type "namespace")
+                nil [558 1392]))          
+      :file "quick_sort.h"
+      :pointmax 1404
+      :fsize 1403
+      :lastmodtime '(23062 19680 275490 627000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ALGO_QUICKSORT_H__")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "generic.h"
+      :fsize 1625
+      :lastmodtime '(23061 37941 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("ALGO_BINARY_SEARCH_TREE_H__" variable (:constant-flag t) nil [713 740])
+            ("stdlib.h" include (:system-flag t) nil [742 761])
+            ("stdint.h" include (:system-flag t) nil [762 781])
+            ("exception" include (:system-flag t) nil [782 802])
+            ("iostream" include (:system-flag t) nil [803 822])
+            ("alg" type
+               (:members 
+                  ( ("BST" type
+                       (:template 
+                          ( ("KeyT" type (:type "class") nil nil)
+                            ("ValueT" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("private" label nil (reparse-symbol classsubparts) [899 907])
+                            ("treeNode" type
+                               (:members 
+                                  ( ("key" variable (:type ("KeyT" type (:type "class") nil nil)) (reparse-symbol classsubparts) [989 999])
+                                    ("value" variable (:type ("ValueT" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1014 1028])
+                                    ("parent" variable
+                                       (:pointer 1
+                                        :type ("treeNode" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1044 1061])
+                                    ("left" variable
+                                       (:pointer 1
+                                        :type ("treeNode" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1078 1093])
+                                    ("right" variable
+                                       (:pointer 1
+                                        :type ("treeNode" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1115 1131]))                                  
+                                :type "struct")
+                                (reparse-symbol classsubparts) [966 1154])
+                            ("excp_key" variable (:type ("BSTException" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1160 1326])
+                            ("BSTException" type
+                               (:superclasses 
+                                  ( ("std::exception" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1209 1216])
+                                    ("what" function
+                                       (:methodconst-flag t
+                                        :pointer 1
+                                        :typemodifiers ("virtual")
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [1223 1310]))                                  
+                                :type "class")
+                                (reparse-symbol classsubparts) [1160 1326])
+                            ("private" label nil (reparse-symbol classsubparts) [1331 1339])
+                            ("m_root" variable
+                               (:pointer 1
+                                :type ("treeNode" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1344 1362])
+                            ("private" label nil (reparse-symbol classsubparts) [1379 1387])
+                            ("BST" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("BST" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1396 1407]))                                  
+                                :type ("BST" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1392 1408])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("BST" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1428 1439]))                                  
+                                :type ("BST" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1413 1440])
+                            ("public" label nil (reparse-symbol classsubparts) [1444 1451])
+                            ("BST" function
+                               (:constructor-flag t
+                                :type ("BST" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1456 1476])
+                            ("BST" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [1483 1521])
+                            ("find" function
+                               (:pointer 1
+                                :arguments 
+                                  ( ("key" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("KeyT" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1575 1592]))                                  
+                                :type ("treeNode" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1559 1782])
+                            ("insert" function
+                               (:arguments 
+                                  ( ("key" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("KeyT" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1870 1887])
+                                    ("value" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ValueT" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1888 1909]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1858 2376])
+                            ("deleteKey" function
+                               (:arguments 
+                                  ( ("key" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("KeyT" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2462 2479]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2447 3214])
+                            ("print_tree" function
+                               (:arguments 
+                                  ( ("n" variable
+                                       (:pointer 1
+                                        :type ("treeNode" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3236 3249])
+                                    ("indent" variable (:type "int") (reparse-symbol arg-sub-list) [3250 3261]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3220 3524])
+                            ("print_helper" function (:type "void") (reparse-symbol classsubparts) [3530 3585])
+                            ("private" label nil (reparse-symbol classsubparts) [3590 3598])
+                            ("destruct_" function
+                               (:arguments 
+                                  ( ("n" variable
+                                       (:pointer 1
+                                        :type ("treeNode" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3618 3630]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3603 3730])
+                            ("transplant" function
+                               (:arguments 
+                                  ( ("u" variable
+                                       (:pointer 1
+                                        :type ("treeNode" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3798 3810])
+                                    ("v" variable
+                                       (:pointer 1
+                                        :type ("treeNode" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3811 3823]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3782 4052])
+                            ("minimum" function
+                               (:pointer 1
+                                :arguments 
+                                  ( ("x" variable
+                                       (:pointer 1
+                                        :type ("treeNode" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4140 4152]))                                  
+                                :type ("treeNode" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4121 4233]))                          )
+                        (reparse-symbol namespacesubparts) [841 4238]))                  
+                :type "namespace")
+                nil [824 4240]))          
+      :file "binary_search_tree.h"
+      :pointmax 4252
+      :fsize 4251
+      :lastmodtime '(23065 32310 839625 862000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ALGO_BINARY_SEARCH_TREE_H__")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("ALGO_SHUFFLE_H__" variable (:constant-flag t) nil [502 518])
+            ("stdio.h" include (:system-flag t) nil [520 538])
+            ("stdlib.h" include (:system-flag t) nil [539 558])
+            ("time.h" include (:system-flag t) nil [559 576])
+            ("alg" type
+               (:members 
+                  ( ("shuffle" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("list" variable
+                               (:pointer 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [687 696])
+                            ("len" variable (:type "int") (reparse-symbol arg-sub-list) [697 705]))                          
+                        :typemodifiers ("static"))
+                        (reparse-symbol namespacesubparts) [644 900]))                  
+                :type "namespace")
+                nil [578 902]))          
+      :file "shuffle.h"
+      :pointmax 914
+      :fsize 913
+      :lastmodtime '(23061 37941 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ALGO_SHUFFLE_H__")
+          )
+))
+  :file "!Users!Frank!Google Drive!org-notes!programmingNotes!cpp!algorithms!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

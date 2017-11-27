@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode java-mode
+      :tags nil
+      :file "one_edit_away.java"
+      :pointmax 1265
+      :fsize 1264
+      :lastmodtime '(23066 12069 910458 338000)
+      :unmatched-syntax '((BRACE_BLOCK 287 . 1264) (PAREN_BLOCK 257 . 286) (IDENTIFIER 248 . 257) (BOOLEAN 240 . 247) (BRACE_BLOCK 284 . 1261) (PAREN_BLOCK 254 . 283) (IDENTIFIER 245 . 254) (BOOLEAN 237 . 244) (BRACE_BLOCK 281 . 1258) (PAREN_BLOCK 251 . 280) (IDENTIFIER 242 . 251) (BOOLEAN 234 . 241) (BRACE_BLOCK 77 . 1054) (PAREN_BLOCK 47 . 76) (IDENTIFIER 38 . 47) (BOOLEAN 30 . 37) (BRACE_BLOCK 102 . 1079) (PAREN_BLOCK 72 . 101) (IDENTIFIER 63 . 72) (BOOLEAN 55 . 62) (BRACE_BLOCK 77 . 1054) (PAREN_BLOCK 47 . 76) (IDENTIFIER 38 . 47) (BOOLEAN 30 . 37) (BRACE_BLOCK 74 . 1051) (PAREN_BLOCK 44 . 73) (IDENTIFIER 35 . 44) (BOOLEAN 27 . 34) (BRACE_BLOCK 74 . 1051) (PAREN_BLOCK 44 . 73) (IDENTIFIER 35 . 44) (BOOLEAN 27 . 34) (BRACE_BLOCK 73 . 1050) (PAREN_BLOCK 43 . 72) (IDENTIFIER 34 . 43) (BOOLEAN 26 . 33) (BRACE_BLOCK 91 . 1068) (PAREN_BLOCK 61 . 90) (IDENTIFIER 52 . 61) (BOOLEAN 44 . 51) (BRACE_BLOCK 83 . 1060) (PAREN_BLOCK 53 . 82) (IDENTIFIER 44 . 53) (BOOLEAN 36 . 43) (BRACE_BLOCK 68 . 1045) (PAREN_BLOCK 38 . 67) (IDENTIFIER 29 . 38) (BOOLEAN 21 . 28) (BRACE_BLOCK 66 . 1043) (PAREN_BLOCK 36 . 65) (IDENTIFIER 27 . 36) (BOOLEAN 19 . 26) (BRACE_BLOCK 63 . 1040) (PAREN_BLOCK 33 . 62) (IDENTIFIER 24 . 33) (BOOLEAN 16 . 23))))
+  :file "!Users!Frank!Google Drive!org-notes!programmingNotes!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

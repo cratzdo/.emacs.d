@@ -9,12 +9,26 @@
   :init)
 (elpy-enable)
 
+;; use ipython
 (setq python-shell-interpreter "ipython3"
       python-shell-interpreter-args "--simple-prompt --pprint")
-
 (elpy-enable)
 (elpy-use-ipython)
-;(elpy-clean-modeline)
+; use IPython
+(setq-default py-shell-name "ipython")
+(setq-default py-which-bufname "IPython")
+
+;; use anaconda-mode for code navigation, documentation lookup
+(use-package anaconda-mode
+  :ensure t
+  :init)
+(add-hook 'python-mode-hook 'anaconda-mode)
+
+;; company-mode for anaconda
+(use-package company-anaconda
+  :ensure t
+  :init)
+(require 'company-anaconda)
 
 ;; install iedit
 (use-package iedit

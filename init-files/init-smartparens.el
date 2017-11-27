@@ -2,15 +2,20 @@
 ;; Smartparens mode
 ;;
 (use-package smartparens
+  :ensure t
   :config
   (progn
     (require 'smartparens-config)
     (add-hook 'emacs-lisp-mode-hook 'smartparens-mode)
-    (add-hook 'emacs-lisp-mode-hook 'show-smartparens-mode)))
+    (add-hook 'emacs-lisp-mode-hook 'show-smartparens-mode)
+    (add-hook 'c++-mode-hook 'smartparens-mode)
+    (add-hook 'latex-mode-hook 'smartparens-mode)
+    (add-hook 'ess-mode-hook 'smartparens-mode)
+    (add-hook 'python-mode-hook 'smartparens-mode)
+    (add-hook 'scala-mode-hook 'smartparens-mode)))
 
 
 ;; pair management
-
     (sp-local-pair 'minibuffer-inactive-mode "'" nil :actions nil)
     (sp-local-pair 'web-mode "<" nil :when '(my/sp-web-mode-is-code-context))
 
@@ -21,8 +26,15 @@
       (sp-local-tag "s" "```scheme" "```")
       (sp-local-tag "<"  "<_>" "</_>" :transform 'sp-match-sgml-tags))
 
-;;; tex-mode latex-mode
-    (sp-with-modes '(tex-mode plain-tex-mode latex-mode)
-		   (sp-local-tag "i" "1d5f8e69396c521f645375107197ea4dfbc7b792quot;<" "1d5f8e69396c521f645375107197ea4dfbc7b792quot;>"))
+;; wrap-region
+(use-package wrap-region
+  :ensure t
+  :init)
+
+(wrap-region-add-wrapper "$" "$" nil '(latex-mode org-mode))
+(wrap-region-add-wrapper "{-" "-}" "#")
+(wrap-region-add-wrapper "/" "/" nil 'ruby-mode)
+(wrap-region-add-wrapper "/* " " */" "#" '(java-mode javascript-mode css-mode c++-mode sas-mode))
+(wrap-region-add-wrapper "`" "`" nil '(markdown-mode ruby-mode))
 
 (provide 'init-smartparens)

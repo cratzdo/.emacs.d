@@ -1,58 +1,3 @@
-brew info mysql
-brew tap homebrew/services
-brew services start mysql
-mysql -uroot
-brew services restart mysql
-sudo rm /usr/local/mysql
-sudo rm -rf /usr/local/mysql-5.7.18-macos10.12-x86_64/
-sudo rm -rf /Library/StartupItems/MYSQLCOM
-sudo rm -rf /Library/PreferencePanes/MySQL.prefPane/
-emacs /etc/hostconfig
-vim /ect/hostconfig
-cd /usr/local/bin/mysql
-cd /usr/local/mysql/bin/
-./mysql -u root -p
-pip3 install tensorflow
-which python3
-which python
-brew info python3
-brew install python3
-pip install tensorflow
-brew install pip
-python get-pip.py
-which python
-python -V
-brew install python3
-which python3
-pip3 install tensorflow
-pip3 -V
-sudo pip3 install --upgrade TF_BINARY_URL 
-sudo pip3 install --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.1.0-py3-none-any.whl
-which tensorflow
-python3
-which tensorflow
-which numpy
-python3
-pip3 install matplotlib
-pip3 install numpy
-pip3 install scipy
-which pandas
-pandas -V
-pip3 install pandas
-which pandas
-pip3 install -U scikit-learn
-python3
-python3 *.py
-which python3
-which rope
-pip3 install rope
-pip3 install jedi
-pip3 install flake8
-pip install importmagic
-pip3 install importmagic
-pip3 install autopep8
-pip3 install yapf
-which python3
 jupyter notebook
 jupyter notebook
 which multimarkdown 
@@ -104,3 +49,80 @@ tar zxvf cudnn-9.0-osx-x64-v7.tar
 sudo cp ./cuda/include/cudnn.h /usr/local/cuda/include/
 sudo cp cuda/lib/libcudnn* /usr/local/cuda/lib/
 source ~/.bash_profile
+ls -l
+g++ -o list142.cpp 
+g++ -std=c++11 list142.cpp 
+ls -l
+./a.out
+g++ -std=c++11 list142.cpp 
+g++ -std=c++11 list142.cpp 
+./a.out
+g++ -o -std=c++11 list142.cpp 
+g++ -o -std=c++11 list142.cpp 
+g++ -o -std=c++11 list142.cpp 
+./a.out 
+g++ -std=c++11 list142.cpp 
+./a.out 
+g++ -std=c++11 list142.cpp 
+./a.out 
+g++ -std=c++11 list142.cpp 
+./a.out 
+g++ -std=c++11 list142.cpp 
+g++ -std=c++11 list142.cpp 
+./a.out 
+cd ~/Python/
+ls -l
+cd emacs-virtualenv/
+ls -l
+cd ..
+pip3 --upgrade install jedi
+pip3 install --upgrade jedi
+pip3 install --upgrade autopep8 yapf
+cd ~/.emacs.d/
+git status
+git add -A
+git commit -m "	fix python error"
+git push
+which ipython
+which ipython3
+ls -l
+g++ -std=c++11 print.cpp
+g++ -std=c++11 print.cpp
+./a.out 
+g++ -std=c++11 print.cpp
+g++ -std=c++11 print.cpp
+g++ -std=c++11 print.cpp
+g++ -std=c++11 print.cpp
+g++ -std=c++11 print.cpp
+g++ -std=c++11 print.cpp
+g++ -std=c++11 print.cpp
+g++ -std=c++11 print.cpp
+./a.out 
+g++ -std=c++11 print.cpp
+g++ -std=c++11 print.cpp
+ls -l
+g++ -std=c++11 factor.cpp
+g++ -std=c++11 factor.cpp
+g++ -std=c++11 factor.cpp
+g++ -std=c++11 factor.cpp
+g++ -std=c++11 factor.cpp
+g++ -std=c++11 factor.cpp
+g++ -std=c++11 factor.cpp
+g++ -std=c++11 factor.cpp
+g++ -std=c++11 factor.cpp
+g++ -std=c++11 factor.cpp
+./a.out
+./a.out
+g++ -std=c++11 factor.cpp
+./a.out
+./a.out
+g++ -std=c++11 factor.cpp
+./a.out
+g++ -std=c++11 factor.cpp
+g++ -std=c++11 factor.cpp
+g++ -std=c++11 factor.cpp
+g++ -std=c++11 factor.cpp
+./a.out 
+./a.out 
+g++ -std=c++11 factor.cpp
+./a.out 

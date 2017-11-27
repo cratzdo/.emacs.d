@@ -34,12 +34,12 @@
 
 ;; font for eshell
 (add-hook 'eshell-mode-hook (lambda ()
-                            (setq buffer-face-mode-face '(:family "Input Mono"))
+                            (setq buffer-face-mode-face '(:family "Consola Mono"))
                             (buffer-face-mode)))
 
 ;; font for help-mode
 (add-hook 'help-mode-hook (lambda ()
-                            (setq buffer-face-mode-face '(:family "Monoid"))
+                            (setq buffer-face-mode-face '(:family "Hasklig" :height 130))
                             (buffer-face-mode)))
 
 ;; font for python-mode
@@ -77,10 +77,10 @@
 
 ;; font for c++ and c
 (add-hook 'c++-mode-hook (lambda ()
-                            (setq buffer-face-mode-face '(:family "Hasklig" :height 140))
+                            (setq buffer-face-mode-face '(:family "Fira Code" :height 140))
                             (buffer-face-mode)))
 (add-hook 'c-mode-hook (lambda ()
-                            (setq buffer-face-mode-face '(:family "Hasklig" :height 140))
+                            (setq buffer-face-mode-face '(:family "Fira Code" :height 140))
                             (buffer-face-mode)))
 
 ;; use ligature in emacs

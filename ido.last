@@ -2,12 +2,15 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/Users/Frank/Google Drive/org-notes/" . "capsulNet/")
+ ("/Users/Frank/Python/ve/" . "bin/")
+ ("/Users/" . "Frank/")
  ("/Users/Frank/Scala/" . "programming-in-scala/")
  ("/Users/Frank/Dropbox/R/ltpp2017/" . "Rcode/")
  ("/Users/Frank/Dropbox/R/" . "ltpp2017/")
  ("/Users/Frank/Dropbox/" . "R/")
  ("/Users/Frank/.emacs.d/lisp/" . "emacs-for-python-master/")
- ("/Users/Frank/Python/" . "hand-on-ml/")
+ ("/Users/Frank/Python/" . "ve/")
  ("/Users/Frank/Google Drive/LTPP Paper/2017/manuscript/sps5/" . "IRI-plots/")
  ("/Users/Frank/Google Drive/LTPP Paper/2017/manuscript/" . "sps5/")
  ("/Users/Frank/Rcode/R/ltpp2017/" . "Rcode/")
@@ -15,9 +18,9 @@
  ("/Users/Frank/Rcode/" . "R/")
  ("/Users/Frank/Google Drive/LTPP Paper/2017/" . "manuscript/")
  ("/Users/Frank/Google Drive/LTPP Paper/" . "2017/")
- ("/Users/Frank/Google Drive/" . "LTPP Paper/")
+ ("/Users/Frank/Google Drive/" . "org-notes/")
  ("/Users/Frank/.emacs.d/" . "lisp/")
- ("/Users/Frank/" . "Scala/")
+ ("/Users/Frank/" . "Google Drive/")
  ("/Users/PG/Google Drive/Geosynthetics Project/" . "DCP Phase I/")
  ("/Users/PG/.emacs.d/elisp/" . "emacs-for-python-master/")
  ("/Users/PG/Google Drive/Course Materials/Spring 2017/STAT575/" . "Takehome Final/")
@@ -34,6 +37,10 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/Users/Frank/Google Drive/org-notes/capsulNet/"
+ "/Users/Frank/Downloads/"
+ "/Users/Frank/.emacs.d/"
+ "/Users/Frank/Python/stock_price_LSTM.py/"
  "/Users/Frank/Google Drive/org-notes/programmingNotes/cpp/"
  "/Users/Frank/Scala/programming-in-scala/"
  "/Users/Frank/.emacs.d/lisp/"
@@ -43,7 +50,6 @@
  "/Users/Frank/Python/"
  "/Users/Frank/Dropbox/R/ltpp2017/Rcode/"
  "/Users/Frank/Python/hand-on-ml/"
- "/Users/Frank/.emacs.d/"
  "/Users/Frank/magit-exe/"
  "/Users/Frank/.emacs.d/lisp/emacs-for-python-master/"
  "/Users/Frank/Rcode/R/ltpp2017/Rcode/"
@@ -77,7 +83,30 @@
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/Frank/Google Drive/org-notes/programmingNotes/cpp/" (23046 12014 28504 775000) "vegnews.cpp" "stringBad.cpp" "stringbad.h" "../" "./")
+ ("/Users/Frank/Google Drive/org-notes/capsulNet/" (23047 55767 280272 455000) ".texpadtmp/" "capsuleNet.pdf" "capsuleNet.tex~" "capsuleNet.org" "capsuleLayerKeras.py" "capsuleNet.py~" "capsuleLayerKeras.py~" "auto/" "capsuleNet.org~" "capsuleNet.py" "capsuleNet.tex" "../" "./")
+
+ ("/Users/Frank/Downloads/" (23047 55142 614755 10000) "Data/" "Doc/" "firefox-58.0a1.en-US.mac.dmg" "test.py~" "test.py" "PDF/" "Images/" "deicer/" ".DS_Store" "TEMP/" "deicer.zip" "../" "./")
+
+ ("/Users/Frank/Python/ve/bin/" (23047 54133 714877 814000) "activate.csh" "activate" "pip" "activate_this.py" "python-config" "python3.6" "wheel" "activate.fish" "easy_install-3.6" "pip3" "python" "easy_install" "python3" "pip3.6" "../" "./")
+
+ ("/Users/Frank/Python/ve/" (23047 54133 670315 109000) "pip-selfcheck.json" "lib/" "include/" "bin/" ".Python" "../" "./")
+
+ ("/Users/Frank/" (23047 54128 893832 908000) "Spark/" ".yjp/" ".viminfo" ".bash_history" ".latexmkrc~" ".gitconfig" ".cache/" ".python_history" "Downloads/" ".oh-my-zsh/" ".Xauthority" ".vim_runtime/" ".gem/" ".aspell.en.pws" ".bash_profile" ".hyper.js" ".mono/" ".git/" ".mysql_history" ".rstudio-desktop/" ".black-screen/" ".mailcap" "Documents/" ".npm/" ".scala_history" ".swo" ".keras/" ".jupyter/" ".aspell.en.prepl" ".ipynb_checkpoints/" ".Trash/" ".Rapp.history" "Dropbox/" ".zsh-update" ".ghc/" "Applications/" ".vimrc" "Movies/" "Applications (Parallels)/" ".vim_mru_files" ".ssh/" ".latexmkrc" ".RData" "Scala/" ".idlerc/" ".nimble-options.json" ".gitignore" ".hyper_plugins/" ".dropbox/" ".iterm2/" ".sbt/" "Google Drive/" ".cups/" ".gitignore_global" ".android/" ".emacs.d/" "NVIDIA_CUDA-9.0_Samples/" ".coursier/" ".IdentityService/" ".oracle_jre_usage/" "Books/" ".electron/" ".matplotlib/" "Library/" "Desktop/" ".iterm2_shell_integration.zsh" ".ipython/" ".p2/" ".zsh_history" ".zcompdump-Hongren’s MacBook Pro-5.3" "R/" ".rnd" ".nvm/" ".zprofile" ".atom/" ".MarkEditorData/" "Pictures/" "Creative Cloud Files/" ".local/" ".templateengine/" ".mime.types" ".textadept/" ".ServiceHub/" ".zshrc" ".scalaide/" ".subversion/" ".cabal/" "Snapshots/" "Dropbox (UTK)/" "Python/" ".sogouinput/" "Papers/" ".tooling/" ".hgignore_global" ".stCommitMsg" ".Rprofile" ".w3m/" ".electron-gyp/" "eclipse/" ".R/" ".DS_Store" ".vim/" ".virtualenvs/" ".node-gyp/" ".ivy2/" ".mysql-init" "Dropbox (Personal)/" "Music/" ".gnuplot_history" ".config/" ".eclipse/" ".Rhistory" ".upterm/" "../" "./")
+
+ ("/Users/Frank/Python/" (23047 54129 132437 800000) "hand-on-ml/" ".idea/" "deep-learning-with-python-notebooks-master/" "US-Stock-Market-Prediction-by-LSTM/" ".ipynb_checkpoints/" "tensorflow/" "pandas-exe.py" "ve/" "wine.py" "prophet_example-master/" "pytorch-tutorial/" ".DS_Store" "stock_price_LSTM.py" "matplotlib_style.ipynb" "test_tf.py" "../" "./")
+
+ ("/Users/Frank/.emacs.d/" (23047 52318 322547 741000) "eproject.lst" "Moe-edit-theme.el~" ".git/" "recentf" "request/" "site-lisp/" "network-security.data" "LanguageTool-3.5/" "init.el" "emacs-custom.el" ".python-environments/" "auto-save-list/" "SessionDesktop.el" "Moe-edit-theme.el" "emacs-custom.el~" "custom.el" "recentf~" "projectile-bookmarks.eld" "ido.last~" "abbrev_defs" "srecode-map.el" "eshell/" ".DS_Store" "init.el~" "ido.last" "elpa-25.3/" "init-files/" "snippets/" "ac-comphist.dat" "../" "./")
+
+ ("/Users/" (23019 50985 259913 298000) "Guest/" "Frank/" "Shared/" ".localized" "../" "./")
+
+ ("/Users/Frank/Google Drive/" (23046 31437 581559 740000) "Course Materials/" "bibFiles/" "TRC/" "Books/" "Geosynthetics Project/" ".tmp.drivedownload/" "Files Backup/" "LTPP Paper/" "org-notes/" "r_color/" "References/" "Design Criteria Paper/" "Icon
+" ".DS_Store" "Misc/" "../" "./")
+
+ ("/Users/Frank/Google Drive/org-notes/" (23043 32029 725913 931000) "programmingNotes/" "paper_review/" ".git/" "codeIntereview/" "capsulNet/" "orgFiles/" ".texpadtmp/" "fatigueCracking/" "stat575Notes/" "neuralNetwrok/" "xiaoLingAbstract/" "stateSpace/" "../" "./")
+
+ ("/Users/Frank/Google Drive/org-notes/programmingNotes/" (23047 45311 458658 653000) "p_value.png" "cpp/" "programmingNotes.tex~" "programmingNotes.tex" "auto/" "programmingNotes.pdf" "programmingNotes.org~" "programmingNotes.org" "../" "./")
+
+ ("/Users/Frank/Google Drive/org-notes/programmingNotes/cpp/" (23047 46791 538986 521000) "list142.cpp" "strngbad.h" "-std=c++11" "vegnews.cpp" "a.out" "stringBad.cpp~" "list142.cpp~" "stringBad.cpp" "strngbad.h~" "stringbad.h~" "../" "./")
 
  ("/Users/Frank/Downloads/r-pkgs/book/" (23038 28319 205558 719000) "package.aux" "r-packages.out" "git.aux" "check.aux" "r-packages.toc" "r-packages.idx" "r-packages.tex" "r-packages.ind" "tests.aux" "r-packages.pdf" "r-packages.ilg" "intro.aux" ".gitignore" ".texpadtmp/" "src.aux" "r-packages.fdb_latexmk" "description.aux" "build-book.r" "r-packages.fls" "namespace.aux" "r-packages.aux" "r-packages.log" "data.aux" "vignettes.aux" "man.aux" "auto/" "inst.aux" "r.aux" "misc.aux" "tex/" "release.aux" "../" "./")
 
@@ -85,20 +114,13 @@
 
  ("/Users/Frank/Scala/" (23029 16971 803643 665000) ".idea/" ".project" "programming-in-scala/" ".DS_Store" ".#forags.scala" "../" "./")
 
- ("/Users/Frank/" (23029 16946 767707 203000) "Spark/" ".yjp/" ".viminfo" ".bash_history" ".latexmkrc~" ".gitconfig" ".cache/" ".python_history" "Downloads/" ".oh-my-zsh/" ".Xauthority" ".vim_runtime/" ".gem/" ".aspell.en.pws" ".bash_profile" ".hyper.js" ".mono/" ".git/" ".mysql_history" ".rstudio-desktop/" ".black-screen/" ".mailcap" "Documents/" ".npm/" ".scala_history" ".swo" ".keras/" ".jupyter/" ".aspell.en.prepl" ".ipynb_checkpoints/" ".Trash/" ".Rapp.history" "Dropbox/" ".zsh-update" ".ghc/" "Applications/" ".vimrc" "Movies/" "Applications (Parallels)/" ".vim_mru_files" ".ssh/" ".latexmkrc" ".RData" "Scala/" ".idlerc/" ".nimble-options.json" ".gitignore" ".hyper_plugins/" ".dropbox/" ".iterm2/" ".sbt/" "Google Drive/" ".cups/" ".gitignore_global" ".android/" ".emacs.d/" ".coursier/" ".IdentityService/" ".oracle_jre_usage/" "Books/" ".electron/" ".matplotlib/" "Library/" "Desktop/" ".iterm2_shell_integration.zsh" ".ipython/" ".p2/" ".zsh_history" ".zcompdump-Hongren’s MacBook Pro-5.3" "R/" ".rnd" ".nvm/" ".zprofile" ".atom/" ".MarkEditorData/" "Pictures/" ".local/" ".templateengine/" ".mime.types" ".textadept/" ".ServiceHub/" ".zshrc" ".scalaide/" ".subversion/" ".cabal/" "Snapshots/" "Dropbox (UTK)/" "Python/" "derby.log" ".sogouinput/" "Papers/" ".hgignore_global" ".stCommitMsg" ".Rprofile" ".w3m/" ".CFUserTextEncoding" ".bash_profile.swp" ".electron-gyp/" ".R/" ".DS_Store" ".vim/" ".node-gyp/" ".ivy2/" ".mysql-init" "Dropbox (Personal)/" "Music/" ".gnuplot_history" ".config/" ".eclipse/" ".Rhistory" ".upterm/" "../" "./")
-
  ("/Users/Frank/scala/programming-in-scala/src/main/scala/" (23028 64227 787164 774000) "list9_1.scala" "list7_1.scala~" ".#list9_1.scala" "list9_1.scala~" "list7_1.scala" "../" "./")
 
  ("/Users/Frank/linkage/" (22992 25718 261228 910000) "data/" "metastore_db/" "frequencies.csv" "sparkR.R~" "block_9.csv" "block_8.csv" "block_8.zip" "block_9.zip" "block_7.zip" "block_1.csv" "block_10.zip" "block_6.zip" "block_4.zip" "block_3.csv" "block_2.csv" "block_5.zip" "block_1.zip" "block_10.csv" "block_6.csv" "block_7.csv" "block_2.zip" "block_5.csv" "block_4.csv" "block_3.zip" "derby.log" "sparkR.R" ".DS_Store" "documentation" "donation.zip" "../" "./")
 
  ("/Users/Frank/papers/trb2017rap/" (22902 43380 0 0) "trbunofficial.cls" "trb2017rap.bib" "trb2017_rap.tex~" "trb2017_rap.tex" "trb2017_rap.synctex.gz" "trb2017_rap.synctex (1).gz" "trb2017_rap.pdf" "trb2017_rap.out" "trb2017_rap.log" "trb2017_rap.fls" "trb2017_rap.fdb_latexmk" "trb2017_rap.blg" "trb2017_rap.bbl" "trb2017_rap.aux" "trb.bst" "supp.csv" "SPS5_Coordinate.csv" "sps5_coord.R~" "sps5_coord.R" "Rplot001.pdf" "README.md" "mytrb.bst" "missfont.log" "long_wp_mean_box.pdf" "LICENSE" "IRI_box.pdf" "iri.R" "gator_mean.tex" "gator_mean.pdf" "font_ggplot.pdf" "figure/" "dis5.R~" "dis5.R" "data/" "count.txt" "auto/" ".texpadtmp/" ".Rhistory" ".git/" ".DS_Store" "#trb2017_rap (1).tex#" "../" "./")
 
- ("/Users/Frank/.emacs.d/" (22897 10593 342490 174000) "eproject.lst" ".git/" "recentf" "site-lisp/" "init.el" "emacs-custom.el" "auto-save-list/" "SessionDesktop.el" "emacs-custom.el~" "recentf~" "projectile-bookmarks.eld" "ido.last~" "abbrev_defs" "srecode-map.el" "eshell/" ".DS_Store" "lisp/" "init.el~" "ido.last" "snippets/" "elpa-25.2/" "ac-comphist.dat" "../" "./")
-
  ("/Users/Frank/Google Drive/LTPP Paper/2017/trb2017rap/" (22897 9531 438822 52000) "trb2017_rap.pdf" "trb2017_rap.synctex.gz" "sps5_coord.R" "trb2017_rap[Conflict].fdb_latexmk" "count.txt" "#trb2017_rap.tex#" "trb2017_rap[Conflict].pdf" "#trb2017_rap (1).tex#" "data/" ".git/" "supp.csv" "trb2017_rap.bbl" "trb2017rap.bib" "trb2017_rap.out" "trb2017_rap.tex~" "trb2017_rap.synctex.gz(busy)" ".texpadtmp/" "trb2017_rap.tex" "README.md" "mytrb.bst" "dis5.R~" "trb2017_rap.fdb_latexmk" "figure/" "dis5.R" "auto/" "LICENSE" "trb2017_rap.blg" "missfont.log" "trb2017_rap.fls" "trb2017_rap.synctex (1).gz" ".DS_Store" "sps5_coord.R~" "trb2017_rap.log" "trb2017_rap.aux" "SPS5_Coordinate.csv" "trbunofficial.cls" ".Rhistory" "../" "./")
-
- ("/Users/Frank/Google Drive/" (22894 7014 525915 848000) "bibFiles/" "TRC/" "Geosynthetics Project/" ".tmp.drivedownload/" "Files Backup/" "LTPP Paper/" "color/" "Alfred_C.dmg" "References/" "Design Criteria Paper/" "Icon
-" ".DS_Store" "Misc/" "../" "./")
 
  ("/Users/Frank/Google Drive/LTPP Paper/2017/" (22894 60987 637275 988000) "Selecting Preventive Maintenance Treatments in Texas Using the Technique for Order Preference by Similarity to the Ideal Solution for Specific Pavement Study–3 Sites .pdf" "Results of Long-Term Pavement Performance SPS-3 Analysis- Preventive Maintenance of Flexible Pavements .pdf" "LTPP Data Analysis_Effectiveness of Maintenance and Rehabilitation Options.pdf" "A Pavement Condition-Rating Model Using Backpropagation Neural Networks.pdf" "Calibration and Application of Treatment Performance Models in a Pavement Management System in Tennessee.pdf" "Rehabilitation of Asphalt Concrete Pavements_Initial Evaluation of the SPS-5 Experiment-Final Report.pdf" "2009_hdm4_volume_1.pdf" "LTPP_DATA/" "Temperature Correction of Multiload-Level Falling Weight Deflectometer Deflections.pdf" "LTPP Data Analysis_Influnce of Design and Construction Features on the Response and Performance of New Flexible and Rigid Pavements.pdf" "trb2017bib/" "Subgrade_soil_code.pdf" "manuscript 2.zip" "SHRP-P-395.pdf" "LTPP Specific Pavement Studies (SPS) Materials Action Plan Final Report.pdf" "sps5_site_map_crop.pdf" "FWD TEMPERATURE CORRECTION/" "Statistical Analysis of LTPP SPS-3 Experiment on Preventive Maintenance of Flexible Pavements .pdf" "trb2017rap/" "2016_2017_asce_ltpp_contest_guidelines.pdf" ".DS_Store" "fwdman1.pdf" "Evaluation of Effectiveness and Cost-Effectiveness of Asphalt Pavement Rehabilitations Utilizing LTPP Data.pdf" "manuscript/" "The Highway Development and Management System in Washington State Calibration and Application for the Department of Transportation Road Network.pdf" "../" "./")
 
@@ -112,16 +134,12 @@
 
  ("/Users/Frank/Dropbox/R/ltpp2017/Rcode/" (22880 23771 608577 473000) "sps5-iri.R" "approx.R" "ltpp2017.R" "dis-all.R" "most-iri.R" "defl-mod-label.R" "iri-all.R" "lead-lag-climate.R" "sps5_stack.R~" "sps3-iri.R" "sps3-dis.R~" ".ipynb_checkpoints/" "sps3-defl-mod.R~" "sigmoid_fit.R" "sigmoid.R" "ltppData.py" "sps3-defl-mod.R" "sps5-rutting.R" "mod_defl_temp_correction.R" "mod-temperature.R" "defl-sps5.R" "thick-compare.R~" "rutting-temp.R" "box_function.R" "rutting-all.R" "sps3-dis.R" "sps5_stacked.ipynb" "most-rutting.R" "sps5-dis.R" "scratch.R" "ltpp2017-dis.R" "sps5_stack.R" "thick-compare.R" "fwd.R" "defl-all.R" ".Rhistory" "../" "./")
 
- ("/Users/Frank/Python/" (22882 20336 802248 603000) "hand-on-ml/" ".idea/" "ggplot2_examples.ipynb" "pandas-exe.py~" "py3virtualenv/" ".ipynb_checkpoints/" "pandas-exe.py" "nn_wine.ipynb" "emacs-virtualenv/" "ggpy/" "wine.py" "wine.py~" ".DS_Store" "KerasHelloWorld.ipynb" "missing_val_interpolate_groupby.ipynb" "../" "./")
-
  ("/Users/Frank/Dropbox/R/ltpp2017/" (22830 11747 0 0) "Rcode/" "../" "./")
 
  ("/Users/Frank/Dropbox/R/" (22876 11864 93375 581000) ".git/" ".Rapp.history" ".RData" "ltpp2017/" ".DS_Store" ".Rhistory" "../" "./")
 
  ("/Users/Frank/Dropbox/" (22877 4977 344556 0) "Apps/" "Library.papers3/" ".dropbox.cache/" "RMPD Proofs/" "PDFs/" ".Rapp.history" "dunnett_results.txt" "Day One/" "Work/" "VMware+Fusion_8.5.8-5824040_xclient.info.dmg" "Ulysses Files/" ".dropbox" ".Trash-1000/" "R/" ".Papers3.syncsettings" "~$ecutive Board.docx" "org-notes/" "str_to_date.sql" "Papers/" "Icon
 " ".DS_Store" "Estar_Gstar.xlsx" ".Rhistory" "../" "./")
-
- ("/Users/" (22616 531 0 0) "Shared/" "Guest/" "Frank/" ".localized" "../" "./")
 
  ("/Users/Frank/Google Drive/LTPP Paper/2017/manuscript/" (22861 40671 0 0) "trans-l-overall.pdf" "trans-hist.pdf" "thick-compare/" "sps5-iri-surf-cond.pdf" "sps5-IRI-count.pdf" "sps5-IRI-count-hist.pdf" "sps5-dis-count.pdf" "sps5-dis-count-hist.pdf" "sps5/" "sps3-IRI-count.pdf" "sps3-IRI-count-hist.pdf" "sps3/" "rutting-temperature.pdf" "rutting-bar-all.pdf" "rutting-bar-all-2.pdf" "rutting-all-hist2.pdf" "rutting-all-hist.pdf" "rut-all-loc.pdf" "recovered-plots/" "plainat.bib" "most-gator-all.pdf" "most/" "mod/" "ltpp2017.tex~" "ltpp2017.synctex.gz" "ltpp2017.synctex (1).gz" "ltpp2017.pdf" "ltpp2017.log" "ltpp2017.fls" "ltpp2017.fdb_latexmk" "ltpp2017.blg" "ltpp2017.bib" "ltpp2017.bbl" "ltpp2017.aux" "ltpp2017-3.tex" "ltpp2017-2.tex" "ltpp2017-2.pdf" "ltpp2017 copy 2.tex" "ltpp2017 copy 2.pdf" "ltpp2017 copy 2.log" "ltpp2017 copy 2.fls" "ltpp2017 copy 2.fdb_latexmk" "ltpp2017 copy 2.aux" "ltpp2017 (1).pdf" "long-wp-hist.pdf" "long-nwp-hist.pdf" "iri-most-time.pdf" "iri-count-bar-all.pdf" "iri-all-hist2.pdf" "gator-hist.pdf" "dis-all-bar.pdf" "auto/" ".texpadtmp/" ".git/" ".DS_Store" ".aux" "../" "./")
 

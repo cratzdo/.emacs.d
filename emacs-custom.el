@@ -24,7 +24,7 @@
  '(ns-tool-bar-size-mode nil t)
  '(package-selected-packages
    (quote
-    (company-c-headers sr-speedbar ggtags helm-gtags hlem-gtags helm-projectile helm-bibtex helm-bibtexkey helm-bind-key helm-company helm-flycheck helm-flyspell setup-helm paredit paredit-menu beacon dirtree color-theme-solarized color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized ensime powerline moe-theme aggressive-fill-paragraph prettify-symbols-mode expand-region jedi epc projectile auto-org-md markdown-mode eink-theme eink browse-kill-ring pip-requirements synonyms rtags cmake-ide magit iedit ivy ivy-bibtex ivy-gitlab elpy flyspell-correct-helm writeroom-mode use-package smartscan smartparens smart-cursor-color pretty-mode peep-dired osx-dictionary org-bullets matlab-mode langtool helm google-this ess company-auctex auto-save-buffers-enhanced auto-compile)))
+    (wrap-region company-anaconda anaconda-mode company-c-headers sr-speedbar ggtags helm-gtags hlem-gtags helm-projectile helm-bibtex helm-bibtexkey helm-bind-key helm-company helm-flycheck helm-flyspell setup-helm paredit paredit-menu beacon dirtree color-theme-solarized color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized ensime powerline moe-theme aggressive-fill-paragraph prettify-symbols-mode expand-region jedi epc projectile auto-org-md markdown-mode eink-theme eink browse-kill-ring pip-requirements synonyms rtags cmake-ide magit iedit ivy ivy-bibtex ivy-gitlab elpy flyspell-correct-helm writeroom-mode use-package smartscan smartparens smart-cursor-color pretty-mode peep-dired osx-dictionary org-bullets matlab-mode langtool helm google-this ess company-auctex auto-save-buffers-enhanced auto-compile)))
  '(python-shell-interpreter "ipython3")
  '(python-shell-virtualenv-root "'~/Python/py3virtualenv/'")
  '(sentence-end-double-space nil)
@@ -42,11 +42,11 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "PragmataPro Mono" :foundry "nil" :slant normal :weight normal :height 130 :width normal))))
+ '(default ((t (:family "monofur for Powerline" :foundry "nil" :slant normal :weight normal :height 141 :width normal))))
  '(font-latex-sectioning-2-face ((t (:foreground "sienna" :weight bold :height 1.2 :family "Arima Madurai"))))
  '(font-latex-sectioning-3-face ((t (:inherit font-latex-sectioning-4-face :height 1.05))))
  '(font-latex-sectioning-4-face ((t (:inherit font-latex-sectioning-5-face :height 1.05))))
  '(fringe ((t (:background "nil" :foreground "#a8a8a8"))))
  '(linum ((t (:inherit nil :background "#4e4e4e" :foreground "#b2b2b2" :height 0.85))))
  '(minibuffer-prompt ((t (:background "#a1db00" :foreground "#4e4e4e" :height 120 :family "Inconsolata"))))
- '(mode-line ((t (:background "#5faf87" :foreground "#ffffff" :box nil :weight normal :family "Hasklig" :height 115)))))
+ '(mode-line ((t (:background "#5faf87" :foreground "#ffffff" :box nil :weight normal :height 100 :family "Consola Mono")))))
