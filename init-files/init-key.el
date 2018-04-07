@@ -75,20 +75,17 @@
 ;; call last macro
 (global-set-key [f5] 'call-last-kbd-macro)
 
-;; paredits
-(use-package paredit
-  :ensure t
-  :init)
 
-(global-set-key (kbd "C-M-u") #'paredit-backward-up)
-(global-set-key (kbd "C-M-n") #'paredit-forward-up)
-;; This one's surpisingly useful for writing prose.
-(global-set-key "\M-S"
-  #'paredit-splice-sexp-killing-backward)
-(global-set-key "\M-R" #'paredit-raise-sexp)
-(global-set-key "\M-(" #'paredit-wrap-round)
-(global-set-key "\M-[" #'paredit-wrap-square)
-(global-set-key "\M-{" #'paredit-wrap-curly)
+;; restart emacs
+(use-package restart-emacs
+  :ensure t
+  :bind* (("C-x M-c" . restart-emacs)))
+
+;;
+;; answer yes or no
+;;
+(fset 'yes-or-no-p 'y-or-n-p)
+
 
 (provide 'init-key)
 

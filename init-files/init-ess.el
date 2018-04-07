@@ -34,6 +34,16 @@
 (define-key ess-mode-map (kbd "C-:") 'uncomment-region)
 ))
 
+;; aggressive-indent mode
+(use-package aggressive-indent
+  :ensure t
+  :init )
+
+;; enable in emacs-lisp-mode
+(add-hook 'emacs-lisp-mode-hook #'aggressive-indent-mode)
+(add-hook 'ess-mode-hook #'aggressive-indent-mode)
+	  
+
 ;; default sweave processor
 (custom-set-variables
  '(ess-swv-prossor (quote knitr)))

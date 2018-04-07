@@ -14,6 +14,9 @@
 (defconst *is-a-mac* (eq system-type 'darwin))
 
 
+(setq gc-cons-threshold 402653184
+      gc-cons-percentage 0.6)
+
 ;;----------------------------------------------------------------------------
 ;; Bootstrap config
 ;;----------------------------------------------------------------------------
@@ -30,9 +33,9 @@
 (require 'init-elpa)      ;; Machinery for installing required packages
 (require 'init-exec-path) ;; Set up $PATH
 
-;;
+;;-------------------------------------------------
 ;; use-package
-;;
+;;-------------------------------------------------
 
 (unless (package-installed-p 'use-package)
   (package-install 'use-package))
@@ -54,7 +57,10 @@
 (require 'init-key)
 
 ;; ido
-(require 'init-ido)
+;;(require 'init-ido)
+
+;; ivy
+;;(require 'init-ivy)
 
 ;; themes
 (require 'init-theme)
@@ -66,19 +72,19 @@
 (require 'init-tex)
 
 ;; matlab-mode
-(require 'init-matlab)
+;;(require 'init-matlab)
 
 ;; auto-save buffer
 (require 'init-autosave)
 
 ;; customize interface looking
-(require 'init-interface)
+;;(require 'init-frame-gui)
 
 ;; mode-line
 (require 'init-modeline)
 
 ;; helm
-(require 'init-helm)
+(require 'init-helm) 
 
 ;;org-mode
 (require 'init-org)
@@ -93,16 +99,19 @@
 (require 'init-ess)
 
 ;; langtools for grammar checking
-(require 'init-langtool)
+;;(require 'init-langtool) 
 
 ;; smart-scan
-(require 'init-smartscan)
+;;(require 'init-smartscan)
 
 ;; dired
 (require 'init-dired)
 
 ;; smart-parens
 (require 'init-smartparens)
+
+;; electric parens
+;;(require 'init-parens)
 
 ;;--------------------------------
 ;; show recent files with <f7>
@@ -112,32 +121,18 @@
 ;; auto-fill mode
 (require 'init-auto-fill)
 
+;; different fonts for different modes
+(require 'init-font)
+
 ;; pretty-mode
 ;; font ligatures
 (require 'init-pretty)
-
-;;
-;; answer yes or no
-;;
-(fset 'yes-or-no-p 'y-or-n-p)
-
-;;
-;; electric parens
-(require 'init-parens)
-
-;; different fonts for different modes
-(require 'init-font)
 
 ;; sql mode
 (require 'init-sql)
 
 ;; key-bindings
 (require 'init-key)
-
-;;--------------------------------------------------------
-;; automatically copy text selected with the mouse
-;;---------------------------------------------------------
-(setq mouse-drag-copy-region t)
 
 ;;---------------------
 ;; spelling
@@ -146,7 +141,7 @@
 (require 'init-spelling)
 
 ;; UI tweaking
-(require 'init-ui)
+(require 'init-gui)
 
 ;;---------------------------------
 ;; Python
@@ -160,7 +155,7 @@
 (require 'init-cpp)
 
 ;; projectile
-(require 'init-projectile)
+;;(require 'init-projectile)
 
 ;; auto-complete
 (require 'init-autocomplete)
@@ -168,7 +163,7 @@
 ;; fix rubbish codes in shell-mode
 (require 'init-shell)
 
-;; expand region with "C+="
+;; expand region with "C-="
 (require 'init-expandregion)
 
 ;; beautify eshell
@@ -178,7 +173,30 @@
 (require 'init-lisp)
 
 ;; scala & ensime
-(require 'init-scala)
+;;(require 'init-scala) 
 
 ;; c++
 (require 'init-c++)
+
+;; email
+(require 'init-email)
+
+;; pdf
+;; (require 'init-pdf)
+
+;; find file at project
+(require 'init-findfile)
+
+;; smex to handle M-x
+(require 'init-smex)
+
+;; fast move windows
+;;(require 'init-windows)
+
+;; Then reset it as late as possible; these are the reasonable defaults I use.
+(add-hook 'emacs-startup-hook
+	  (setq gc-cons-threshold 16777216
+		gc-cons-percentage 0.1))
+
+;;----------------------------------
+(provide 'init)

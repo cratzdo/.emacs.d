@@ -1,0 +1,59 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("tensorflow/cc/ops/cc_op_gen.h" include nil nil [659 699])
+            ("tensorflow/core/framework/op.h" include nil nil [700 741])
+            ("tensorflow/core/framework/op_def.pb.h" include nil nil [742 790])
+            ("tensorflow/core/lib/core/stringpiece.h" include nil nil [791 840])
+            ("tensorflow/core/platform/init_main.h" include nil nil [841 888])
+            ("tensorflow/core/platform/types.h" include nil nil [889 932])
+            ("tensorflow" type
+               (:members 
+                  ( ("unnamed" type
+                       (:members 
+                          ( ("PrintAllCCOps" function
+                               (:arguments 
+                                  ( ("dot_h" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [989 1014])
+                                    ("dot_cc" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1015 1041])
+                                    ("include_internal" variable (:type "bool") (reparse-symbol arg-sub-list) [1061 1083]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [970 1191]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [957 1194]))                  
+                :type "namespace")
+                nil [934 1210])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1246 1255])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1256 1269]))                  
+                :type "int")
+                nil [1237 1671]))          
+      :file "cc_op_gen_main.cc"
+      :pointmax 1672
+      :fsize 1671
+      :lastmodtime '(23035 32438 784269 306000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "cc_op_gen.h"
+      :fsize 1047
+      :lastmodtime '(23035 32438 784146 320000)))
+  :file "!Users!Frank!Python!tensorflow!tensorflow!cc!ops!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

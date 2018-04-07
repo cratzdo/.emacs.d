@@ -1,128 +1,128 @@
-jupyter notebook
-jupyter notebook
-which multimarkdown 
-cd ~/.emacs.d/
-git push
-git status
-which python3
-ipython3
-which ipython3
-pip3 install epc
-pip install epc
-which virtualenv
-brew install virtualenv
-brew install pyenv-virtualenv
-python3 jediepcserver.py --help
-cd ..
-git status
-python3 -m pip install --user yapf
-pip3 install yapf
-pip install yapf
-pip3 install virtualenv
-tclsh
-ls
-pip3 install nnabla
-cd ~/.emacs.d/
-git status
-git add -A
-git log
-pip3 update scikit-learn
-pip3 upgrade scikit-learn
-sudo pip3 scikit-learn --upgrade
-pip3 install scikit-learn --upgrade
-bash
-bash
-bash
-bash
-ls
-alias ff 'find-file $1'
-ff
-alias d 'dired $1'
-d
-cd ~
-ls
-ls -a
-scala
+g++ -std=c++11 factor.cpp
+g++ -std=c++11 factor.cpp
+g++ -std=c++11 factor.cpp
+g++ -std=c++11 factor.cpp
+g++ -std=c++11 factor.cpp
+g++ -std=c++11 factor.cpp
+g++ -std=c++11 factor.cpp
+g++ -std=c++11 factor.cpp
+g++ -std=c++11 factor.cpp
+./a.out
+./a.out
+g++ -std=c++11 factor.cpp
+./a.out
+./a.out
+g++ -std=c++11 factor.cpp
+./a.out
+g++ -std=c++11 factor.cpp
+g++ -std=c++11 factor.cpp
+g++ -std=c++11 factor.cpp
+g++ -std=c++11 factor.cpp
+./a.out 
+./a.out 
+g++ -std=c++11 factor.cpp
+./a.out 
+g++ -std=c++11 local_static.cpp 
+./a.out 
+g++ -std=c++11 local_static.cpp 
+./a.out 
+g++ -std=c++11 local_static.cpp 
+./a.out 
+g++ version
+g++ --version
+g++ -std=c++11 local_static.cpp -o local_static
+./local_static.out
+ls -l
+./local_static 
+CC -c local_static.cpp 
+ls -l
+CC local_static.o -o local_static
+g++ -std=c++11 test.cc 
+./a.out 
+ls -l
+g++ -std=c++11 greeting.cc -o greeting.o
+g++ -std=c++11 greeting.cc 
+g++ -std=c++11 greeting.cc 
+g++ -std=c++11 greeting.cc -o
+g++ -std=c++11 greeting.cc -o greeting.out
+./greeting.out 
+heelo
+g++ -std=c++11 greeting.cc -o greeting.out
+g++ -std=c++11 greeting.cc -o greeting.out
+./greeting.out 
+hello
+g++ -std=c++11 greeting.cc -o greeting.out
+./greeting.out 
+./greeting.out 
+g++ -std=c++11 greeting.cc -o greeting.out
+g++ -std=c++11 greeting.cc -o greeting.out
+./greeting.out 
+g++ -std=c++11 greeting.cc -o greeting.out
+./greeting.out 
+g++ -std=c++11 greeting.cc -o greeting.out
+g++ -std=c++11 greeting.cc -o greeting.out
+./greeting.out 
+g++ -std=c++11 greeting.cc -o greeting.out
+./greeting.out 
+g++ -std=c++11 greeting.cc -o greeting.out
+./greeting.out 
+ls -la
 cd ~/Downloads/
-ls
-tar zxvf cudnn-9.0-osx-x64-v7.tar 
-sudo cp ./cuda/include/cudnn.h /usr/local/cuda/include/
-sudo cp cuda/lib/libcudnn* /usr/local/cuda/lib/
-source ~/.bash_profile
 ls -l
-g++ -o list142.cpp 
-g++ -std=c++11 list142.cpp 
+ls -la
+g++ -std=c++ main.cc -o main
+g++ -std=c++ main_arg.cc -o main
+g++ -std=c++11 main_arg.cc -o main
+./main geek for geek
 ls -l
-./a.out
-g++ -std=c++11 list142.cpp 
-g++ -std=c++11 list142.cpp 
-./a.out
-g++ -o -std=c++11 list142.cpp 
-g++ -o -std=c++11 list142.cpp 
-g++ -o -std=c++11 list142.cpp 
-./a.out 
-g++ -std=c++11 list142.cpp 
-./a.out 
-g++ -std=c++11 list142.cpp 
-./a.out 
-g++ -std=c++11 list142.cpp 
-./a.out 
-g++ -std=c++11 list142.cpp 
-g++ -std=c++11 list142.cpp 
-./a.out 
+g++ -std=c++11 emplace.cc -o emplace
+g++ -std=c++11 emplace.cc -o emplace
+./emplace 
+ls -l
+g++ -std=c++11 try_block.cc -o try_block
+./try_block 
+python3 -m pip install --upgrade yapf jedi
 cd ~/Python/
 ls -l
-cd emacs-virtualenv/
+git clone https://github.com/naturomics/CapsNet-Tensorflow.git
+git clone https://github.com/cedrickchee/capsule-net-pytorch.git
+git clone https://github.com/XifengGuo/CapsNet-Pytorch.git
+cd ~/Downloads/xgboost/
 ls -l
+cp make/config.mk .
+make -j4
+brew tap homebrew/versions; brew install gcc --without-multilib
+cd python-package; python setup.py install
+cat ~/.ssh/id_rsa.pub
+cd ~/.shh/
+cd ~/.ssh/
+ls -l
+source config
 cd ..
-pip3 --upgrade install jedi
-pip3 install --upgrade jedi
-pip3 install --upgrade autopep8 yapf
-cd ~/.emacs.d/
+cd ..
+cd ~
+cd /usr/local/texlive/texmf-local/bibtex/bib/
+sudo ln -s ~/Dropbox\ \(Personal\)/hg.bib hg.bib
+sudo texhash
+cd ~
+cd ~/Google\ Drive/
+cd LTPP\ Paper/2017/crack_nn/
+ls -l
+cd crack_nn_python/
+jupyter notebook
+brew cask search emacs-mac
+brew cask -S emacs-mac
+brew cask info emacs-mac
+brew cask install emacs-mac-official-icon
+zsh
+cd ~/Dropbox\ \(Personal\)/github_show
+ls -l
+cd iri_dis
+ls -l
+cd ~/Dropbox\ \(Personal\)/github_show/iri_dis/python_src/
+jupyter notebook 
 git status
-git add -A
-git commit -m "	fix python error"
+git remote -v
 git push
-which ipython
-which ipython3
-ls -l
-g++ -std=c++11 print.cpp
-g++ -std=c++11 print.cpp
-./a.out 
-g++ -std=c++11 print.cpp
-g++ -std=c++11 print.cpp
-g++ -std=c++11 print.cpp
-g++ -std=c++11 print.cpp
-g++ -std=c++11 print.cpp
-g++ -std=c++11 print.cpp
-g++ -std=c++11 print.cpp
-g++ -std=c++11 print.cpp
-./a.out 
-g++ -std=c++11 print.cpp
-g++ -std=c++11 print.cpp
-ls -l
-g++ -std=c++11 factor.cpp
-g++ -std=c++11 factor.cpp
-g++ -std=c++11 factor.cpp
-g++ -std=c++11 factor.cpp
-g++ -std=c++11 factor.cpp
-g++ -std=c++11 factor.cpp
-g++ -std=c++11 factor.cpp
-g++ -std=c++11 factor.cpp
-g++ -std=c++11 factor.cpp
-g++ -std=c++11 factor.cpp
-./a.out
-./a.out
-g++ -std=c++11 factor.cpp
-./a.out
-./a.out
-g++ -std=c++11 factor.cpp
-./a.out
-g++ -std=c++11 factor.cpp
-g++ -std=c++11 factor.cpp
-g++ -std=c++11 factor.cpp
-g++ -std=c++11 factor.cpp
-./a.out 
-./a.out 
-g++ -std=c++11 factor.cpp
-./a.out 
+ssh-add ~/.ssh/github_rsa
+git push

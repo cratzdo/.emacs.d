@@ -6,13 +6,20 @@
   :config
   (progn
     (require 'smartparens-config)
-    (add-hook 'emacs-lisp-mode-hook 'smartparens-mode)
+    (add-hook 'emacs-lisp-mode-hook #'smartparens-mode)
     (add-hook 'emacs-lisp-mode-hook 'show-smartparens-mode)
-    (add-hook 'c++-mode-hook 'smartparens-mode)
-    (add-hook 'latex-mode-hook 'smartparens-mode)
-    (add-hook 'ess-mode-hook 'smartparens-mode)
-    (add-hook 'python-mode-hook 'smartparens-mode)
-    (add-hook 'scala-mode-hook 'smartparens-mode)))
+    (add-hook 'c++-mode-hook #'smartparens-mode)
+    (add-hook 'latex-mode-hook #'smartparens-mode)
+    (add-hook 'ess-mode-hook #'smartparens-mode)
+    (add-hook 'python-mode-hook #'smartparens-mode)
+    (add-hook 'scala-mode-hook #'smartparens-mode)
+    (add-hook 'text-mode-hook #'smartparens-mode)))
+
+;; add more pairs
+(sp-local-pair 'c++-mode "<" ">" :wrap "C-<")
+(sp-local-pair 'c-mode "<" ">" :wrap "C-<")
+(sp-local-pair 'LaTeX-mode "$" "$" :wrap "C-$")
+(sp-pair "$" "$" :wrap "C-$")
 
 
 ;; pair management

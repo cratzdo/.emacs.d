@@ -1,0 +1,248 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("TENSORFLOW_COMMON_RUNTIME_EXECUTOR_H_" variable (:constant-flag t) nil [713 750])
+            ("tensorflow/core/common_runtime/device.h" include nil nil [752 802])
+            ("tensorflow/core/framework/rendezvous.h" include nil nil [803 852])
+            ("tensorflow/core/framework/session_state.h" include nil nil [853 905])
+            ("tensorflow/core/framework/tensor.h" include nil nil [906 951])
+            ("tensorflow/core/graph/graph.h" include nil nil [952 992])
+            ("tensorflow/core/lib/core/notification.h" include nil nil [993 1043])
+            ("tensorflow/core/lib/core/status.h" include nil nil [1044 1088])
+            ("tensorflow/core/platform/logging.h" include nil nil [1089 1134])
+            ("tensorflow/core/platform/macros.h" include nil nil [1135 1179])
+            ("tensorflow" type
+               (:members 
+                  ( ("StepStatsCollector" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1205 1230])
+                    ("Executor" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1768 1775])
+                            ("Executor" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [1778 1800])
+                            ("Args" type
+                               (:members 
+                                  ( ("step_id" variable
+                                       (:default-value "0"
+                                        :type ("int64" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3486 3504])
+                                    ("rendezvous" variable
+                                       (:pointer 1
+                                        :default-value "nullptr"
+                                        :type ("Rendezvous" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3509 3542])
+                                    ("stats_collector" variable
+                                       (:pointer 1
+                                        :default-value "nullptr"
+                                        :type ("StepStatsCollector" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3547 3593])
+                                    ("call_frame" variable
+                                       (:pointer 1
+                                        :default-value "nullptr"
+                                        :type ("FunctionCallFrame" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3598 3638])
+                                    ("cancellation_manager" variable
+                                       (:pointer 1
+                                        :default-value "nullptr"
+                                        :type ("CancellationManager" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3643 3695])
+                                    ("session_state" variable
+                                       (:pointer 1
+                                        :default-value "nullptr"
+                                        :type ("SessionState" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3700 3738])
+                                    ("tensor_store" variable
+                                       (:pointer 1
+                                        :default-value "nullptr"
+                                        :type ("TensorStore" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3743 3779])
+                                    ("Closure" variable (:type "int") (reparse-symbol classsubparts) [3815 3823])
+                                    ("Runner" variable (:type "int") (reparse-symbol classsubparts) [3865 3872])
+                                    ("runner" variable
+                                       (:default-value "nullptr"
+                                        :type ("Runner" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3877 3901]))                                  
+                                :type "struct")
+                                (reparse-symbol classsubparts) [3468 3906])
+                            ("DoneCallback" variable (:type "int") (reparse-symbol classsubparts) [3952 3965])
+                            ("RunAsync" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("args" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Args" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3990 4007])
+                                    ("done" variable (:type ("DoneCallback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4008 4026]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3968 4031])
+                            ("Run" function
+                               (:arguments 
+                                  ( ("args" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Args" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4087 4104]))                                  
+                                :type ("Status" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4076 4281]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1750 4284])
+                    ("LocalExecutorParams" type
+                       (:members 
+                          ( ("device" variable
+                               (:pointer 1
+                                :type ("Device" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4719 4734])
+                            ("function_library" variable
+                               (:pointer 1
+                                :type ("FunctionLibraryRuntime" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4772 4813])
+                            ("create_kernel" variable (:type "int") (reparse-symbol classsubparts) [5039 5053])
+                            ("delete_kernel" variable (:type "int") (reparse-symbol classsubparts) [5087 5101]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [4688 5104])
+                    ("NewLocalExecutor" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("LocalExecutorParams" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5143 5177])
+                            ("graph" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Graph" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5216 5235])
+                            ("executor" variable
+                               (:pointer 2
+                                :type ("Executor" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5236 5256]))                          
+                        :type ("tensorflow::Status" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [5107 5257])
+                    ("ExecutorBarrier" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [5470 5477])
+                            ("StatusCallback" variable (:type "int") (reparse-symbol classsubparts) [5523 5538])
+                            ("ExecutorBarrier" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("num" variable (:type "int") (reparse-symbol arg-sub-list) [5909 5917])
+                                    ("r" variable
+                                       (:pointer 1
+                                        :type ("Rendezvous" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5918 5932])
+                                    ("done" variable (:type ("StatusCallback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5933 5953]))                                  
+                                :type ("ExecutorBarrier" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5893 6006])
+                            ("ExecutorBarrier" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [6010 6031])
+                            ("Get" function (:type ("StatusCallback" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6172 6277])
+                            ("private" label nil (reparse-symbol classsubparts) [6280 6288])
+                            ("rendez_" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("Rendezvous" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6291 6321])
+                            ("done_cb_" variable
+                               (:default-value "nullptr"
+                                :type ("StatusCallback" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6324 6358])
+                            ("mu_" variable
+                               (:typemodifiers ("mutable")
+                                :type ("mutex" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6362 6380])
+                            ("GUARDED_BY" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("mu_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6407 6411]))                                  
+                                :type ("pending_" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6387 6416])
+                            ("GUARDED_BY" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("mu_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6445 6449]))                                  
+                                :type ("status_" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6426 6450])
+                            ("WhenDone" function
+                               (:arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Status" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6468 6484]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6454 7367])
+                            ("TF_DISALLOW_COPY_AND_ASSIGN" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("ExecutorBarrier" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7399 7415]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [7371 7416]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [5445 7419])
+                    ("CreateNonCachedKernel" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("device" variable
+                               (:pointer 1
+                                :type ("Device" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7668 7683])
+                            ("flib" variable
+                               (:pointer 1
+                                :type ("FunctionLibraryRuntime" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7684 7713])
+                            ("ndef" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("NodeDef" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7743 7763])
+                            ("graph_def_version" variable (:type "int") (reparse-symbol arg-sub-list) [7764 7786])
+                            ("kernel" variable
+                               (:pointer 2
+                                :type ("OpKernel" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7816 7834]))                          
+                        :type ("Status" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [7639 7835])
+                    ("DeleteNonCachedKernel" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("kernel" variable
+                               (:pointer 1
+                                :type ("OpKernel" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7910 7927]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7883 7928]))                  
+                :type "namespace")
+                nil [1181 7931]))          
+      :file "executor.h"
+      :pointmax 8011
+      :fsize 8010
+      :lastmodtime '(23035 32438 841631 446000)
+      :unmatched-syntax '((symbol 6419 . 6425) (INT 6383 . 6386) (punctuation 5521 . 5522) (semantic-list 5506 . 5521) (VOID 5502 . 5506) (punctuation 5501 . 5502) (symbol 5493 . 5501) (punctuation 5492 . 5493) (punctuation 5491 . 5492) (symbol 5488 . 5491) (TYPEDEF 5480 . 5487) (punctuation 5106 . 5107) (punctuation 5105 . 5106) (punctuation 5085 . 5086) (semantic-list 5074 . 5085) (VOID 5070 . 5074) (punctuation 5069 . 5070) (symbol 5061 . 5069) (punctuation 5060 . 5061) (punctuation 5059 . 5060) (symbol 5056 . 5059) (punctuation 5037 . 5038) (semantic-list 5009 . 5037) (symbol 5003 . 5009) (punctuation 5002 . 5003) (symbol 4994 . 5002) (punctuation 4993 . 4994) (punctuation 4992 . 4993) (symbol 4989 . 4992) (punctuation 3950 . 3951) (semantic-list 3935 . 3950) (VOID 3931 . 3935) (punctuation 3930 . 3931) (symbol 3922 . 3930) (punctuation 3921 . 3922) (punctuation 3920 . 3921) (symbol 3917 . 3920) (TYPEDEF 3909 . 3916) (punctuation 3863 . 3864) (semantic-list 3854 . 3863) (VOID 3850 . 3854) (punctuation 3849 . 3850) (symbol 3841 . 3849) (punctuation 3840 . 3841) (punctuation 3839 . 3840) (symbol 3836 . 3839) (TYPEDEF 3828 . 3835) (punctuation 3813 . 3814) (semantic-list 3811 . 3813) (VOID 3807 . 3811) (punctuation 3806 . 3807) (symbol 3798 . 3806) (punctuation 3797 . 3798) (punctuation 3796 . 3797) (symbol 3793 . 3796) (TYPEDEF 3785 . 3792) (punctuation 3863 . 3864) (semantic-list 3854 . 3863) (VOID 3850 . 3854) (punctuation 3849 . 3850) (symbol 3841 . 3849) (punctuation 3840 . 3841) (punctuation 3839 . 3840) (symbol 3836 . 3839) (TYPEDEF 3828 . 3835) (punctuation 3813 . 3814) (semantic-list 3811 . 3813) (VOID 3807 . 3811) (punctuation 3806 . 3807) (symbol 3798 . 3806) (punctuation 3797 . 3798) (punctuation 3796 . 3797) (symbol 3793 . 3796) (TYPEDEF 3785 . 3792))
+      :lexical-table 
+        '(("TENSORFLOW_COMMON_RUNTIME_EXECUTOR_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "device.h"
+      :fsize 6669
+      :lastmodtime '(23035 32438 837306 885000)))
+  :file "!Users!Frank!Python!tensorflow!tensorflow!core!common_runtime!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

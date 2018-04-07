@@ -119,4 +119,16 @@
       (call-interactively (ad-get-orig-definition 'python-shell-send-string))
     ad-do-it))
 
+;; ein (emacs IPython Notebook)
+(use-package ein
+  :ensure t
+  :init)
+
+(package-initialize)
+(require 'ein)
+(require 'ein-loaddefs)
+(require 'ein-notebook)
+(require 'ein-subpackages)
+
+
 (provide 'init-python)

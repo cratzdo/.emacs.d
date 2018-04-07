@@ -1,0 +1,189 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("tensorflow/core/framework/op.h" include nil nil [659 700])
+            ("algorithm" include (:system-flag t) nil [702 722])
+            ("memory" include (:system-flag t) nil [723 740])
+            ("vector" include (:system-flag t) nil [741 758])
+            ("tensorflow/core/framework/op_kernel.h" include nil nil [759 807])
+            ("tensorflow/core/lib/core/errors.h" include nil nil [808 852])
+            ("tensorflow/core/lib/gtl/map_util.h" include nil nil [853 898])
+            ("tensorflow/core/platform/logging.h" include nil nil [899 944])
+            ("tensorflow/core/platform/mutex.h" include nil nil [945 988])
+            ("tensorflow/core/platform/protobuf.h" include nil nil [989 1035])
+            ("tensorflow/core/platform/types.h" include nil nil [1036 1079])
+            ("tensorflow" type
+               (:members 
+                  ( ("OpRegistryInterface" function
+                       (:destructor-flag t
+                        :parent "OpRegistryInterface"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1186 1232])
+                    ("OpRegistry" function
+                       (:constructor-flag t
+                        :parent "OpRegistry"
+                        :type ("OpRegistry" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1234 1283])
+                    ("Register" function
+                       (:parent "OpRegistry"
+                        :arguments 
+                          ( ("op_def" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("OpDef" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1311 1331]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1285 1626])
+                    ("LookUp" function
+                       (:methodconst-flag t
+                        :pointer 1
+                        :parent "OpRegistry"
+                        :constant-flag t
+                        :arguments 
+                          ( ("op_type_name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1660 1687])
+                            ("status" variable
+                               (:pointer 1
+                                :type ("Status" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1720 1735]))                          
+                        :type ("OpDef" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1628 2570])
+                    ("GetRegisteredOps" function
+                       (:parent "OpRegistry"
+                        :arguments 
+                          ( ("op_defs" variable
+                               (:pointer 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("OpDef" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2606 2634]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2572 2748])
+                    ("SetWatcher" function
+                       (:parent "OpRegistry"
+                        :arguments 
+                          ( ("watcher" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Watcher" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2780 2803]))                          
+                        :type ("Status" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2750 3003])
+                    ("Export" function
+                       (:methodconst-flag t
+                        :parent "OpRegistry"
+                        :arguments 
+                          ( ("include_internal" variable (:type "bool") (reparse-symbol arg-sub-list) [3029 3051])
+                            ("ops" variable
+                               (:pointer 1
+                                :type ("OpList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3052 3064]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3005 3539])
+                    ("DebugString" function
+                       (:methodconst-flag t
+                        :parent "OpRegistry"
+                        :arguments 
+                          ( ("include_internal" variable (:type "bool") (reparse-symbol arg-sub-list) [3572 3594]))                          
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3541 3788])
+                    ("CallDeferred" function
+                       (:methodconst-flag t
+                        :parent "OpRegistry"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [3790 4122])
+                    ("RegisterAlreadyLocked" function
+                       (:methodconst-flag t
+                        :parent "OpRegistry"
+                        :arguments 
+                          ( ("def" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("OpDef" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4165 4182]))                          
+                        :type ("Status" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4124 4515])
+                    ("Global" function
+                       (:pointer 1
+                        :parent "OpRegistry"
+                        :type ("OpRegistry" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4527 4650])
+                    ("OpListOpRegistry" function
+                       (:constructor-flag t
+                        :parent "OpListOpRegistry"
+                        :arguments 
+                          ( ("op_list" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("OpList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4768 4790]))                          
+                        :type ("OpListOpRegistry" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4733 4881])
+                    ("LookUp" function
+                       (:methodconst-flag t
+                        :pointer 1
+                        :parent "OpListOpRegistry"
+                        :constant-flag t
+                        :arguments 
+                          ( ("op_type_name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4921 4948])
+                            ("status" variable
+                               (:pointer 1
+                                :type ("Status" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4987 5002]))                          
+                        :type ("OpDef" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4883 5224])
+                    ("register_op" type
+                       (:members 
+                          ( ("OpDefBuilderReceiver" function
+                               (:constructor-flag t
+                                :parent "OpDefBuilderReceiver"
+                                :arguments 
+                                  ( ("wrapper" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("OpDefBuilderWrapper" type
+                                             (:template-specifier 
+                                                ( ("true" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5379 5420]))                                  
+                                :type ("OpDefBuilderReceiver" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [5331 5521]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [5307 5523]))                  
+                :type "namespace")
+                nil [1081 5552]))          
+      :file "op.cc"
+      :pointmax 5578
+      :fsize 5577
+      :lastmodtime '(23035 32438 888162 652000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "op.h"
+      :fsize 9881
+      :lastmodtime '(23035 32438 888471 730000))
+    (semanticdb-table "semanticdb-table"
+      :file "op_kernel.h"
+      :fsize 52670
+      :lastmodtime '(23035 32438 892253 681000))
+    (semanticdb-table "semanticdb-table"
+      :file "types.h"
+      :fsize 7326
+      :lastmodtime '(23035 32438 905288 682000)))
+  :file "!Users!Frank!Python!tensorflow!tensorflow!core!framework!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

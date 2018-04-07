@@ -1,0 +1,26 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-bsdmake-mode
+      :tags 
+        '( ("ADD_LDFLAGS" variable nil nil [698 712])
+            ("ADD_CFLAGS" variable nil nil [760 773])
+            ("USE_OPENMP" variable (:default-value ("1")) nil [835 850])
+            ("USE_HDFS" variable (:default-value ("0")) nil [893 906])
+            ("USE_S3" variable (:default-value ("0")) nil [951 962])
+            ("USE_AZURE" variable (:default-value ("0")) nil [1011 1025])
+            ("ARCH" variable (:default-value ("$(shell uname -a)")) nil [1120 1146])
+            ("LIB_RABIT" variable (:default-value ("librabit.a")) nil [1369 1392])
+            ("LIBJVM" variable (:default-value ("$(JAVA_HOME)/jre/lib/amd64/server")) nil [1413 1454])
+            ("TEST_COVER" variable (:default-value ("0")) nil [1684 1699]))          
+      :file "config.mk"
+      :pointmax 2335
+      :fsize 2334
+      :lastmodtime '(23144 52156 515657 445000)
+      :unmatched-syntax '((symbol 2300 . 2328) (punctuation 2298 . 2299) (punctuation 2297 . 2298) (symbol 2285 . 2296) (bol 2283 . 2283) (symbol 2247 . 2250) (punctuation 2245 . 2246) (punctuation 2244 . 2245) (symbol 2225 . 2243) (bol 2225 . 2225) (symbol 1977 . 1980) (punctuation 1975 . 1976) (punctuation 1974 . 1975) (symbol 1965 . 1973) (bol 1965 . 1965) (punctuation 1855 . 1856) (punctuation 1854 . 1855) (symbol 1843 . 1853) (bol 1843 . 1843) (shell-command 1233 . 1242) (bol 1232 . 1232) (shell-command 1217 . 1226) (bol 1216 . 1216) (symbol 625 . 627) (punctuation 624 . 625) (punctuation 623 . 624) (symbol 622 . 623) (punctuation 620 . 621) (symbol 616 . 619) (symbol 609 . 615) (bol 608 . 608) (symbol 602 . 607) (punctuation 600 . 601) (symbol 597 . 599) (symbol 590 . 596) (bol 589 . 589))))
+  :file "!Users!Frank!Downloads!xgboost!make!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

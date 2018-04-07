@@ -41,9 +41,6 @@
 ;; NOTE: In case of MELPA problems, the official mirror URL is
 ;; https://www.mirrorservice.org/sites/stable.melpa.org/packages/
 
-
-
-
 ;;; On-demand installation of packages
 
 (defun require-package (package &optional min-version no-refresh)

@@ -1,0 +1,135 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("cstdio" include (:system-flag t) nil [659 676])
+            ("functional" include (:system-flag t) nil [677 698])
+            ("string" include (:system-flag t) nil [699 716])
+            ("vector" include (:system-flag t) nil [717 734])
+            ("tensorflow/cc/ops/standard_ops.h" include nil nil [736 779])
+            ("tensorflow/core/framework/graph.pb.h" include nil nil [780 827])
+            ("tensorflow/core/framework/tensor.h" include nil nil [828 873])
+            ("tensorflow/core/graph/default_device.h" include nil nil [874 923])
+            ("tensorflow/core/graph/graph_def_builder.h" include nil nil [924 976])
+            ("tensorflow/core/lib/core/threadpool.h" include nil nil [977 1025])
+            ("tensorflow/core/lib/strings/stringprintf.h" include nil nil [1026 1079])
+            ("tensorflow/core/platform/init_main.h" include nil nil [1080 1127])
+            ("tensorflow/core/platform/logging.h" include nil nil [1128 1173])
+            ("tensorflow/core/platform/types.h" include nil nil [1174 1217])
+            ("tensorflow/core/public/session.h" include nil nil [1218 1261])
+            ("tensorflow::string" using (:type ("tensorflow::string" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1263 1288])
+            ("tensorflow::int32" using (:type ("tensorflow::int32" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1289 1313])
+            ("tensorflow" type
+               (:members 
+                  ( ("example" type
+                       (:members 
+                          ( ("Options" type
+                               (:members 
+                                  ( ("num_concurrent_sessions" variable
+                                       (:default-value "10"
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1378 1411])
+                                    ("num_concurrent_steps" variable
+                                       (:default-value "10"
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1452 1482])
+                                    ("num_iterations" variable
+                                       (:default-value "100"
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1523 1548])
+                                    ("use_gpu" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [1597 1618]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1359 1672])
+                            ("CreateGraphDef" function (:type ("GraphDef" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [1805 2670])
+                            ("DebugString" function
+                               (:arguments 
+                                  ( ("x" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Tensor" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2691 2707])
+                                    ("y" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Tensor" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2708 2724]))                                  
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2672 3061])
+                            ("ConcurrentSteps" function
+                               (:arguments 
+                                  ( ("opts" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Options" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3084 3104])
+                                    ("session_index" variable (:type "int") (reparse-symbol arg-sub-list) [3105 3123]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3063 4433])
+                            ("ConcurrentSessions" function
+                               (:arguments 
+                                  ( ("opts" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Options" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4459 4479]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [4435 4750]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1338 4753]))                  
+                :type "namespace")
+                nil [1315 4781])
+            ("unnamed" type
+               (:members 
+                  ( ("ParseInt32Flag" function
+                       (:arguments 
+                          ( ("arg" variable (:type ("tensorflow::StringPiece" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4845 4873])
+                            ("flag" variable (:type ("tensorflow::StringPiece" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4874 4903])
+                            ("dst" variable
+                               (:pointer 1
+                                :type ("int32" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4924 4935]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [4825 5082])
+                    ("ParseBoolFlag" function
+                       (:arguments 
+                          ( ("arg" variable (:type ("tensorflow::StringPiece" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5103 5131])
+                            ("flag" variable (:type ("tensorflow::StringPiece" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5132 5161])
+                            ("dst" variable
+                               (:pointer 1
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [5181 5191]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [5084 5454]))                  
+                :type "namespace")
+                nil [4812 5457])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [5482 5491])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5492 5505]))                  
+                :type "int")
+                nil [5473 6513]))          
+      :file "example_trainer.cc"
+      :pointmax 6514
+      :fsize 6513
+      :lastmodtime '(23089 58617 591332 875000)
+      :unmatched-syntax nil))
+  :file "!Users!Frank!Python!tensorflow!tensorflow!cc!tutorials!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

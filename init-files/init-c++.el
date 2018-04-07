@@ -77,5 +77,10 @@
 ;; project management with projectile
 (projectile-mode 1)
 
+;;-----------------------
+;; counsel-etags
+;;-----------------------
+;; (require 'counsel-etags) 
+
 
 (provide 'init-c++)

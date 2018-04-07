@@ -10,20 +10,20 @@
 
 ;; font for latex-mode
 (add-hook 'latex-mode-hook (lambda ()
-                            (setq buffer-face-mode-face '(:family "GT Pressura Mono" :height 160))
+                            (setq buffer-face-mode-face '(:family "Hasklig" :height 160))
                             (buffer-face-mode)))
 
 ;; font for text-mode
 (add-hook 'text-mode-hook (lambda ()
-                            (setq buffer-face-mode-face '(:family "Hasklig" :height 170))
+                            (setq buffer-face-mode-face '(:family "PragmataPro" :height 170))
                             (buffer-face-mode)))
 
 ;; font for ess-mode
 (add-hook 'ess-mode-hook (lambda ()
-                            (setq buffer-face-mode-face '(:family "Fantasque Sans Mono" :height 140))
+                            (setq buffer-face-mode-face '(:family "PragmataPro" :height 130))
                             (buffer-face-mode)))
 (add-hook 'inferior-ess-mode-hook (lambda ()
-                            (setq buffer-face-mode-face '(:family "Consola Mono" :height 110))
+                            (setq buffer-face-mode-face '(:family "Fira Code" :height 120))
                             (buffer-face-mode)))
 
 
