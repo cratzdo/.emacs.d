@@ -13,7 +13,10 @@
     (add-hook 'ess-mode-hook #'smartparens-mode)
     (add-hook 'python-mode-hook #'smartparens-mode)
     (add-hook 'scala-mode-hook #'smartparens-mode)
-    (add-hook 'text-mode-hook #'smartparens-mode)))
+    (add-hook 'text-mode-hook #'smartparens-mode)
+    (add-hook 'ein:notebook-multilang-mode #'smartparens-mode) ) )
+
+(smartparens-global-mode 1)
 
 ;; add more pairs
 (sp-local-pair 'c++-mode "<" ">" :wrap "C-<")

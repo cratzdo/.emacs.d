@@ -11,7 +11,7 @@
  '(custom-enabled-themes (quote (doom-one)))
  '(custom-safe-themes
    (quote
-    ("90bd0eb20a1cb155b5a076f698b3c72cfe775aa7ea93b7bfbc171eb250db5e20" default)))
+    ("aa0a998c0aa672156f19a1e1a3fb212cdc10338fb50063332a0df1646eb5dfea" "90bd0eb20a1cb155b5a076f698b3c72cfe775aa7ea93b7bfbc171eb250db5e20" default)))
  '(display-time-mode t)
  '(elpy-rpc-python-command "python3")
  '(ess-swv-plug-into-AUCTeX-p nil)
@@ -30,12 +30,13 @@
  '(ns-tool-bar-size-mode nil t)
  '(package-selected-packages
    (quote
-    (ivy-mode flx-ido org-download org-pomodoro window-numbering smex aggressive-indent ein restart-emacs ess-R-data-view ess-smart-equals ess-smart-underscore ess-view pdf-tools wrap-region company-anaconda anaconda-mode company-c-headers sr-speedbar ggtags helm-gtags hlem-gtags helm-projectile helm-bibtex helm-bibtexkey helm-bind-key helm-company helm-flycheck helm-flyspell setup-helm paredit paredit-menu beacon dirtree ensime powerline aggressive-fill-paragraph prettify-symbols-mode expand-region jedi epc projectile auto-org-md markdown-mode eink browse-kill-ring pip-requirements synonyms rtags cmake-ide magit iedit ivy ivy-bibtex ivy-gitlab elpy flyspell-correct-helm writeroom-mode use-package smartscan smartparens smart-cursor-color pretty-mode peep-dired osx-dictionary org-bullets matlab-mode langtool helm google-this ess company-auctex auto-save-buffers-enhanced auto-compile)))
+    (company-math company-statistics counsel ace-window define-word wordnut ivy-mode flx-ido org-download org-pomodoro window-numbering smex aggressive-indent ein restart-emacs ess-R-data-view ess-smart-equals ess-smart-underscore ess-view pdf-tools wrap-region company-anaconda anaconda-mode company-c-headers sr-speedbar ggtags helm-gtags hlem-gtags helm-projectile helm-bibtex helm-bibtexkey helm-bind-key helm-company helm-flycheck helm-flyspell setup-helm paredit paredit-menu beacon dirtree ensime powerline aggressive-fill-paragraph prettify-symbols-mode expand-region jedi epc projectile auto-org-md markdown-mode eink browse-kill-ring pip-requirements synonyms rtags cmake-ide magit iedit ivy ivy-bibtex ivy-gitlab elpy flyspell-correct-helm writeroom-mode use-package smartscan smartparens smart-cursor-color pretty-mode peep-dired osx-dictionary org-bullets matlab-mode langtool helm google-this ess company-auctex auto-save-buffers-enhanced auto-compile)))
  '(python-shell-interpreter "ipython3")
- '(python-shell-virtualenv-root "'~/Python/py3virtualenv/'")
+ '(python-shell-virtualenv-root "'~/Python/ve/'")
  '(sentence-end-double-space nil)
  '(show-paren-mode t)
- '(synonyms-file "/Users/Frank/.emacs.d/lisp/mthesaur.txt")
+ '(synonyms-cache-file "/Users/Frank/.emacs.d/init-files/mthesaur.txt.cache")
+ '(synonyms-file "/Users/Frank/.emacs.d/init-files/mthesaur.txt")
  '(tool-bar-mode nil)
  '(vc-annotate-background "#1B2229")
  '(vc-annotate-color-map

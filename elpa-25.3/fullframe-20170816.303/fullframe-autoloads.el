@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "fullframe" "fullframe.el" (23203 27774 404810
-;;;;;;  810000))
+;;;### (autoloads nil "fullframe" "fullframe.el" (23250 49157 643891
+;;;;;;  584000))
 ;;; Generated autoloads from fullframe.el
 
 (autoload 'fullframe/current-buffer-window-config "fullframe" "\

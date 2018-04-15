@@ -2,7 +2,8 @@
 ;;; Smartscan
 ;;
 (use-package smartscan
-  :defer t
+  :ensure t
+  :init
   :config (global-smartscan-mode t))
 
 (provide 'init-smartscan)

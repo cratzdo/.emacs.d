@@ -1,21 +1,56 @@
-;;; This file bootstraps the configuration, which is divided into
-;;; a number of other files.
-
-(let ((minver "24.1"))
-  (when (version<= emacs-version minver)
-    (error "Your Emacs is too old -- this config requires v%s or higher" minver)))
-(when (version<= emacs-version "24.4")
-  (message "Your Emacs is old, and some functionality in this config will be disabled. Please upgrade if possible."))
-
-;(add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
-;(require 'init-benchmarking) ;; Measure startup time
-
-(defconst *spell-check-support-enabled* nil) ;; Enable with t if you prefer
-(defconst *is-a-mac* (eq system-type 'darwin))
+;; -*- coding: utf-8 -*-
+;;(defvar best-gc-cons-threshold gc-cons-threshold "Best default gc threshold value. Should't be too big.")
 
 
-(setq gc-cons-threshold 402653184
-      gc-cons-percentage 0.6)
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
+(let ((minver "24.3"))
+  (when (version< emacs-version minver)
+    (error "This config requires Emacs v%s or higher" minver)))
+
+(defvar best-gc-cons-threshold 4000000 "Best default gc threshold value. Should't be too big.")
+;; don't GC during startup to save time
+(setq gc-cons-threshold most-positive-fixnum)
+
+(setq emacs-load-start-time (current-time))
+
+;; {{ emergency security fix
+;; https://bugs.debian.org/766397
+(eval-after-load "enriched"
+  '(defun enriched-decode-display-prop (start end &optional param)
+     (list start end)))
+;; }}
+;;----------------------------------------------------------------------------
+;; Which functionality to enable (use t or nil for true and false)
+;;----------------------------------------------------------------------------
+(setq *is-a-mac* (eq system-type 'darwin))
+(setq *win64* (eq system-type 'windows-nt) )
+(setq *cygwin* (eq system-type 'cygwin) )
+(setq *linux* (or (eq system-type 'gnu/linux) (eq system-type 'linux)) )
+(setq *unix* (or *linux* (eq system-type 'usg-unix-v) (eq system-type 'berkeley-unix)) )
+(setq *emacs24* (and (not (featurep 'xemacs)) (or (>= emacs-major-version 24))) )
+(setq *emacs25* (and (not (featurep 'xemacs)) (or (>= emacs-major-version 25))) )
+(setq *no-memory* (cond
+                   (*is-a-mac*
+                    (< (string-to-number (nth 1 (split-string (shell-command-to-string "sysctl hw.physmem")))) 4000000000))
+                   (*linux* nil)
+                   (t nil)))
+
+;; emacs 24.3-
+(setq *emacs24old*  (or (and (= emacs-major-version 24) (= emacs-minor-version 3))
+                        (not *emacs24*)))
+
+;; @see https://www.reddit.com/r/emacs/comments/55ork0/is_emacs_251_noticeably_slower_than_245_on_windows/
+;; Emacs 25 does gc too frequently
+(when *emacs25*
+  ;; (setq garbage-collection-messages t) ; for debug
+  (setq gc-cons-threshold (* 64 1024 1024) )
+  (setq gc-cons-percentage 0.5)
+  (run-with-idle-timer 5 t #'garbage-collect))
 
 ;;----------------------------------------------------------------------------
 ;; Bootstrap config
@@ -25,7 +60,7 @@
 (add-to-list 'load-path "~/.emacs.d/init-files/emacs-for-python-master")
 
 
-(require 'init-compat)
+;;(require 'init-compat)
 (require 'init-utils)
 (require 'init-site-lisp) ;; Must come before elpa, as it may provide package.el
 
@@ -46,39 +81,42 @@
   :config (auto-compile-on-load-mode))
 (setq load-prefer-newer t)
 
+
 ;;-------------------------------------------------
 ;; customization in a separate file
 ;;-------------------------------------------------
- (setq custom-file "~/.emacs.d/emacs-custom.el")
-     (load custom-file)
+(setq custom-file "~/.emacs.d/emacs-custom.el")
+(load custom-file)
+
 
 ;; load mac key-bindings
 (require 'init-smartparens)
 (require 'init-key)
 
+
 ;; ido
 ;;(require 'init-ido)
 
+
 ;; ivy
-;;(require 'init-ivy)
+(require 'init-ivy)
+
 
 ;; themes
 (require 'init-theme)
 
+
 ;; writeroom-mode for a distraction free environment
 (require 'init-writeroom)
+
 
 ;; tex-mode
 (require 'init-tex)
 
-;; matlab-mode
-;;(require 'init-matlab)
 
 ;; auto-save buffer
 (require 'init-autosave)
 
-;; customize interface looking
-;;(require 'init-frame-gui)
 
 ;; mode-line
 (require 'init-modeline)
@@ -107,11 +145,6 @@
 ;; dired
 (require 'init-dired)
 
-;; smart-parens
-(require 'init-smartparens)
-
-;; electric parens
-;;(require 'init-parens)
 
 ;;--------------------------------
 ;; show recent files with <f7>
@@ -124,12 +157,13 @@
 ;; different fonts for different modes
 (require 'init-font)
 
+
 ;; pretty-mode
 ;; font ligatures
-(require 'init-pretty)
+;;(require 'init-pretty)
 
 ;; sql mode
-(require 'init-sql)
+;;(require 'init-sql)
 
 ;; key-bindings
 (require 'init-key)
@@ -161,7 +195,7 @@
 (require 'init-autocomplete)
 
 ;; fix rubbish codes in shell-mode
-(require 'init-shell)
+;;(require 'init-shell)
 
 ;; expand region with "C-="
 (require 'init-expandregion)
@@ -181,22 +215,27 @@
 ;; email
 (require 'init-email)
 
-;; pdf
-;; (require 'init-pdf)
 
 ;; find file at project
-(require 'init-findfile)
+;;(require 'init-findfile)
 
 ;; smex to handle M-x
 (require 'init-smex)
 
-;; fast move windows
-;;(require 'init-windows)
+
+;; fast switch windows
+(require 'init-acewindow)
+
+
+;;----------------------------------------------
+;; require linum-mode in python and c
+;;---------------------------------------------
+(require 'init-linum-mode)
+
 
 ;; Then reset it as late as possible; these are the reasonable defaults I use.
-(add-hook 'emacs-startup-hook
-	  (setq gc-cons-threshold 16777216
-		gc-cons-percentage 0.1))
+(setq gc-cons-threshold best-gc-cons-threshold)
+
 
 ;;----------------------------------
 (provide 'init)

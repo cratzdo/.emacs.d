@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "historian" "historian.el" (23233 17930 506214
-;;;;;;  436000))
+;;;### (autoloads nil "historian" "historian.el" (23250 49160 729853
+;;;;;;  696000))
 ;;; Generated autoloads from historian.el
 
 (autoload 'historian-save "historian" "\

@@ -10,7 +10,6 @@
       "Overridden; see `sanityinc/called-interactively-p' for the wrapped function."
       (sanityinc/called-interactively-p))))
 
-
 ;;----------------------------------------------------------------------------
 ;; Restore removed var alias, used by ruby-electric-brace and others
 ;;----------------------------------------------------------------------------

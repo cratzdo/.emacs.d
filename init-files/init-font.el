@@ -44,8 +44,8 @@
 
 ;; font for python-mode
 (add-hook 'python-mode-hook (lambda ()
-                            (setq buffer-face-mode-face '(:family "Consola Mono" :height 130))
-                            (buffer-face-mode)))
+			      (setq buffer-face-mode-face '(:family "PragmataPro" :height 150))
+			      (buffer-face-mode)))
 
 (add-hook 'inferior-python-mode-hook (lambda ()
 				       (setq buffer-face-mode-face '(:family "Inconsolata LGC" :height 130))

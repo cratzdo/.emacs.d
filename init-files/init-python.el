@@ -18,6 +18,10 @@
 (setq-default py-shell-name "ipython")
 (setq-default py-which-bufname "IPython")
 
+(let ((pyvenv-workon-starts-python nil))
+  (pyvenv-workon "~/Python/ve/bin/"))
+
+
 ;; use anaconda-mode for code navigation, documentation lookup
 (use-package anaconda-mode
   :ensure t
@@ -62,17 +66,6 @@
 (setq jedi:get-in-function-call-delay 100000000000)
 (setq jedi:complete-on-dot t)
 
-;; install iedit
-(use-package iedit
-  :ensure t
-  :config
-  :init)
-
-;; Fixing a key binding bug in elpy
-(define-key yas-minor-mode-map (kbd "C-c k") 'yas-expand)
-
-;; Fixing another key binding bug in iedit mode
-(define-key global-map (kbd "C-c o") 'iedit-mode)
 
 ;; major mode for editing pip requirements files
 (use-package pip-requirements
@@ -124,7 +117,6 @@
   :ensure t
   :init)
 
-(package-initialize)
 (require 'ein)
 (require 'ein-loaddefs)
 (require 'ein-notebook)

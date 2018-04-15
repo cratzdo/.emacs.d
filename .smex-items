@@ -1,16 +1,27 @@
 
 ;; ----- smex-history -----
 (
- R
- cd
- 5x5
- arp
- dbx
- dig
- erc
+ elpy-config
+ eshell
+ pyvenv-workon
+ powerline-center-theme
+ find-file
+ counsel-find-file
+ ivy-mode
 )
 
 ;; ----- smex-data -----
 (
- 
+ (magit-status . 1)
+ (ace-window . 2)
+ (package-list-packages . 1)
+ (package-autoremove . 1)
+ (counsel-find-file . 2)
+ (counsel-mode . 1)
+ (ivy-mode . 1)
+ (find-file . 3)
+ (powerline-center-theme . 2)
+ (elpy-config . 10)
+ (pyvenv-workon . 3)
+ (eshell . 1)
 )
