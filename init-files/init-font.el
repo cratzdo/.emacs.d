@@ -77,10 +77,10 @@
 
 ;; font for c++ and c
 (add-hook 'c++-mode-hook (lambda ()
-                           (setq buffer-face-mode-face '(:family "PragmataPro" :height 150))
+                           (setq buffer-face-mode-face '(:family "Iosevka" :height 150))
                            (buffer-face-mode)))
 (add-hook 'c-mode-hook (lambda ()
-			 (setq buffer-face-mode-face '(:family "PragmataPro" :height 150))
+			 (setq buffer-face-mode-face '(:family "Iosevka" :height 150))
 			 (buffer-face-mode)))
 
 ;; SQL mode
