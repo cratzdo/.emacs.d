@@ -86,6 +86,9 @@
 ;;
 (fset 'yes-or-no-p 'y-or-n-p)
 
+;; smart comment/uncomment
+(use-package smart-comment
+  :bind ("M-;" . smart-comment))
 
 (provide 'init-key)
 

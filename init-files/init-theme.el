@@ -3,24 +3,19 @@
 ;; Temporarily reduce garbage collection during startup
 ;;----------------------------------------------------------------------------
 
-(defconst sanityinc/initial-gc-cons-threshold gc-cons-threshold
-  "Initial value of `gc-cons-threshold' at start-up time.")
-(setq gc-cons-threshold (* 128 1024 1024))
-(add-hook 'after-init-hook
-          (lambda () (setq gc-cons-threshold sanityinc/initial-gc-cons-threshold)))
 
 ;;
 ;; Color theme
 ;;
-;(require-package 'eink-theme)
-;(require-package 'color-theme-sanityinc-solarized)
-;(require-package 'color-theme-sanityinc-tomorrow)
+;;(require-package 'eink-theme)
+;;(require-package 'color-theme-sanityinc-solarized)
+;;(require-package 'color-theme-sanityinc-tomorrow)
 (require-package 'powerline)
-; (require-package 'moe-theme)
+;; (require-package 'moe-theme)
 (require-package 'doom-themes)
 
 ;; If you don't customize it, this is the theme you get.
-; (setq-default custom-enabled-themes '(moe-dark))
+;; (setq-default custom-enabled-themes '(moe-dark))
 
 ;; Ensure that themes will be applied even if they have not been customized
 (defun reapply-themes ()
@@ -86,7 +81,17 @@
   (interactive)
   (doom-one))
 
-(setq gc-cons-threshold sanityinc/initial-gc-cons-threshold)
+;;--------------------------
+;; spacemacs like mode-line
+;;--------------------------
+(use-package spaceline
+  :demand t
+  :init
+  (setq powerline-default-separator 'arrow-fade)
+  :config
+  (require 'spaceline-config)
+  (spaceline-spacemacs-theme)  )
+
 
 ;; setup moe-theme
 

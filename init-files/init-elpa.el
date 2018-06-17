@@ -1,5 +1,6 @@
 (require 'package)
 
+(setq package-check-signature nil)
 
 (let ((local-package-el (locate-library "package")))
   (when (string-match-p (concat "^" (regexp-quote user-emacs-directory))

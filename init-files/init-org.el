@@ -88,12 +88,16 @@
 		    ("\\paragraph{%s}" . "\\paragraph*{%s}")
 		    ("\\subparagraph{%s}" . "\\subparagraph*{%s}"))
 		  org-export-latex-classes))))  
-        
-        (add-hook 'org-export-latex-after-initial-vars-hook 'my-auto-tex-parameters)
+
+(add-hook 'org-export-latex-after-initial-vars-hook 'my-auto-tex-parameters)
+
+(setq org-highlight-latex-and-related '(latex))
 
 (use-package auto-org-md
   :ensure t
   :init)
+
+(setq org-src-tab-acts-natively t)
 
 ;; tomato working
 (use-package org-pomodoro
@@ -104,6 +108,37 @@
 (use-package org-download
   :ensure
   :init)
+
+;;=============================================
+;; ob-ipython: org-babel integrate with Jupyter
+;;============================================
+
+(use-package ob-ipython
+  :ensure t
+  :init)
+(require 'ob-ipython)
+
+(setq org-confirm-babel-evaluate nil)   ;don't prompt me to confirm everytime I want to evaluate a block
+;;; display/update images in the buffer after I evaluate
+(add-hook 'org-babel-after-execute-hook 'org-display-inline-images 'append)
+
+(add-to-list 'org-latex-minted-langs '(ipython "python"))
+
+
+;; enable ipython in org-babel
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((ipython . t)
+   (emacs-lisp . t)
+   (R . t)
+   (latex . t)
+   (sql . t)
+   ;; (c++ . t)
+   (python . t)
+   ;; (sh . t)
+   (awk . t)
+   (sed . t)
+   ))
 
 (provide 'init-org)
 

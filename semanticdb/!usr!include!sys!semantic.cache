@@ -90,16 +90,16 @@
             ("__DARWIN_C_FULL" variable (:constant-flag t) nil [25000 25015])
             ("__DARWIN_C_LEVEL" variable (:constant-flag t) nil [25260 25276])
             ("__STDC_WANT_LIB_EXT1__" variable (:constant-flag t) nil [25605 25627])
-            ("__DARWIN_NO_LONG_LONG" variable (:constant-flag t) nil [25809 25830])
-            ("_DARWIN_FEATURE_64_BIT_INODE" variable (:constant-flag t) nil [26249 26277])
-            ("_DARWIN_FEATURE_ONLY_UNIX_CONFORMANCE" variable (:constant-flag t) nil [27049 27086])
-            ("_DARWIN_FEATURE_UNIX_CONFORMANCE" variable (:constant-flag t) nil [27262 27294])
-            ("__CAST_AWAY_QUALIFIER" variable (:constant-flag t) nil [27511 27532])
-            ("__XNU_PRIVATE_EXTERN" variable (:constant-flag t) nil [27795 27815]))          
+            ("__DARWIN_NO_LONG_LONG" variable (:constant-flag t) nil [25935 25956])
+            ("_DARWIN_FEATURE_64_BIT_INODE" variable (:constant-flag t) nil [26289 26317])
+            ("_DARWIN_FEATURE_ONLY_UNIX_CONFORMANCE" variable (:constant-flag t) nil [27089 27126])
+            ("_DARWIN_FEATURE_UNIX_CONFORMANCE" variable (:constant-flag t) nil [27302 27334])
+            ("__CAST_AWAY_QUALIFIER" variable (:constant-flag t) nil [27551 27572])
+            ("__XNU_PRIVATE_EXTERN" variable (:constant-flag t) nil [27835 27855]))          
       :file "cdefs.h"
-      :pointmax 28111
-      :fsize 28110
-      :lastmodtime '(22990 62086 0 0)
+      :pointmax 28151
+      :fsize 28150
+      :lastmodtime '(23198 13309 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("__dead2" . ((symbol "__attribute__" 5993 . 6006) (semantic-list "((noreturn))" 6006 . 6018)))
@@ -122,8 +122,8 @@
           ("__DARWIN_ALIAS" (spp-arg-list ("sym") 20918 . 20923) . ((symbol "__asm" 20925 . 20930) (semantic-list "(\"_\" __STRING(sym) __DARWIN_SUF_UNIX03)" 20930 . 20969)))
           ("__DARWIN_ALIAS_C" (spp-arg-list ("sym") 20994 . 20999) . ((symbol "__asm" 21001 . 21006) (semantic-list "(\"_\" __STRING(sym) __DARWIN_SUF_NON_CANCELABLE __DARWIN_SUF_UNIX03)" 21006 . 21073)))
           ("__DARWIN_1050INODE64" (spp-arg-list ("sym") 21788 . 21793) . ((symbol "__asm" 21794 . 21799) (semantic-list "(\"_\" __STRING(sym) __DARWIN_SUF_1050 __DARWIN_SUF_64_BIT_INO_T)" 21799 . 21862)))
-          ("_DARWIN_FEATURE_64_BIT_INODE" . ((number "1" 26279 . 26280)))
-          ("_DARWIN_FEATURE_UNIX_CONFORMANCE" . ((number "3" 27295 . 27296)))
+          ("_DARWIN_FEATURE_64_BIT_INODE" . ((number "1" 26319 . 26320)))
+          ("_DARWIN_FEATURE_UNIX_CONFORMANCE" . ((number "3" 27335 . 27336)))
           ("__END_DECLS" . ((close-paren "}" 3483 . 3484)))
           ("__has_include" (spp-arg-list ("x") 3963 . 3966) . ((number "0" 3967 . 3968)))
           ("__volatile" . ((VOLATILE "volatile" 4785 . 4793)))
@@ -136,8 +136,8 @@
           ("__DARWIN_EXTSN_C" (spp-arg-list ("sym") 21961 . 21966) . ((symbol "__asm" 21968 . 21973) (semantic-list "(\"_\" __STRING(sym) __DARWIN_SUF_EXTSN __DARWIN_SUF_NON_CANCELABLE)" 21973 . 22039)))
           ("__DARWIN_C_FULL" . ((number "900000L" 25024 . 25031)))
           ("__DARWIN_C_LEVEL" . ((symbol "__DARWIN_C_FULL" 25284 . 25299)))
-          ("__CAST_AWAY_QUALIFIER" (spp-arg-list ("variable" "qualifier" "type") 27532 . 27559) . 
-              ((semantic-list "(type)" 27561 . 27567) (semantic-list "(long)" 27568 . 27574) (semantic-list "(variable)" 27574 . 27584)))
+          ("__CAST_AWAY_QUALIFIER" (spp-arg-list ("variable" "qualifier" "type") 27572 . 27599) . 
+              ((semantic-list "(type)" 27601 . 27607) (semantic-list "(long)" 27608 . 27614) (semantic-list "(variable)" 27614 . 27624)))
           ("__STRING" (spp-arg-list ("x") 4670 . 4673) . ((punctuation "#" 4674 . 4675) (symbol "x" 4675 . 4676)))
           ("__dead")
           ("__pure")
@@ -172,7 +172,7 @@
           ("__DEQUALIFY" (spp-arg-list ("type" "var") 13562 . 13573) . ((symbol "__CAST_AWAY_QUALIFIER" 13574 . 13595) (semantic-list "(var, const volatile, type)" 13595 . 13622)))
           ("__DARWIN_SUF_64_BIT_INO_T" . ((string "\"$INODE64\"" 19829 . 19839)))
           ("__DARWIN_ALIAS_I" (spp-arg-list ("sym") 21098 . 21103) . ((symbol "__asm" 21105 . 21110) (semantic-list "(\"_\" __STRING(sym) __DARWIN_SUF_64_BIT_INO_T __DARWIN_SUF_UNIX03)" 21110 . 21175)))
-          ("__XNU_PRIVATE_EXTERN" . ((symbol "__attribute__" 27816 . 27829) (semantic-list "((visibility(\"hidden\")))" 27829 . 27853)))
+          ("__XNU_PRIVATE_EXTERN" . ((symbol "__attribute__" 27856 . 27869) (semantic-list "((visibility(\"hidden\")))" 27869 . 27893)))
           ("__has_attribute" (spp-arg-list ("x") 4079 . 4082) . ((number "0" 4083 . 4084)))
           ("__restrict")
           ("__DARWIN_UNIX03" . ((number "1" 17690 . 17691)))
@@ -186,13 +186,11 @@
           ("__SCCSID" (spp-arg-list ("s") 13082 . 13085) . ((symbol "__IDSTRING" 13086 . 13096) (semantic-list "(sccsid,s)" 13096 . 13106)))
           ("__DECONST" (spp-arg-list ("type" "var") 13359 . 13370) . ((symbol "__CAST_AWAY_QUALIFIER" 13371 . 13392) (semantic-list "(var, const, type)" 13392 . 13410)))
           ("__DARWIN_SUF_NON_CANCELABLE")
-          ("__DARWIN_NO_LONG_LONG" . ((semantic-list "(defined(__STRICT_ANSI__) \\
-				&& (__STDC_VERSION__-0 < 199901L) \\
-				&& !defined(__GNUG__))" 25831 . 25925)))
+          ("__DARWIN_NO_LONG_LONG" . ((number "0" 25957 . 25958)))
           ("__PROJECT_VERSION" (spp-arg-list ("s") 13166 . 13169) . ((symbol "__IDSTRING" 13170 . 13180) (semantic-list "(project_version,s)" 13180 . 13199)))
           ("__DARWIN_SUF_1050" . ((string "\"$1050\"" 20189 . 20196)))
           ("__DARWIN_1050ALIAS_C" (spp-arg-list ("sym") 21540 . 21545) . ((symbol "__asm" 21546 . 21551) (semantic-list "(\"_\" __STRING(sym) __DARWIN_SUF_1050 __DARWIN_SUF_NON_CANCELABLE __DARWIN_SUF_UNIX03)" 21551 . 21636)))
-          ("_DARWIN_FEATURE_ONLY_UNIX_CONFORMANCE" . ((number "1" 27087 . 27088)))
+          ("_DARWIN_FEATURE_ONLY_UNIX_CONFORMANCE" . ((number "1" 27127 . 27128)))
           )
 )
     (semanticdb-table "semanticdb-table"
@@ -254,8 +252,8 @@
             ("__DARWIN_ALIAS_STARTING_MAC___MAC_10_13_1" variable (:constant-flag t) nil [14417 14458]))          
       :file "_symbol_aliasing.h"
       :pointmax 14470
-      :fsize 14469
-      :lastmodtime '(22990 62102 0 0)
+      :fsize 15445
+      :lastmodtime '(23198 13317 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("__DARWIN_ALIAS_STARTING_IPHONE___IPHONE_2_2" (spp-arg-list ("x") 2156 . 2159))
@@ -327,7 +325,7 @@
       :file "_posix_availability.h"
       :pointmax 2906
       :fsize 2905
-      :lastmodtime '(22990 62102 0 0)
+      :lastmodtime '(23198 13317 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("___POSIX_C_DEPRECATED_STARTING_199506L")
@@ -431,7 +429,7 @@
       :file "_types.h"
       :pointmax 3717
       :fsize 3716
-      :lastmodtime '(22990 62100 0 0)
+      :lastmodtime '(23198 13316 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("__offsetof" (spp-arg-list ("type" "field") 3525 . 3538) . ((symbol "__builtin_offsetof" 3539 . 3557) (semantic-list "(type, field)" 3557 . 3570)))

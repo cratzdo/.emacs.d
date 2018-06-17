@@ -1,7 +1,6 @@
 ;; -*- coding: utf-8 -*-
 ;;(defvar best-gc-cons-threshold gc-cons-threshold "Best default gc threshold value. Should't be too big.")
 
-
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
@@ -32,21 +31,25 @@
 (setq *cygwin* (eq system-type 'cygwin) )
 (setq *linux* (or (eq system-type 'gnu/linux) (eq system-type 'linux)) )
 (setq *unix* (or *linux* (eq system-type 'usg-unix-v) (eq system-type 'berkeley-unix)) )
-(setq *emacs24* (and (not (featurep 'xemacs)) (or (>= emacs-major-version 24))) )
 (setq *emacs25* (and (not (featurep 'xemacs)) (or (>= emacs-major-version 25))) )
+(setq *emacs26* (and (not (featurep 'xemacs)) (or (>= emacs-major-version 26))) )
+
 (setq *no-memory* (cond
                    (*is-a-mac*
                     (< (string-to-number (nth 1 (split-string (shell-command-to-string "sysctl hw.physmem")))) 4000000000))
                    (*linux* nil)
                    (t nil)))
 
-;; emacs 24.3-
-(setq *emacs24old*  (or (and (= emacs-major-version 24) (= emacs-minor-version 3))
-                        (not *emacs24*)))
 
 ;; @see https://www.reddit.com/r/emacs/comments/55ork0/is_emacs_251_noticeably_slower_than_245_on_windows/
 ;; Emacs 25 does gc too frequently
 (when *emacs25*
+  ;; (setq garbage-collection-messages t) ; for debug
+  (setq gc-cons-threshold (* 64 1024 1024) )
+  (setq gc-cons-percentage 0.5)
+  (run-with-idle-timer 5 t #'garbage-collect))
+
+(when *emacs26*
   ;; (setq garbage-collection-messages t) ; for debug
   (setq gc-cons-threshold (* 64 1024 1024) )
   (setq gc-cons-percentage 0.5)
@@ -57,10 +60,9 @@
 ;;----------------------------------------------------------------------------
 
 (add-to-list 'load-path "~/.emacs.d/init-files")
-(add-to-list 'load-path "~/.emacs.d/init-files/emacs-for-python-master")
 
 
-;;(require 'init-compat)
+(require 'init-compat)
 (require 'init-utils)
 (require 'init-site-lisp) ;; Must come before elpa, as it may provide package.el
 
@@ -68,10 +70,10 @@
 (require 'init-elpa)      ;; Machinery for installing required packages
 (require 'init-exec-path) ;; Set up $PATH
 
+
 ;;-------------------------------------------------
 ;; use-package
 ;;-------------------------------------------------
-
 (unless (package-installed-p 'use-package)
   (package-install 'use-package))
 (setq use-package-verbose t)
@@ -81,6 +83,13 @@
   :config (auto-compile-on-load-mode))
 (setq load-prefer-newer t)
 
+
+;;------------------------------------------
+;; use space instead of spaces
+;;------------------------------------------
+(setq-default indent-tabs-mode nil)
+(setq tab-width 2)
+(setq-default tab-always-indent 'complete) ; Tab key indent first, then complete
 
 ;;-------------------------------------------------
 ;; customization in a separate file
@@ -93,36 +102,32 @@
 (require 'init-smartparens)
 (require 'init-key)
 
+;; undo tree
+(require 'init-undotree)
 
 ;; ido
 ;;(require 'init-ido)
 
-
-;; ivy
-(require 'init-ivy)
-
-
 ;; themes
 (require 'init-theme)
-
-
-;; writeroom-mode for a distraction free environment
-(require 'init-writeroom)
-
-
-;; tex-mode
-(require 'init-tex)
-
-
-;; auto-save buffer
-(require 'init-autosave)
-
 
 ;; mode-line
 (require 'init-modeline)
 
+;; writeroom-mode for a distraction free environment
+(require 'init-writeroom)
+
+;; tex-mode
+(require 'init-tex)
+
+;; auto-save buffer
+(require 'init-autosave)
+
 ;; helm
 (require 'init-helm) 
+
+;; ivy
+(require 'init-ivy)
 
 ;;org-mode
 (require 'init-org)
@@ -163,7 +168,7 @@
 ;;(require 'init-pretty)
 
 ;; sql mode
-;;(require 'init-sql)
+(require 'init-sql)
 
 ;; key-bindings
 (require 'init-key)
@@ -232,6 +237,11 @@
 ;;---------------------------------------------
 (require 'init-linum-mode)
 
+(require 'init-yasnippet)
+
+
+;; window management
+(require 'init-window-move)
 
 ;; Then reset it as late as possible; these are the reasonable defaults I use.
 (setq gc-cons-threshold best-gc-cons-threshold)

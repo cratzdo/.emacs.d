@@ -1,27 +1,60 @@
 
 ;; ----- smex-history -----
 (
- elpy-config
+ ein:notebooklist-open
+ ein:notebooklist-login
  eshell
- pyvenv-workon
- powerline-center-theme
- find-file
- counsel-find-file
- ivy-mode
+ ein:jupyter-server-start
+ package-install
+ customize-group
+ package-list-packages
 )
 
 ;; ----- smex-data -----
 (
- (magit-status . 1)
+ (magit-status . 8)
  (ace-window . 2)
- (package-list-packages . 1)
+ (package-list-packages . 6)
  (package-autoremove . 1)
- (counsel-find-file . 2)
+ (counsel-find-file . 3)
  (counsel-mode . 1)
- (ivy-mode . 1)
+ (ivy-mode . 5)
  (find-file . 3)
  (powerline-center-theme . 2)
- (elpy-config . 10)
- (pyvenv-workon . 3)
- (eshell . 1)
+ (elpy-config . 23)
+ (pyvenv-workon . 4)
+ (eshell . 61)
+ (linum-mode . 4)
+ (ein:notebooklist-login . 35)
+ (calendar . 1)
+ (ein:notebooklist-open . 31)
+ (comment-box . 1)
+ (comment-region . 2)
+ (uncomment-region . 4)
+ (aggressive-indent-mode . 4)
+ (linum-relative-mode . 3)
+ (smart-comment . 1)
+ (powerline-center-evil-theme . 1)
+ (spaceline-toggle-helm-done . 1)
+ (package-initialize . 1)
+ (package-install . 4)
+ (LaTeX-mode . 1)
+ (customize-face . 3)
+ (helm-major-mode . 1)
+ (python-mode . 1)
+ (pyvenv-activate . 3)
+ (super-save-mode . 4)
+ (poly-markdown+r-mode . 1)
+ (text-scale-increase . 1)
+ (mac-mouse-turn-on-fullscreen . 2)
+ (counsel-M-x . 1)
+ (eval-buffer . 4)
+ (lisp-mode . 1)
+ (mac-toggle-fullscreen . 1)
+ (toggle-frame-fullscreen . 1)
+ (text-scale-adjust . 1)
+ (pyenv-mode . 1)
+ (org-mode . 1)
+ (customize-group . 1)
+ (ein:jupyter-server-start . 1)
 )

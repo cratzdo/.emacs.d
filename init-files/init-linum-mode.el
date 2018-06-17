@@ -1,4 +1,13 @@
+(use-package linum-relative
+  :ensure t
+  :init)
+
 (global-linum-mode t)
+
+(linum-on)
+(linum-relative-on)
+
+
 
 ;; http://stackoverflow.com/questions/3875213/turning-on-linum-mode-when-in-python-c-mode
 (setq linum-mode-inhibit-modes-list '(eshell-mode
@@ -11,6 +20,7 @@
                                       dired-mode
                                       help-mode
                                       text-mode
+				      latex-mode
                                       fundamental-mode
                                       jabber-roster-mode
                                       jabber-chat-mode

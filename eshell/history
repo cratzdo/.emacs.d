@@ -1,97 +1,3 @@
-ls -l
-CC local_static.o -o local_static
-g++ -std=c++11 test.cc 
-./a.out 
-ls -l
-g++ -std=c++11 greeting.cc -o greeting.o
-g++ -std=c++11 greeting.cc 
-g++ -std=c++11 greeting.cc 
-g++ -std=c++11 greeting.cc -o
-g++ -std=c++11 greeting.cc -o greeting.out
-./greeting.out 
-heelo
-g++ -std=c++11 greeting.cc -o greeting.out
-g++ -std=c++11 greeting.cc -o greeting.out
-./greeting.out 
-hello
-g++ -std=c++11 greeting.cc -o greeting.out
-./greeting.out 
-./greeting.out 
-g++ -std=c++11 greeting.cc -o greeting.out
-g++ -std=c++11 greeting.cc -o greeting.out
-./greeting.out 
-g++ -std=c++11 greeting.cc -o greeting.out
-./greeting.out 
-g++ -std=c++11 greeting.cc -o greeting.out
-g++ -std=c++11 greeting.cc -o greeting.out
-./greeting.out 
-g++ -std=c++11 greeting.cc -o greeting.out
-./greeting.out 
-g++ -std=c++11 greeting.cc -o greeting.out
-./greeting.out 
-ls -la
-cd ~/Downloads/
-ls -l
-ls -la
-g++ -std=c++ main.cc -o main
-g++ -std=c++ main_arg.cc -o main
-g++ -std=c++11 main_arg.cc -o main
-./main geek for geek
-ls -l
-g++ -std=c++11 emplace.cc -o emplace
-g++ -std=c++11 emplace.cc -o emplace
-./emplace 
-ls -l
-g++ -std=c++11 try_block.cc -o try_block
-./try_block 
-python3 -m pip install --upgrade yapf jedi
-cd ~/Python/
-ls -l
-git clone https://github.com/naturomics/CapsNet-Tensorflow.git
-git clone https://github.com/cedrickchee/capsule-net-pytorch.git
-git clone https://github.com/XifengGuo/CapsNet-Pytorch.git
-cd ~/Downloads/xgboost/
-ls -l
-cp make/config.mk .
-make -j4
-brew tap homebrew/versions; brew install gcc --without-multilib
-cd python-package; python setup.py install
-cat ~/.ssh/id_rsa.pub
-cd ~/.shh/
-cd ~/.ssh/
-ls -l
-source config
-cd ..
-cd ..
-cd ~
-cd /usr/local/texlive/texmf-local/bibtex/bib/
-sudo ln -s ~/Dropbox\ \(Personal\)/hg.bib hg.bib
-sudo texhash
-cd ~
-cd ~/Google\ Drive/
-cd LTPP\ Paper/2017/crack_nn/
-ls -l
-cd crack_nn_python/
-jupyter notebook
-brew cask search emacs-mac
-brew cask -S emacs-mac
-brew cask info emacs-mac
-brew cask install emacs-mac-official-icon
-zsh
-cd ~/Dropbox\ \(Personal\)/github_show
-ls -l
-cd iri_dis
-ls -l
-cd ~/Dropbox\ \(Personal\)/github_show/iri_dis/python_src/
-jupyter notebook 
-git status
-git remote -v
-git push
-ssh-add ~/.ssh/github_rsa
-git push
-pip3 install nltk
-pip3 install torchtext
-cd ~/Python/
 cd ~/Python/
 jupyter notebook
 cd ~/Python/
@@ -126,3 +32,97 @@ pip install --upgrade pip
 ls -l
 virtualenv -p /usr/local/bin/python3 gentry-env
 ls -l
+jupyter notebook --nobrowser
+jupyter notebook
+cd ~/.jupyter/
+ls -l
+jupyter notebook --generate-config
+sudo pip install matplotlib --upgrade
+pip install --upgrade pip
+pip3 install --upgrade matplotlib
+pip3 install --upgrade pip
+pip3 install --upgrade torch
+pip3 install nbconvert
+pip3 install --upgrade flake8
+pip3 install --upgrade numpy pandas scikit-learn  keras tensorflow
+brew upgrade python3
+pip3 install importmagic
+pip install importmagic
+pip3 install --upgrade importmagic
+unset PYTHONPATH
+pip3 install ipython3
+pip3 install ipython
+workon ~/Python/ve/bin/
+source ~/Python/ve/bin/activate
+ls -l
+cd ve
+ls -l
+dir
+cd bin | ls -l
+cd bin
+ls -l
+./activate
+source activate
+python3 -m pip install --upgrade jedi
+which python3
+ls -
+ls -l
+which park
+which spark
+brew info spark
+spark --version
+spark --version
+brew install spark
+which spark
+spark-shell
+wc
+cd ~/Google\ Drive/org-notes/deep_learning/
+jupyter notebook
+cd ~/Google\ Drive/org-notes/machine-learning/
+ls -l
+cd ~/Google zsh
+zsh
+zsh
+which bash
+which zsh
+brew upgrade zsh 
+brew upgrade
+cd ~/Google\ Drive/org-notes/machine-learning/
+ls -l
+mv ~/Google\ Drive/ ~/google-drive/
+cd ~/google-drive/
+pwd
+ls -l
+cd ~/Dropbox\ \(Personal\)/Work/Dissertation/
+ls -l
+cd Dissertation/
+ls -l
+cd ~/google-drive/org-notes/deep_learning/
+cd ..
+cd deep-learning/
+cd ~/google-drive/org-notes/machine-learning/
+cd ~/google-drive/org-notes/machine-learning/
+ls -l
+cd ~/google-drive/org-notes/deep-learning/
+ls -l
+cd ~/google-drive/org-notes/deep-learning/
+ls -l
+pip3 install --upgrade jupyter notebook
+python3
+ipython3
+cd ~/Downloads/
+cd ~/google-drive/org-notes/deep-learning/tensorflow-exe/
+cd ~/google-drive/kaggle/mnist-fashion/
+cd ~/google-drive/
+cd ~/Downloads/
+cd ~/google-drive/LTPP\ Paper/2018/contest/
+ls -l
+cd ~/google-drive/
+cd ..
+ls -l
+cd ~/google-drive/
+cd ~/google-drive/
+ls -l
+jupyter notebook --no-browser
+cd ~/Dropbox\ \(Personal\)/github_show/
+jupyter notebook --no-browser

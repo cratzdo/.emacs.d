@@ -2,7 +2,7 @@
 ;;;; GUI Tweaking
 ;;
 (menu-bar-mode +1) ;keep  menu-bar
-(global-set-key [f9] 'toggle-menu-bar-mode-from-frame)
+;; (global-set-key (kbd "<f9>") 'mac-mouse-turn-on-fullscreen) ;; toggle-menu-bar-mode-from-frame 
 (scroll-bar-mode 0) ;remove scroll bar
 (fringe-mode '(20 . 0))
 (set-face-attribute 'fringe nil :background nil)
